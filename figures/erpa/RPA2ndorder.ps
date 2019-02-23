@@ -1,0 +1,548 @@
+%!
+%%Creator: FeynDiagram 1.18  by Bill Dimm
+%%BoundingBox: 131.062 208.8 480.938 583.2
+%%LanguageLevel: 1
+%%Pages: 1
+%%EndComments
+%%BeginProlog
+% @(#) abbrev.ps 1.9@(#)
+
+/CP /charpath load def
+/CF /currentflat load def
+/CPT /currentpoint load def
+/C2 /curveto load def
+/FP /flattenpath load def
+/L2 /lineto load def
+/M2 /moveto load def
+/NP /newpath load def
+/PBX /pathbbox load def
+/RM2 /rmoveto load def
+/SD /setdash load def
+/SLC /setlinecap load def
+/SLW /setlinewidth load def
+/S /show load def
+/ST /stroke load def
+
+% @(#) vertex.ps 1.9@(#) 
+
+/vtx_dict 20 dict def
+vtx_dict /vtx_mtrxstor matrix put
+
+/vtx_create
+  {
+  vtx_dict begin
+
+  /ang exch def
+  /rad exch def
+  /y exch def
+  /x exch def
+  /vtx_proc exch def
+
+  /vtx_oldmatrix vtx_mtrxstor currentmatrix def
+
+  x y translate
+  ang rotate
+
+  vtx_proc
+
+  vtx_oldmatrix setmatrix
+  end
+  } bind def
+
+
+/vtx_dot
+  {
+  NP
+  rad 0 M2
+  0 0 rad 0 360 arc
+  0 setgray
+  fill
+  } bind def
+
+
+/vtx_box
+  {
+  NP
+  rad rad M2
+  rad rad neg L2
+  rad neg rad neg L2
+  rad neg rad L2
+  closepath
+  0 setgray
+  fill
+  } def
+
+/vtx_cross
+  {
+  NP
+  -1 2 sqrt div rad mul
+  -1 2 sqrt div rad mul
+  M2
+  1 2 sqrt div rad mul
+  1 2 sqrt div rad mul
+  L2
+
+  -1 2 sqrt div rad mul
+  1 2 sqrt div rad mul
+  M2
+  1 2 sqrt div rad mul
+  -1 2 sqrt div rad mul
+  L2
+
+  ST
+  } def
+
+/vtx_circlecross
+  {
+  /xshrfct .63 def
+
+    % blank out whatever is underneath
+  NP
+  rad 0 M2
+  0 0 rad 0 360 arc
+  1 setgray
+  fill
+
+  NP
+  -1 2 sqrt div rad mul xshrfct mul
+  -1 2 sqrt div rad mul xshrfct mul
+  M2
+  1 2 sqrt div rad mul xshrfct mul
+  1 2 sqrt div rad mul xshrfct mul
+  L2
+
+  -1 2 sqrt div rad mul xshrfct mul
+  1 2 sqrt div rad mul xshrfct mul
+  M2
+  1 2 sqrt div rad mul xshrfct mul
+  -1 2 sqrt div rad mul xshrfct mul
+  L2
+
+  rad 0 M2
+  0 0 rad 0 360 arc
+
+  0 setgray
+  ST
+  } def
+
+% @(#) arrow.ps 1.9@(#)
+
+/tan
+  {
+  dup
+  sin exch cos div
+  } bind def
+
+/arrow_dict 12 dict def
+arrow_dict /arrow_mtrxstor matrix put
+
+/arrow
+  {
+  arrow_dict 
+    begin
+
+    /alpha exch def
+    /y2 exch def
+    /x2 exch def
+    /y1 exch def
+    /x1 exch def
+  
+    /arrow_oldmtrx arrow_mtrxstor currentmatrix def
+  
+    /dx x2 x1 sub def
+    /dy y2 y1 sub def
+  
+    /len dx dx mul dy dy mul add sqrt def
+    
+    /theta 1 alpha tan atan def
+    /rad len alpha tan mul 
+      theta sin alpha tan theta cos -1 add mul add div def
+  
+    x1 y1 translate
+    dy dx atan rotate
+  
+    len 0 M2
+    rad neg 0 rad theta 360 theta sub arcn
+    closepath
+  
+    arrow_oldmtrx setmatrix
+    end
+  } bind def
+
+% @(#) fill.ps 1.9@(#)
+
+/fillbox_dict 20 dict def
+fillbox_dict /fillbox_mtrxstor matrix put
+
+% fillbox_create is to be used for filling a box which is AT LEAST AS LARGE
+% as box given by xmin,ymin xmax,ymax - use clipping to strip off what
+% you don't want
+
+/fillbox_create
+  {
+  fillbox_dict begin
+
+  /ang exch def
+  /ymax exch def
+  /xmax exch def
+  /ymin exch def
+  /xmin exch def
+  /fillbox_proc exch def  % the fillbox_proc fetches rest of stack
+
+  /fillbox_oldmtrx fillbox_mtrxstor currentmatrix def
+
+  xmin xmax add 2 div
+  ymin ymax add 2 div
+  translate
+
+  ang rotate
+
+  % rad tells how big a circle which encompasses the box must be
+  /rad 
+    xmax xmin sub xmax xmin sub mul
+    ymax ymin sub ymax ymin sub mul
+    add sqrt 2 div
+    def
+
+  fillbox_proc
+
+  fillbox_oldmtrx setmatrix
+  end
+  } def
+
+
+/fillbox_lines
+  {
+  /incr exch def
+
+  rad neg incr rad
+    {
+    /yv exch def
+    rad neg yv M2
+    rad yv L2
+    ST
+    } for
+  } bind def
+  
+
+/fillbox_dots
+  {
+  /dtrad exch def
+  /incr exch def
+
+  /shx 0 def
+
+  rad neg incr rad
+    {
+    /yval exch def
+    rad neg shx sub incr rad
+      {
+      /xval exch def
+      xval dtrad add yval M2
+      xval yval dtrad 0 360 arc
+      fill
+      } for
+    shx 0 eq { /shx incr 2 div def } { /shx 0 def } ifelse
+    } for
+  } bind def
+
+% @(#) ellipse.ps 1.9@(#)
+
+/ellipse_dict 6 dict def
+ellipse_dict /ellipse_mtrxstor matrix put
+
+/ellipse
+  {
+  ellipse_dict begin
+
+  /yrad exch def
+  /xrad exch def
+  /y exch def
+  /x exch def
+
+  /ellipse_oldmtrx ellipse_mtrxstor currentmatrix def
+
+  x y translate
+  xrad yrad scale
+  0 0 1 0 360 arc
+
+  ellipse_oldmtrx setmatrix
+
+  end
+  } def
+
+% @(#) text.ps 1.9@(#)
+
+/text_dict 20 dict def
+text_dict /text_mtrxstor matrix put
+
+/SF* {  exch findfont exch scalefont setfont } bind def
+
+systemdict /selectfont known
+  { /SF /selectfont load def }
+  { /SF /SF* load def }
+  ifelse
+
+/txtsta
+  {
+  text_dict begin
+
+  /angle exch def
+  /y exch def
+  /x exch def
+
+  /text_oldmtrx text_mtrxstor currentmatrix def
+
+  x y translate
+  angle rotate
+  } bind def
+
+
+/txtend
+  {
+  text_oldmtrx setmatrix
+  end
+  } bind def
+
+% @(#) max.ps 1.9@(#)
+
+/max { 2 copy lt {exch} if pop } bind def
+
+% @(#) grid.ps 1.9@(#)
+
+/grid_dict 40 dict def
+grid_dict /grid_mtrxstor matrix put
+
+/grid
+  {
+  grid_dict
+    begin
+
+    /ysteps    exch def
+    /xsteps    exch def
+    /delpts  exch def
+    /yminpts   exch def
+    /xminpts   exch def
+    /delta     exch def
+    /ymin      exch def
+    /xmin      exch def
+
+    0 SLW
+
+    /xmaxpts xminpts xsteps delpts mul add def
+    /ymaxpts yminpts ysteps delpts mul add def
+
+    /fnthgt 8 def
+    /Times-Roman findfont fnthgt scalefont setfont
+    /labsep fnthgt 2 mul def
+    /extndfr 1 2 div def
+    /graylevel 0.2 def
+
+    /labseptrk -1 def
+    0 1 xsteps 
+      {
+      /xn exch def
+      /xpts xminpts delpts xn mul add def
+      /x    xmin    delta    xn mul add def
+
+      /dolabel labseptrk 0 lt def
+
+      graylevel setgray
+      xpts 
+      dolabel { yminpts delpts extndfr mul sub } { yminpts } ifelse
+      M2
+      xpts ymaxpts L2
+      ST
+
+      dolabel
+        {
+        /labseptrk labsep def
+        0 setgray
+        xpts yminpts M2
+        x 20 string cvs false CP
+        PBX
+        pop exch pop exch sub /txtwid exch def
+        NP
+        xpts txtwid 2 div sub 
+          yminpts fnthgt sub delpts extndfr mul sub M2
+        x 20 string cvs S
+        } if
+
+      /labseptrk labseptrk delpts sub def
+      } for
+
+    /labseptrk -1 def
+    0 1 ysteps 
+      {
+      /yn exch def
+      /ypts yminpts delpts yn mul add def
+      /y    ymin    delta    yn mul add def
+
+      /dolabel labseptrk 0 lt def
+
+      graylevel setgray
+      dolabel { xminpts delpts extndfr mul sub } { xminpts } ifelse
+      ypts M2
+      xmaxpts ypts L2
+      ST
+
+      dolabel
+        {
+        /labseptrk labsep def
+        0 setgray
+        xminpts ypts M2
+        y 20 string cvs false CP
+        PBX
+        exch 4 -1 roll sub /txtwid exch def
+        sub neg /txthgt exch def
+        NP
+        xminpts txtwid sub fnthgt sub delpts extndfr mul sub
+          ypts txthgt 2 div sub M2
+        y 20 string cvs S
+        } if
+
+      /labseptrk labseptrk delpts sub def
+      } for
+
+    0 setgray
+    
+    end
+  } def
+
+%%EndProlog
+%%Page: 1 1
+%%PageBoundingBox: 131.062 208.8 480.938 583.2
+%%PageOrientation: Portrait
+save
+
+NP
+1.638 SLW
+1 SLC
+142.2 489.6 M2
+146.568 478.462 150.936 478.462 155.304 489.6 C2
+159.672 500.738 164.04 500.738 168.408 489.6 C2
+172.776 478.462 177.144 478.462 181.512 489.6 C2
+185.88 500.738 190.248 500.738 194.616 489.6 C2
+198.984 478.462 203.352 478.462 207.72 489.6 C2
+212.088 500.738 216.456 500.738 220.824 489.6 C2
+225.192 478.462 229.56 478.462 233.928 489.6 C2
+238.296 500.738 242.664 500.738 247.032 489.6 C2
+251.4 478.462 255.768 478.462 260.136 489.6 C2
+264.504 500.738 268.872 500.738 273.24 489.6 C2
+277.608 478.462 281.976 478.462 286.344 489.6 C2
+290.712 500.738 295.08 500.738 299.448 489.6 C2
+303.816 478.462 308.184 478.462 312.552 489.6 C2
+316.92 500.738 321.288 500.738 325.656 489.6 C2
+330.024 478.462 334.392 478.462 338.76 489.6 C2
+343.128 500.738 347.496 500.738 351.864 489.6 C2
+356.232 478.462 360.6 478.462 364.968 489.6 C2
+369.336 500.738 373.704 500.738 378.072 489.6 C2
+382.44 478.462 386.808 478.462 391.176 489.6 C2
+395.544 500.738 399.912 500.738 404.28 489.6 C2
+408.648 478.462 413.016 478.462 417.384 489.6 C2
+421.752 500.738 426.12 500.738 430.488 489.6 C2
+434.856 478.462 439.224 478.462 443.592 489.6 C2
+447.96 500.738 452.328 500.738 456.696 489.6 C2
+461.064 478.462 465.432 478.462 469.8 489.6 C2
+ST
+NP
+1.638 SLW
+1 SLC
+142.2 302.4 M2
+146.568 291.262 150.936 291.262 155.304 302.4 C2
+159.672 313.538 164.04 313.538 168.408 302.4 C2
+172.776 291.262 177.144 291.262 181.512 302.4 C2
+185.88 313.538 190.248 313.538 194.616 302.4 C2
+198.984 291.262 203.352 291.262 207.72 302.4 C2
+212.088 313.538 216.456 313.538 220.824 302.4 C2
+225.192 291.262 229.56 291.262 233.928 302.4 C2
+238.296 313.538 242.664 313.538 247.032 302.4 C2
+251.4 291.262 255.768 291.262 260.136 302.4 C2
+264.504 313.538 268.872 313.538 273.24 302.4 C2
+277.608 291.262 281.976 291.262 286.344 302.4 C2
+290.712 313.538 295.08 313.538 299.448 302.4 C2
+303.816 291.262 308.184 291.262 312.552 302.4 C2
+316.92 313.538 321.288 313.538 325.656 302.4 C2
+330.024 291.262 334.392 291.262 338.76 302.4 C2
+343.128 313.538 347.496 313.538 351.864 302.4 C2
+356.232 291.262 360.6 291.262 364.968 302.4 C2
+369.336 313.538 373.704 313.538 378.072 302.4 C2
+382.44 291.262 386.808 291.262 391.176 302.4 C2
+395.544 313.538 399.912 313.538 404.28 302.4 C2
+408.648 291.262 413.016 291.262 417.384 302.4 C2
+421.752 313.538 426.12 313.538 430.488 302.4 C2
+434.856 291.262 439.224 291.262 443.592 302.4 C2
+447.96 313.538 452.328 313.538 456.696 302.4 C2
+461.064 291.262 465.432 291.262 469.8 302.4 C2
+ST
+NP
+1.638 SLW
+1 SLC
+142.2 208.8 M2
+142.2 302.4 L2
+ST
+1 SLW
+0 SLC
+142.2 250.195 142.2 261.005 22 arrow
+fill
+NP
+1.638 SLW
+1 SLC
+142.2 302.4 M2
+142.2 489.6 L2
+ST
+1 SLW
+0 SLC
+142.2 390.595 142.2 401.405 22 arrow
+fill
+NP
+1.638 SLW
+1 SLC
+142.2 489.6 M2
+142.2 583.2 L2
+ST
+1 SLW
+0 SLC
+142.2 530.995 142.2 541.805 22 arrow
+fill
+NP
+1.638 SLW
+1 SLC
+469.8 583.2 M2
+469.8 489.6 L2
+ST
+1 SLW
+0 SLC
+469.8 541.805 469.8 530.995 22 arrow
+fill
+NP
+1.638 SLW
+1 SLC
+469.8 489.6 M2
+469.8 302.4 L2
+ST
+1 SLW
+0 SLC
+469.8 401.405 469.8 390.595 22 arrow
+fill
+NP
+1.638 SLW
+1 SLC
+469.8 302.4 M2
+469.8 208.8 L2
+ST
+1 SLW
+0 SLC
+469.8 261.005 469.8 250.195 22 arrow
+fill
+2.457 SLW
+{vtx_dot} 142.2 489.6 4.212 0 vtx_create
+2.457 SLW
+{vtx_dot} 469.8 489.6 4.212 0 vtx_create
+2.457 SLW
+{vtx_dot} 142.2 302.4 4.212 0 vtx_create
+2.457 SLW
+{vtx_dot} 469.8 302.4 4.212 0 vtx_create
+restore
+showpage
+%%EOF
