@@ -1,3 +1,3 @@
-# thesis
-thesis latex source
-test
+# thesis compilation
+. .texenv
+latex thesis.tex
