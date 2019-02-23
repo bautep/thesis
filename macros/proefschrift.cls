@@ -759,9 +759,9 @@
 \DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
 \DeclareOldFontCommand{\sl}{\normalfont\slshape}{\relax}
 \DeclareOldFontCommand{\sc}{\normalfont\scshape}{\relax}
-\renewcommand{\cal}{\protect\pcal}
+\newcommand{\cal}{\protect\pcal}
 \newcommand{\pcal}{\@fontswitch{\relax}{\mathcal}}
-\renewcommand{\mit}{\protect\pmit}
+\newcommand{\mit}{\protect\pmit}
 \newcommand{\pmit}{\@fontswitch{\relax}{\mathnormal}}
 \def\pem{\@nomath\em \ifdim \fontdimen\@ne\font >\z@
                        \upshape \else \slshape \fi}
