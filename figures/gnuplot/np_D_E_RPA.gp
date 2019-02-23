@@ -9,7 +9,7 @@ set output "np_D_E_RPA.eps"
 set xran[-55:-15]
 set xlabel "Energy (MeV)"
 set yran[0:0.5]
-set ylabel "GT-strength (1/MeV)" 2
+set ylabel "GT-strength (1/MeV)" 
 #
 set size 1,0.9
 set ytics 0,0.1
