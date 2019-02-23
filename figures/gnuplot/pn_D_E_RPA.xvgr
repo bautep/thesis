@@ -1,0 +1,1159 @@
+# ACE/gr parameter file
+#
+#
+@page 5
+@page inout 5
+@link page off
+@with g0
+@g0 on
+@g0 label off
+@g0 hidden false
+@g0 type xy
+@g0 autoscale type AUTO
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@    default linestyle 1
+@    default linewidth 1
+@    default color 1
+@    default char size 1.000000
+@    default font 2
+@    default font source 0
+@    default symbol size 1.000000
+@    world xmin -5
+@    world xmax 25
+@    world ymin 0
+@    world ymax 12
+@    view xmin 0.150000
+@    view xmax 0.850000
+@    view ymin 0.150000
+@    view ymax 0.850000
+@    title ""
+@    title font 4
+@    title size 1.500000
+@    title color 1
+@    title linewidth 1
+@    subtitle ""
+@    subtitle font 4
+@    subtitle size 1.000000
+@    subtitle color 1
+@    subtitle linewidth 1
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol fill 0
+@    s0 symbol center false
+@    s0 symbol char 0
+@    s0 skip 0
+@    s0 linestyle 1
+@    s0 linewidth 1
+@    s0 color 1
+@    s0 fill 0
+@    s0 fill with color
+@    s0 fill color 0
+@    s0 fill pattern 0
+@    s0 errorbar type BOTH
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser on
+@    s0 errorbar riser linewidth 1
+@    s0 errorbar riser linestyle 1
+@    s0 xyz 0.000000, 0.000000
+@    s0 comment "GT_pn_3p_dipa"
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol fill 0
+@    s1 symbol center false
+@    s1 symbol char 0
+@    s1 skip 0
+@    s1 linestyle 3
+@    s1 linewidth 1
+@    s1 color 1
+@    s1 fill 0
+@    s1 fill with color
+@    s1 fill color 0
+@    s1 fill pattern 0
+@    s1 errorbar type BOTH
+@    s1 errorbar length 1.000000
+@    s1 errorbar linewidth 1
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser on
+@    s1 errorbar riser linewidth 1
+@    s1 errorbar riser linestyle 1
+@    s1 xyz 0.000000, 0.000000
+@    s1 comment "GT_pn_3p_drpa"
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol fill 0
+@    s2 symbol center false
+@    s2 symbol char 0
+@    s2 skip 0
+@    s2 linestyle 2
+@    s2 linewidth 1
+@    s2 color 1
+@    s2 fill 0
+@    s2 fill with color
+@    s2 fill color 0
+@    s2 fill pattern 0
+@    s2 errorbar type BOTH
+@    s2 errorbar length 1.000000
+@    s2 errorbar linewidth 1
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser on
+@    s2 errorbar riser linewidth 1
+@    s2 errorbar riser linestyle 1
+@    s2 xyz 0.000000, 0.000000
+@    s2 comment "GT_pn_3p_derpa"
+@    xaxis  tick on
+@    xaxis  tick major 5
+@    xaxis  tick minor 5
+@    xaxis  tick offsetx 0.000000
+@    xaxis  tick offsety 0.000000
+@    xaxis  tick alt off
+@    xaxis  tick min 0
+@    xaxis  tick max 1
+@    xaxis  label "Energy (MeV)"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label linewidth 1
+@    xaxis  ticklabel on
+@    xaxis  ticklabel type auto
+@    xaxis  ticklabel prec 0
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel layout horizontal
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  ticklabel linewidth 1
+@    xaxis  tick major on
+@    xaxis  tick minor on
+@    xaxis  tick default 6
+@    xaxis  tick in
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick log off
+@    xaxis  tick size 1.000000
+@    xaxis  tick minor size 0.500000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor grid off
+@    xaxis  tick op both
+@    xaxis  tick type auto
+@    xaxis  tick spec 0
+@    yaxis  tick on
+@    yaxis  tick major 2
+@    yaxis  tick minor 2
+@    yaxis  tick offsetx 0.000000
+@    yaxis  tick offsety 0.000000
+@    yaxis  tick alt off
+@    yaxis  tick min 0
+@    yaxis  tick max 1
+@    yaxis  label "GT-strength (MeV\S-1\N)"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label linewidth 1
+@    yaxis  ticklabel on
+@    yaxis  ticklabel type auto
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel layout horizontal
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  ticklabel linewidth 1
+@    yaxis  tick major on
+@    yaxis  tick minor on
+@    yaxis  tick default 6
+@    yaxis  tick in
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick log off
+@    yaxis  tick size 1.000000
+@    yaxis  tick minor size 0.500000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor grid off
+@    yaxis  tick op both
+@    yaxis  tick type auto
+@    yaxis  tick spec 0
+@    altxaxis  tick on
+@    altxaxis  tick major 0.5
+@    altxaxis  tick minor 0.25
+@    altxaxis  tick offsetx 0.000000
+@    altxaxis  tick offsety 0.000000
+@    altxaxis  tick alt off
+@    altxaxis  tick min 0
+@    altxaxis  tick max 1
+@    altxaxis  label ""
+@    altxaxis  label layout para
+@    altxaxis  label place auto
+@    altxaxis  label char size 1.000000
+@    altxaxis  label font 4
+@    altxaxis  label color 1
+@    altxaxis  label linewidth 1
+@    altxaxis  ticklabel off
+@    altxaxis  ticklabel type auto
+@    altxaxis  ticklabel prec 1
+@    altxaxis  ticklabel format decimal
+@    altxaxis  ticklabel layout horizontal
+@    altxaxis  ticklabel skip 0
+@    altxaxis  ticklabel stagger 0
+@    altxaxis  ticklabel op bottom
+@    altxaxis  ticklabel sign normal
+@    altxaxis  ticklabel start type auto
+@    altxaxis  ticklabel start 0.000000
+@    altxaxis  ticklabel stop type auto
+@    altxaxis  ticklabel stop 0.000000
+@    altxaxis  ticklabel char size 1.000000
+@    altxaxis  ticklabel font 4
+@    altxaxis  ticklabel color 1
+@    altxaxis  ticklabel linewidth 1
+@    altxaxis  tick major off
+@    altxaxis  tick minor on
+@    altxaxis  tick default 6
+@    altxaxis  tick in
+@    altxaxis  tick major color 1
+@    altxaxis  tick major linewidth 1
+@    altxaxis  tick major linestyle 1
+@    altxaxis  tick minor color 1
+@    altxaxis  tick minor linewidth 1
+@    altxaxis  tick minor linestyle 1
+@    altxaxis  tick log off
+@    altxaxis  tick size 1.000000
+@    altxaxis  tick minor size 0.500000
+@    altxaxis  bar off
+@    altxaxis  bar color 1
+@    altxaxis  bar linestyle 1
+@    altxaxis  bar linewidth 1
+@    altxaxis  tick major grid off
+@    altxaxis  tick minor grid off
+@    altxaxis  tick op both
+@    altxaxis  tick type auto
+@    altxaxis  tick spec 0
+@    altyaxis  tick on
+@    altyaxis  tick major 0.5
+@    altyaxis  tick minor 0.25
+@    altyaxis  tick offsetx 0.000000
+@    altyaxis  tick offsety 0.000000
+@    altyaxis  tick alt off
+@    altyaxis  tick min 0
+@    altyaxis  tick max 1
+@    altyaxis  label ""
+@    altyaxis  label layout para
+@    altyaxis  label place auto
+@    altyaxis  label char size 1.000000
+@    altyaxis  label font 4
+@    altyaxis  label color 1
+@    altyaxis  label linewidth 1
+@    altyaxis  ticklabel off
+@    altyaxis  ticklabel type auto
+@    altyaxis  ticklabel prec 1
+@    altyaxis  ticklabel format decimal
+@    altyaxis  ticklabel layout horizontal
+@    altyaxis  ticklabel skip 0
+@    altyaxis  ticklabel stagger 0
+@    altyaxis  ticklabel op left
+@    altyaxis  ticklabel sign normal
+@    altyaxis  ticklabel start type auto
+@    altyaxis  ticklabel start 0.000000
+@    altyaxis  ticklabel stop type auto
+@    altyaxis  ticklabel stop 0.000000
+@    altyaxis  ticklabel char size 1.000000
+@    altyaxis  ticklabel font 4
+@    altyaxis  ticklabel color 1
+@    altyaxis  ticklabel linewidth 1
+@    altyaxis  tick major off
+@    altyaxis  tick minor on
+@    altyaxis  tick default 6
+@    altyaxis  tick in
+@    altyaxis  tick major color 1
+@    altyaxis  tick major linewidth 1
+@    altyaxis  tick major linestyle 1
+@    altyaxis  tick minor color 1
+@    altyaxis  tick minor linewidth 1
+@    altyaxis  tick minor linestyle 1
+@    altyaxis  tick log off
+@    altyaxis  tick size 1.000000
+@    altyaxis  tick minor size 0.500000
+@    altyaxis  bar off
+@    altyaxis  bar color 1
+@    altyaxis  bar linestyle 1
+@    altyaxis  bar linewidth 1
+@    altyaxis  tick major grid off
+@    altyaxis  tick minor grid off
+@    altyaxis  tick op both
+@    altyaxis  tick type auto
+@    altyaxis  tick spec 0
+@    zeroxaxis  tick on
+@    zeroxaxis  tick major 10
+@    zeroxaxis  tick minor 5
+@    zeroxaxis  tick offsetx 0.000000
+@    zeroxaxis  tick offsety 0.000000
+@    zeroxaxis  tick alt off
+@    zeroxaxis  tick min 0
+@    zeroxaxis  tick max 1
+@    zeroxaxis  label ""
+@    zeroxaxis  label layout para
+@    zeroxaxis  label place auto
+@    zeroxaxis  label char size 1.000000
+@    zeroxaxis  label font 4
+@    zeroxaxis  label color 1
+@    zeroxaxis  label linewidth 1
+@    zeroxaxis  ticklabel off
+@    zeroxaxis  ticklabel type auto
+@    zeroxaxis  ticklabel prec 1
+@    zeroxaxis  ticklabel format decimal
+@    zeroxaxis  ticklabel layout horizontal
+@    zeroxaxis  ticklabel skip 0
+@    zeroxaxis  ticklabel stagger 0
+@    zeroxaxis  ticklabel op bottom
+@    zeroxaxis  ticklabel sign normal
+@    zeroxaxis  ticklabel start type auto
+@    zeroxaxis  ticklabel start 0.000000
+@    zeroxaxis  ticklabel stop type auto
+@    zeroxaxis  ticklabel stop 0.000000
+@    zeroxaxis  ticklabel char size 1.000000
+@    zeroxaxis  ticklabel font 4
+@    zeroxaxis  ticklabel color 1
+@    zeroxaxis  ticklabel linewidth 1
+@    zeroxaxis  tick major off
+@    zeroxaxis  tick minor on
+@    zeroxaxis  tick default 6
+@    zeroxaxis  tick in
+@    zeroxaxis  tick major color 1
+@    zeroxaxis  tick major linewidth 1
+@    zeroxaxis  tick major linestyle 1
+@    zeroxaxis  tick minor color 1
+@    zeroxaxis  tick minor linewidth 1
+@    zeroxaxis  tick minor linestyle 1
+@    zeroxaxis  tick log off
+@    zeroxaxis  tick size 1.000000
+@    zeroxaxis  tick minor size 0.500000
+@    zeroxaxis  bar off
+@    zeroxaxis  bar color 1
+@    zeroxaxis  bar linestyle 1
+@    zeroxaxis  bar linewidth 1
+@    zeroxaxis  tick major grid off
+@    zeroxaxis  tick minor grid off
+@    zeroxaxis  tick op both
+@    zeroxaxis  tick type auto
+@    zeroxaxis  tick spec 0
+@    zeroyaxis  tick on
+@    zeroyaxis  tick major 2
+@    zeroyaxis  tick minor 1
+@    zeroyaxis  tick offsetx 0.000000
+@    zeroyaxis  tick offsety 0.000000
+@    zeroyaxis  tick alt off
+@    zeroyaxis  tick min 0
+@    zeroyaxis  tick max 1
+@    zeroyaxis  label ""
+@    zeroyaxis  label layout para
+@    zeroyaxis  label place auto
+@    zeroyaxis  label char size 1.000000
+@    zeroyaxis  label font 4
+@    zeroyaxis  label color 1
+@    zeroyaxis  label linewidth 1
+@    zeroyaxis  ticklabel off
+@    zeroyaxis  ticklabel type auto
+@    zeroyaxis  ticklabel prec 1
+@    zeroyaxis  ticklabel format decimal
+@    zeroyaxis  ticklabel layout horizontal
+@    zeroyaxis  ticklabel skip 0
+@    zeroyaxis  ticklabel stagger 0
+@    zeroyaxis  ticklabel op left
+@    zeroyaxis  ticklabel sign normal
+@    zeroyaxis  ticklabel start type auto
+@    zeroyaxis  ticklabel start 0.000000
+@    zeroyaxis  ticklabel stop type auto
+@    zeroyaxis  ticklabel stop 0.000000
+@    zeroyaxis  ticklabel char size 1.000000
+@    zeroyaxis  ticklabel font 4
+@    zeroyaxis  ticklabel color 1
+@    zeroyaxis  ticklabel linewidth 1
+@    zeroyaxis  tick major off
+@    zeroyaxis  tick minor on
+@    zeroyaxis  tick default 6
+@    zeroyaxis  tick in
+@    zeroyaxis  tick major color 1
+@    zeroyaxis  tick major linewidth 1
+@    zeroyaxis  tick major linestyle 1
+@    zeroyaxis  tick minor color 1
+@    zeroyaxis  tick minor linewidth 1
+@    zeroyaxis  tick minor linestyle 1
+@    zeroyaxis  tick log off
+@    zeroyaxis  tick size 1.000000
+@    zeroyaxis  tick minor size 0.500000
+@    zeroyaxis  bar off
+@    zeroyaxis  bar color 1
+@    zeroyaxis  bar linestyle 1
+@    zeroyaxis  bar linewidth 1
+@    zeroyaxis  tick major grid off
+@    zeroyaxis  tick minor grid off
+@    zeroyaxis  tick op both
+@    zeroyaxis  tick type auto
+@    zeroyaxis  tick spec 0
+@    legend on
+@    legend loctype view
+@    legend layout 0
+@    legend vgap 2
+@    legend hgap 1
+@    legend length 4
+@    legend box off
+@    legend box fill off
+@    legend box fill with color
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend box color 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend x1 0.578947
+@    legend y1 0.741519
+@    legend font 4
+@    legend char size 1.000000
+@    legend linestyle 1
+@    legend linewidth 1
+@    legend color 1
+@    legend string 0 "DIPA"
+@    legend string 1 "DRPA"
+@    legend string 2 "DERPA"
+@    frame on
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1
+@    frame color 1
+@    frame fill off
+@    frame background color 0
+@WITH G0
+@G0 ON
+@TYPE xy
+-5 0.0343776
+-4.88294 0.0354067
+-4.76589 0.0365003
+-4.64883 0.0376643
+-4.53177 0.0389053
+-4.41472 0.0402306
+-4.29766 0.0416483
+-4.1806 0.043168
+-4.06355 0.0447999
+-3.94649 0.0465563
+-3.82943 0.0484506
+-3.71237 0.0504985
+-3.59532 0.0527179
+-3.47826 0.0551294
+-3.3612 0.057757
+-3.24415 0.0606286
+-3.12709 0.0637766
+-3.01003 0.0672392
+-2.89298 0.0710617
+-2.77592 0.0752977
+-2.65886 0.0800115
+-2.54181 0.0852804
+-2.42475 0.0911981
+-2.30769 0.0978793
+-2.19064 0.105465
+-2.07358 0.114132
+-1.95652 0.124101
+-1.83946 0.135653
+-1.72241 0.149149
+-1.60535 0.16506
+-1.48829 0.184008
+-1.37124 0.206829
+-1.25418 0.234667
+-1.13712 0.269118
+-1.02007 0.312463
+-0.90301 0.368043
+-0.785953 0.4409
+-0.668896 0.538905
+-0.551839 0.674819
+-0.434783 0.870259
+-0.317726 1.16361
+-0.200669 1.62636
+-0.083612 2.39554
+0.0334448 3.72016
+0.150502 5.86996
+0.267559 8.12317
+0.384615 7.84088
+0.501672 5.4491
+0.618729 3.44664
+0.735786 2.24424
+0.852843 1.54562
+0.9699 1.12322
+1.08696 0.854576
+1.20401 0.675725
+1.32107 0.552067
+1.43813 0.463989
+1.55518 0.399856
+1.67224 0.352487
+1.7893 0.317301
+1.90635 0.291305
+2.02341 0.272519
+2.14047 0.259641
+2.25753 0.251843
+2.37458 0.248661
+2.49164 0.249931
+2.6087 0.255775
+2.72575 0.266612
+2.84281 0.283227
+2.95987 0.306884
+3.07692 0.339533
+3.19398 0.384165
+3.31104 0.445418
+3.42809 0.530672
+3.54515 0.652078
+3.66221 0.830487
+3.77926 1.10338
+3.89632 1.5412
+4.01338 2.27907
+4.13043 3.55252
+4.24749 5.53156
+4.36455 7.19714
+4.48161 6.37235
+4.59866 4.26454
+4.71572 2.69998
+4.83278 1.77794
+4.94983 1.23778
+5.06689 0.906351
+5.18395 0.692077
+5.301 0.546877
+5.41806 0.444464
+5.53512 0.36976
+5.65217 0.313704
+5.76923 0.270623
+5.88629 0.236833
+6.00334 0.209863
+6.1204 0.188008
+6.23746 0.170066
+6.35452 0.155166
+6.47157 0.142669
+6.58863 0.132095
+6.70569 0.123078
+6.82274 0.115338
+6.9398 0.108655
+7.05686 0.102854
+7.17391 0.0977977
+7.29097 0.0933733
+7.40803 0.0894902
+7.52508 0.0860738
+7.64214 0.0830626
+7.7592 0.0804055
+7.87625 0.0780596
+7.99331 0.0759891
+8.11037 0.0741634
+8.22742 0.0725569
+8.34448 0.0711475
+8.46154 0.0699165
+8.5786 0.0688476
+8.69565 0.0679271
+8.81271 0.0671429
+8.92977 0.0664848
+9.04682 0.0659439
+9.16388 0.0655124
+9.28094 0.0651838
+9.39799 0.0649525
+9.51505 0.0648134
+9.63211 0.0647627
+9.74916 0.0647966
+9.86622 0.0649125
+9.98328 0.0651078
+10.1003 0.0653808
+10.2174 0.0657301
+10.3344 0.0661545
+10.4515 0.0666536
+10.5686 0.0672271
+10.6856 0.0678751
+10.8027 0.068598
+10.9197 0.0693968
+11.0368 0.0702725
+11.1538 0.0712267
+11.2709 0.0722611
+11.388 0.0733779
+11.505 0.0745798
+11.6221 0.0758695
+11.7391 0.0772503
+11.8562 0.0787261
+11.9732 0.0803008
+12.0903 0.0819791
+12.2074 0.0837661
+12.3244 0.0856673
+12.4415 0.0876889
+12.5585 0.0898377
+12.6756 0.0921212
+12.7926 0.0945474
+12.9097 0.0971254
+13.0268 0.099865
+13.1438 0.102777
+13.2609 0.105873
+13.3779 0.109166
+13.495 0.112671
+13.612 0.116403
+13.7291 0.120379
+13.8462 0.124618
+13.9632 0.129141
+14.0803 0.133971
+14.1973 0.139134
+14.3144 0.144656
+14.4314 0.15057
+14.5485 0.156909
+14.6656 0.16371
+14.7826 0.171017
+14.8997 0.178874
+15.0167 0.187334
+15.1338 0.196452
+15.2508 0.206292
+15.3679 0.216924
+15.4849 0.228424
+15.602 0.240877
+15.7191 0.254376
+15.8361 0.269025
+15.9532 0.284935
+16.0702 0.302228
+16.1873 0.321036
+16.3043 0.341498
+16.4214 0.36376
+16.5385 0.387973
+16.6555 0.414287
+16.7726 0.442842
+16.8896 0.473764
+17.0067 0.507144
+17.1237 0.543024
+17.2408 0.58137
+17.3579 0.622047
+17.4749 0.664775
+17.592 0.7091
+17.709 0.754351
+17.8261 0.79961
+17.9431 0.843705
+18.0602 0.885226
+18.1773 0.922588
+18.2943 0.954138
+18.4114 0.97831
+18.5284 0.9938
+18.6455 0.999738
+18.7625 0.995813
+18.8796 0.982316
+18.9967 0.960098
+19.1137 0.930453
+19.2308 0.894944
+19.3478 0.855225
+19.4649 0.812893
+19.5819 0.769371
+19.699 0.725845
+19.8161 0.683248
+19.9331 0.642266
+20.0502 0.603368
+20.1672 0.566843
+20.2843 0.532838
+20.4013 0.501398
+20.5184 0.472489
+20.6355 0.446029
+20.7525 0.421901
+20.8696 0.399973
+20.9866 0.380104
+21.1037 0.362154
+21.2207 0.345987
+21.3378 0.331474
+21.4548 0.318496
+21.5719 0.306946
+21.689 0.296724
+21.806 0.287746
+21.9231 0.279936
+22.0401 0.273228
+22.1572 0.267568
+22.2742 0.26291
+22.3913 0.259219
+22.5084 0.256466
+22.6254 0.254634
+22.7425 0.253712
+22.8595 0.253697
+22.9766 0.254594
+23.0936 0.256417
+23.2107 0.259183
+23.3278 0.262918
+23.4448 0.267654
+23.5619 0.273425
+23.6789 0.280269
+23.796 0.288222
+23.913 0.297321
+24.0301 0.307589
+24.1472 0.319039
+24.2642 0.331661
+24.3813 0.345416
+24.4983 0.360222
+24.6154 0.375951
+24.7324 0.392411
+24.8495 0.409347
+24.9666 0.426437
+25.0836 0.443298
+25.2007 0.459501
+25.3177 0.474591
+25.4348 0.488117
+25.5518 0.499654
+25.6689 0.508837
+25.786 0.515376
+25.903 0.519082
+26.0201 0.519883
+26.1371 0.517835
+26.2542 0.51313
+26.3712 0.50609
+26.4883 0.49715
+26.6054 0.48682
+26.7224 0.475651
+26.8395 0.464186
+26.9565 0.452934
+27.0736 0.442336
+27.1906 0.432757
+27.3077 0.424482
+27.4247 0.417714
+27.5418 0.412586
+27.6589 0.409162
+27.7759 0.407446
+27.893 0.407383
+28.01 0.408863
+28.1271 0.411713
+28.2441 0.415704
+28.3612 0.420548
+28.4783 0.4259
+28.5953 0.431376
+28.7124 0.436568
+28.8294 0.441064
+28.9465 0.444487
+29.0635 0.446512
+29.1806 0.446897
+29.2977 0.445499
+29.4147 0.442284
+29.5318 0.437327
+29.6488 0.430804
+29.7659 0.422979
+29.8829 0.414183
+30 0.404779
+&
+@TYPE xy
+0 0.0726525
+0.100334 0.0782446
+0.200669 0.0846485
+0.301003 0.0920346
+0.401338 0.100621
+0.501672 0.110689
+0.602007 0.122609
+0.702341 0.136873
+0.802676 0.15415
+0.90301 0.17536
+1.00334 0.201801
+1.10368 0.235343
+1.20401 0.278755
+1.30435 0.336246
+1.40468 0.414433
+1.50502 0.524061
+1.60535 0.683172
+1.70569 0.92282
+1.80602 1.29615
+1.90635 1.88424
+2.00669 2.74752
+2.10702 3.66141
+2.20736 3.86256
+2.30769 3.11966
+2.40803 2.19524
+2.50836 1.51699
+2.6087 1.0816
+2.70903 0.80509
+2.80936 0.62506
+2.9097 0.504141
+3.01003 0.420651
+3.11037 0.361814
+3.2107 0.319885
+3.31104 0.290041
+3.41137 0.269211
+3.51171 0.255421
+3.61204 0.247419
+3.71237 0.244452
+3.81271 0.246141
+3.91304 0.252419
+4.01338 0.263511
+4.11371 0.279951
+4.21405 0.302636
+4.31438 0.332946
+4.41472 0.372921
+4.51505 0.425569
+4.61538 0.49537
+4.71572 0.58912
+4.81605 0.717384
+4.91639 0.897071
+5.01672 1.15606
+5.11706 1.54146
+5.21739 2.13319
+5.31773 3.05797
+5.41806 4.45518
+5.51839 6.19539
+5.61873 7.26928
+5.71906 6.57383
+5.8194 4.90526
+5.91973 3.43324
+6.02007 2.42387
+6.1204 1.76749
+6.22074 1.33547
+6.32107 1.04228
+6.4214 0.836516
+6.52174 0.687521
+6.62207 0.576585
+6.72241 0.491954
+6.82274 0.426012
+6.92308 0.37368
+7.02341 0.331478
+7.12375 0.296963
+7.22408 0.268384
+7.32441 0.244459
+7.42475 0.224236
+7.52508 0.206994
+7.62542 0.192178
+7.72575 0.179359
+7.82609 0.168199
+7.92642 0.15843
+8.02676 0.149834
+8.12709 0.142237
+8.22742 0.135496
+8.32776 0.129493
+8.42809 0.124131
+8.52843 0.119327
+8.62876 0.115013
+8.7291 0.111131
+8.82943 0.107631
+8.92977 0.104473
+9.0301 0.101618
+9.13043 0.0990372
+9.23077 0.0967027
+9.3311 0.0945912
+9.43144 0.0926825
+9.53177 0.0909588
+9.63211 0.0894046
+9.73244 0.0880061
+9.83278 0.0867513
+9.93311 0.0856297
+10.0334 0.0846319
+10.1338 0.0837497
+10.2341 0.0829757
+10.3344 0.0823035
+10.4348 0.0817273
+10.5351 0.0812423
+10.6355 0.0808438
+10.7358 0.0805281
+10.8361 0.0802917
+10.9365 0.0801317
+11.0368 0.0800455
+11.1371 0.080031
+11.2375 0.0800864
+11.3378 0.0802101
+11.4381 0.080401
+11.5385 0.0806583
+11.6388 0.0809813
+11.7391 0.08137
+11.8395 0.0818242
+11.9398 0.0823446
+12.0401 0.0829318
+12.1405 0.0835873
+12.2408 0.084313
+12.3411 0.0851116
+12.4415 0.085987
+12.5418 0.0869445
+12.6421 0.0879909
+12.7425 0.0891322
+12.8428 0.0903624
+12.9431 0.0916394
+13.0435 0.0928776
+13.1438 0.0940158
+13.2441 0.0951738
+13.3445 0.0965079
+13.4448 0.0980251
+13.5452 0.0996884
+13.6455 0.101475
+13.7458 0.103377
+13.8462 0.105394
+13.9465 0.107527
+14.0468 0.109783
+14.1472 0.112166
+14.2475 0.114686
+14.3478 0.11735
+14.4482 0.120169
+14.5485 0.123155
+14.6488 0.126315
+14.7492 0.129642
+14.8495 0.133117
+14.9498 0.136768
+15.0502 0.140645
+15.1505 0.144768
+15.2508 0.149149
+15.3512 0.153802
+15.4515 0.158742
+15.5518 0.16399
+15.6522 0.169567
+15.7525 0.175498
+15.8528 0.181811
+15.9532 0.188535
+16.0535 0.195702
+16.1538 0.203349
+16.2542 0.211513
+16.3545 0.220239
+16.4548 0.229571
+16.5552 0.239561
+16.6555 0.250263
+16.7559 0.261738
+16.8562 0.27405
+16.9565 0.287269
+17.0569 0.30147
+17.1572 0.316733
+17.2575 0.333144
+17.3579 0.350791
+17.4582 0.369767
+17.5585 0.390166
+17.6589 0.412081
+17.7592 0.4356
+17.8595 0.460804
+17.9599 0.487755
+18.0602 0.516495
+18.1605 0.54703
+18.2609 0.579316
+18.3612 0.613246
+18.4615 0.648623
+18.5619 0.68514
+18.6622 0.722338
+18.7625 0.759566
+18.8629 0.795905
+18.9632 0.830032
+19.0635 0.860009
+19.1639 0.88318
+19.2642 0.8976
+19.3645 0.906733
+19.4649 0.917475
+19.5652 0.929372
+19.6656 0.939271
+19.7659 0.943296
+19.8662 0.93885
+19.9666 0.926042
+20.0669 0.906089
+20.1672 0.880388
+20.2676 0.850282
+20.3679 0.816994
+20.4682 0.781602
+20.5686 0.745017
+20.6689 0.708002
+20.7692 0.67129
+20.8696 0.635974
+20.9699 0.603839
+21.0702 0.57575
+21.1706 0.549814
+21.2709 0.524472
+21.3712 0.499875
+21.4716 0.476513
+21.5719 0.454667
+21.6722 0.434432
+21.7726 0.415809
+21.8729 0.39875
+21.9732 0.383186
+22.0736 0.36904
+22.1739 0.356231
+22.2742 0.344682
+22.3746 0.33432
+22.4749 0.325076
+22.5753 0.316886
+22.6756 0.309695
+22.7759 0.303451
+22.8763 0.29811
+22.9766 0.293632
+23.0769 0.289984
+23.1773 0.287139
+23.2776 0.285076
+23.3779 0.283778
+23.4783 0.283235
+23.5786 0.283441
+23.6789 0.284396
+23.7793 0.286103
+23.8796 0.288573
+23.9799 0.291815
+24.0803 0.295845
+24.1806 0.300678
+24.2809 0.306331
+24.3813 0.312818
+24.4816 0.320152
+24.5819 0.32834
+24.6823 0.337386
+24.7826 0.347282
+24.8829 0.358014
+24.9833 0.369553
+25.0836 0.38186
+25.1839 0.39488
+25.2843 0.408543
+25.3846 0.422762
+25.4849 0.437431
+25.5853 0.452423
+25.6856 0.467584
+25.786 0.482731
+25.8863 0.497648
+25.9866 0.512083
+26.087 0.525747
+26.1873 0.538324
+26.2876 0.549487
+26.388 0.558916
+26.4883 0.566328
+26.5886 0.571507
+26.689 0.574332
+26.7893 0.574795
+26.8896 0.573009
+26.99 0.569202
+27.0903 0.563697
+27.1906 0.556884
+27.291 0.54919
+27.3913 0.541045
+27.4916 0.53286
+27.592 0.525002
+27.6923 0.517787
+27.7926 0.51147
+27.893 0.506247
+27.9933 0.502258
+28.0936 0.499598
+28.194 0.498339
+28.2943 0.49853
+28.3946 0.500082
+28.495 0.502479
+28.5953 0.505181
+28.6957 0.508208
+28.796 0.511581
+28.8963 0.515099
+28.9967 0.518476
+29.097 0.521419
+29.1973 0.523653
+29.2977 0.52494
+29.398 0.525086
+29.4983 0.523954
+29.5987 0.521466
+29.699 0.517616
+29.7993 0.51246
+29.8997 0.506119
+30 0.498768
+&
+@TYPE xy
+0 0.0457378
+0.167785 0.0513759
+0.33557 0.0584365
+0.503356 0.0674545
+0.671141 0.0792416
+0.838926 0.0950761
+1.00671 0.11706
+1.1745 0.148833
+1.34228 0.197114
+1.51007 0.275294
+1.7 0.438184
+1.76667 0.530491
+1.83333 0.653575
+1.9 0.820835
+1.96667 1.0519
+2.03333 1.37375
+2.1 1.81631
+2.16667 2.38809
+2.23333 3.00896
+2.3 3.43782
+2.4 3.2155
+2.53684 2.03908
+2.67368 1.20749
+2.81053 0.770374
+2.94737 0.535684
+3.08421 0.400788
+3.22105 0.318442
+3.35789 0.266018
+3.49474 0.23195
+3.63158 0.209977
+3.76842 0.19657
+3.90526 0.189716
+4.04211 0.188319
+4.17895 0.191893
+4.31579 0.200429
+4.45263 0.214359
+4.58947 0.234644
+4.72632 0.262994
+4.86316 0.302355
+5 0.357857
+5 0.357857
+5 0.357857
+5.1 0.413663
+5.22222 0.508993
+5.22222 0.508993
+5.3 0.592892
+5.44444 0.829526
+5.44444 0.829526
+5.5 0.964583
+5.66667 1.66371
+5.66667 1.66371
+5.7 1.8925
+5.88889 4.55361
+5.88889 4.55361
+5.9 4.82783
+6.11111 10.6014
+6.2 8.52065
+6.33333 4.37446
+6.4 3.14585
+6.55556 1.63871
+6.6 1.39922
+6.77778 0.819374
+6.8 0.773311
+7 0.491647
+7 0.491647
+7.2 0.343316
+7.4 0.255895
+7.6 0.199475
+7.8 0.160259
+8 0.131588
+10 0.0824255
+11.0714 0.0821943
+12.1429 0.0843554
+13.2143 0.091191
+14.2857 0.10838
+15.3571 0.138145
+16.4286 0.194677
+17.5 0.31406
+18.5714 0.589065
+19.6429 0.94345
+20.7143 0.89827
+21.7857 0.492635
+22.8571 0.333009
+23.9286 0.311864
+25 0.388662
+&
