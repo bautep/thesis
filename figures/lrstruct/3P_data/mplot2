@@ -1,0 +1,21 @@
+#! /bin/sh
+TMP=mp_$$
+TMP1=m1p_$$
+TMP2=m2p_$$
+SHFT=3.45125
+shftxy  plot_1+_111110 $SHFT         > $TMP1
+addxy   plot_0+_111111 $TMP1 1.0 3.0 > $TMP
+shftxy  plot_1+_111111 $SHFT         > $TMP1
+addxy   $TMP $TMP1 1.0 3.0           > $TMP2
+/bin/mv $TMP2 $TMP
+shftxy  plot_1+_111110 $SHFT         > $TMP1
+addxy   $TMP $TMP1 1.0 3.0           > $TMP2
+/bin/mv $TMP2 $TMP
+addxy   $TMP plot_2+_111111 1.0 5.0  > $TMP2
+/bin/mv $TMP2 $TMP
+addxy   $TMP plot_2+_111112 1.0 5.0  > $TMP2
+/bin/mv $TMP2 $TMP
+
+/bin/mv $TMP 3PL1.data
+
+#rm $TMP1

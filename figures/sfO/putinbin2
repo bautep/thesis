@@ -1,0 +1,19 @@
+#! /bin/sh
+#
+# putinbin
+#
+XSTART=10.0
+XSTOP=40.0
+BINLEN=1.0
+nawk ' 
+BEGIN { x=xstart; cum=0; }
+((x < $1 ) && ( $1 <= (x+binlen) )) { cum += $2; next; }
+{ print x," ",cum; 
+  x += binlen; 
+  print x," ",cum;
+  cum = 0;
+  while( x+binlen < $1 ) { print x," ",cum; x += binlen; print x," ",cum; }
+  cum = $2;
+  if ( x > xstop ) { exit 0; } 
+}
+' xstart=$XSTART xstop=$XSTOP binlen=$BINLEN

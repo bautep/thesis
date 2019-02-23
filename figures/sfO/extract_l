@@ -1,0 +1,25 @@
+#! /bin/sh
+#
+# extract_l
+#
+PROP=prop_o.p
+nawk ' 
+BEGIN { 
+l[0] = 0; j[0] = 1+1;
+l[1] = 1; j[1] = 3+1;
+l[2] = 1; j[2] = 1+1;
+l[3] = 2; j[3] = 5+1;
+l[4] = 2; j[4] = 3+1;
+l[5] = 0; j[5] = 1+1;
+l[6] = 3; j[6] = 7+1;
+l[7] = 3; j[7] = 5+1;
+l[8] = 1; j[8] = 3+1;
+l[9] = 1; j[9] = 1+1;
+read =0 ;
+shell =-1 ;
+Ehf=0;
+}
+/hole/ { shell++; if ( l[shell] == L ) {read=1;}; next; }
+/particle/ { {read=0;} ; next; }
+read == 1 { print Ehf-$1," ",j[shell]*$2 }
+' L=$1 $PROP | sort -n

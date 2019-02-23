@@ -1,0 +1,27 @@
+#! /bin/sh
+# 
+#
+FILENAME=$1
+TMPFILE=gp$$
+cat > $TMPFILE <<EOF
+set term tgif
+set output "$FILENAME.obj"
+#set term postscript eps 28
+#set output "$FILENAME.eps"
+#
+set tics out
+#set xran[-55:-15]
+set xlabel "Energy (MeV)"
+#set xtics 0, 
+set yran[0:0.2]
+set ylabel "strength " 2
+set ytics -0.05,0.05 
+#
+set size 1,0.4
+#cd  "data"
+set data style impulses
+plot "$FILENAME.dat" 
+pause -1 "gnuplot: press return"
+EOF
+gnuplot $TMPFILE
+rm -f $TMPFILE

@@ -1,0 +1,7 @@
+#
+# make a data file out of ehf_file
+#
+EHF_FILE=ehf_file.14_6
+for i in 0 1 2 3 4 ; do
+awk 'NF == 3 && $1 == nr {print $2, " ", $3} ' nr=$i  $EHF_FILE > data.$i
+done

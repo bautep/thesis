@@ -1,0 +1,528 @@
+%!PostScript
+%%BoundingBox: 18 18 552 428
+%%Creator: Xvgr version 2.10 - PJ Turner OGI-ESE
+%%EndComments
+/m {moveto} bind def
+/l {lineto} bind def
+/RJ {
+ stringwidth neg exch neg exch
+ rmoveto
+} bind def
+/CS {
+ stringwidth
+ 2 div neg exch 2 div neg exch
+ rmoveto
+} bind def
+0.25 0.25 scale
+1 setlinecap
+0.000000 0.000000 0.000000 setrgbcolor
+1 setlinewidth
+/Times-Italic findfont 
+60 scalefont
+ setfont
+[] 0 setdash
+420 342 m
+420 1591 l
+2030 1591 l
+2030 342 l
+420 342 l
+stroke
+[] 0 setdash
+489 342 m
+489 352 l
+629 342 m
+629 352 l
+770 342 m
+770 352 l
+910 342 m
+910 352 l
+1050 342 m
+1050 352 l
+1190 342 m
+1190 352 l
+1330 342 m
+1330 352 l
+1469 342 m
+1469 352 l
+1610 342 m
+1610 352 l
+1750 342 m
+1750 352 l
+1890 342 m
+1890 352 l
+2030 342 m
+2030 352 l
+489 1591 m
+489 1581 l
+629 1591 m
+629 1581 l
+770 1591 m
+770 1581 l
+910 1591 m
+910 1581 l
+1050 1591 m
+1050 1581 l
+1190 1591 m
+1190 1581 l
+1330 1591 m
+1330 1581 l
+1469 1591 m
+1469 1581 l
+1610 1591 m
+1610 1581 l
+1750 1591 m
+1750 1581 l
+1890 1591 m
+1890 1581 l
+2030 1591 m
+2030 1581 l
+stroke
+629 342 m
+629 362 l
+910 342 m
+910 362 l
+1190 342 m
+1190 362 l
+1469 342 m
+1469 362 l
+1750 342 m
+1750 362 l
+2030 342 m
+2030 362 l
+629 1591 m
+629 1571 l
+910 1591 m
+910 1571 l
+1190 1591 m
+1190 1571 l
+1469 1591 m
+1469 1571 l
+1750 1591 m
+1750 1571 l
+2030 1591 m
+2030 1571 l
+/Times-Italic findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+629 292 m
+gsave
+629 292 translate
+0 rotate
+0 -20  m
+(-100) CS
+(-100) show
+grestore
+newpath
+910 292 m
+gsave
+910 292 translate
+0 rotate
+0 -20  m
+(-80) CS
+(-80) show
+grestore
+newpath
+1190 292 m
+gsave
+1190 292 translate
+0 rotate
+0 -20  m
+(-60) CS
+(-60) show
+grestore
+newpath
+1469 292 m
+gsave
+1469 292 translate
+0 rotate
+0 -20  m
+(-40) CS
+(-40) show
+grestore
+newpath
+1750 292 m
+gsave
+1750 292 translate
+0 rotate
+0 -20  m
+(-20) CS
+(-20) show
+grestore
+newpath
+2030 292 m
+gsave
+2030 292 translate
+0 rotate
+0 -20  m
+(0) CS
+(0) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+1225 192 m
+gsave
+1225 192 translate
+0 rotate
+0 0  m
+(w \(MeV\)) CS
+/Symbol findfont 
+60 scalefont
+ setfont
+(w) show
+/Times-Bold findfont 
+60 scalefont
+ setfont
+( \(MeV\)) show
+grestore
+newpath
+420 342 m
+430 342 l
+420 420 m
+430 420 l
+420 498 m
+430 498 l
+420 576 m
+430 576 l
+420 654 m
+430 654 l
+420 732 m
+430 732 l
+420 810 m
+430 810 l
+420 888 m
+430 888 l
+420 966 m
+430 966 l
+420 1045 m
+430 1045 l
+420 1123 m
+430 1123 l
+420 1201 m
+430 1201 l
+420 1279 m
+430 1279 l
+420 1357 m
+430 1357 l
+420 1435 m
+430 1435 l
+420 1513 m
+430 1513 l
+420 1591 m
+430 1591 l
+2030 342 m
+2020 342 l
+2030 420 m
+2020 420 l
+2030 498 m
+2020 498 l
+2030 576 m
+2020 576 l
+2030 654 m
+2020 654 l
+2030 732 m
+2020 732 l
+2030 810 m
+2020 810 l
+2030 888 m
+2020 888 l
+2030 966 m
+2020 966 l
+2030 1045 m
+2020 1045 l
+2030 1123 m
+2020 1123 l
+2030 1201 m
+2020 1201 l
+2030 1279 m
+2020 1279 l
+2030 1357 m
+2020 1357 l
+2030 1435 m
+2020 1435 l
+2030 1513 m
+2020 1513 l
+2030 1591 m
+2020 1591 l
+stroke
+420 342 m
+440 342 l
+420 498 m
+440 498 l
+420 654 m
+440 654 l
+420 810 m
+440 810 l
+420 966 m
+440 966 l
+420 1123 m
+440 1123 l
+420 1279 m
+440 1279 l
+420 1435 m
+440 1435 l
+420 1591 m
+440 1591 l
+2030 342 m
+2010 342 l
+2030 498 m
+2010 498 l
+2030 654 m
+2010 654 l
+2030 810 m
+2010 810 l
+2030 966 m
+2010 966 l
+2030 1123 m
+2010 1123 l
+2030 1279 m
+2010 1279 l
+2030 1435 m
+2010 1435 l
+2030 1591 m
+2010 1591 l
+/Times-Bold findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+383 342 m
+gsave
+383 342 translate
+0 rotate
+0 -20  m
+(-60) RJ
+(-60) show
+grestore
+newpath
+383 498 m
+gsave
+383 498 translate
+0 rotate
+0 -20  m
+(-50) RJ
+(-50) show
+grestore
+newpath
+383 654 m
+gsave
+383 654 translate
+0 rotate
+0 -20  m
+(-40) RJ
+(-40) show
+grestore
+newpath
+383 810 m
+gsave
+383 810 translate
+0 rotate
+0 -20  m
+(-30) RJ
+(-30) show
+grestore
+newpath
+383 966 m
+gsave
+383 966 translate
+0 rotate
+0 -20  m
+(-20) RJ
+(-20) show
+grestore
+newpath
+383 1123 m
+gsave
+383 1123 translate
+0 rotate
+0 -20  m
+(-10) RJ
+(-10) show
+grestore
+newpath
+383 1279 m
+gsave
+383 1279 translate
+0 rotate
+0 -20  m
+(0) RJ
+(0) show
+grestore
+newpath
+383 1435 m
+gsave
+383 1435 translate
+0 rotate
+0 -20  m
+(10) RJ
+(10) show
+grestore
+newpath
+383 1591 m
+gsave
+383 1591 translate
+0 rotate
+0 -20  m
+(20) RJ
+(20) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+220 966 m
+gsave
+220 966 translate
+90 rotate
+0 0  m
+(eHF\(w\) \(MeV\)) CS
+/Symbol findfont 
+60 scalefont
+ setfont
+(e) show
+/Times-Bold findfont 
+60 scalefont
+ setfont
+/Times-Bold findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(HF) show
+/Times-Bold findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(\() show
+/Symbol findfont 
+60 scalefont
+ setfont
+(w) show
+/Times-Bold findfont 
+60 scalefont
+ setfont
+(\) \(MeV\)) show
+grestore
+newpath
+489 765 m
+1050 709 l
+1469 674 l
+1750 646 l
+1959 620 l
+stroke
+489 765 20 0 360 arc
+stroke
+1050 709 20 0 360 arc
+stroke
+1469 674 20 0 360 arc
+stroke
+1750 646 20 0 360 arc
+stroke
+1959 620 20 0 360 arc
+stroke
+489 1091 m
+1050 1051 l
+1469 1025 l
+1750 1003 l
+1959 982 l
+stroke
+472 1074 m
+472 1108 l
+506 1108 l
+506 1074 l
+472 1074 l
+1033 1034 m
+1033 1068 l
+1067 1068 l
+1067 1034 l
+1033 1034 l
+1452 1008 m
+1452 1042 l
+1486 1042 l
+1486 1008 l
+1452 1008 l
+1733 986 m
+1733 1020 l
+1767 1020 l
+1767 986 l
+1733 986 l
+1942 965 m
+1942 999 l
+1976 999 l
+1976 965 l
+1942 965 l
+stroke
+489 1156 m
+1050 1117 l
+1469 1092 l
+1750 1071 l
+1959 1050 l
+stroke
+489 1176 m
+469 1156 l
+489 1136 l
+509 1156 l
+489 1176 l
+1050 1137 m
+1030 1117 l
+1050 1097 l
+1070 1117 l
+1050 1137 l
+1469 1112 m
+1449 1092 l
+1469 1072 l
+1489 1092 l
+1469 1112 l
+1750 1091 m
+1730 1071 l
+1750 1051 l
+1770 1071 l
+1750 1091 l
+1959 1070 m
+1939 1050 l
+1959 1030 l
+1979 1050 l
+1959 1070 l
+stroke
+489 1364 m
+1050 1337 l
+1469 1321 l
+1750 1307 l
+1959 1293 l
+stroke
+489 1384 m
+469 1344 l
+509 1344 l
+489 1384 l
+1050 1357 m
+1030 1317 l
+1070 1317 l
+1050 1357 l
+1469 1341 m
+1449 1301 l
+1489 1301 l
+1469 1341 l
+1750 1327 m
+1730 1287 l
+1770 1287 l
+1750 1327 l
+1959 1313 m
+1939 1273 l
+1979 1273 l
+1959 1313 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+1190 342 m
+2030 1279 l
+stroke
+[] 0 setdash
+1 setlinewidth
+showpage
+%%Trailer

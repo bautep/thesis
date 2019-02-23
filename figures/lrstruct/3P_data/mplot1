@@ -1,0 +1,5 @@
+#! /bin/sh
+TMP=mp_$$
+addxy plot_0-_110110  plot_1-_110111 1.0 3.0 > $TMP
+addxy $TMP  plot_2-_110112 1.0 5.0 > 3PL0.data
+rm $TMP

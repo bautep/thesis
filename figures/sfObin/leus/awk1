@@ -1,0 +1,4 @@
+awk '
+BEGIN { bin=10; factor=2.5/55 }
+{printf "%5.1f %10.8f\n", bin, factor*$1; bin++ }
+' datal1.mm > datal1

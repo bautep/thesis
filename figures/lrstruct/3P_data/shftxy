@@ -1,0 +1,17 @@
+#! /bin/sh
+#
+# shftxy xyfile1  shft
+case $# in
+2) ;;
+*) echo usage shftxy xyfile shft
+esac
+#
+#
+#
+TMP=shftxy_$$
+awk ' { print $1+shft, $2 } ' shft=$2 $1 > $TMP
+START=`head -1 $TMP | awk '{print $1}'`
+STOP=`tail -1 $1 | awk '{print $1}'`
+nawk '$1 < start {print $1," "0.0} ' start=$START $1
+nawk '$1 < stop ' stop=$STOP $TMP
+rm $TMP

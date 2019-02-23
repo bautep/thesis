@@ -1,0 +1,2888 @@
+%!PostScript
+%%BoundingBox: 18 18 552 428
+%%Creator: Xvgr version 2.10 - PJ Turner OGI-ESE
+%%EndComments
+/m {moveto} bind def
+/l {lineto} bind def
+/RJ {
+ stringwidth neg exch neg exch
+ rmoveto
+} bind def
+/CS {
+ stringwidth
+ 2 div neg exch 2 div neg exch
+ rmoveto
+} bind def
+0.25 0.25 scale
+1 setlinecap
+0.000000 0.000000 0.000000 setrgbcolor
+1 setlinewidth
+/Times-Italic findfont 
+60 scalefont
+ setfont
+[] 0 setdash
+305 253 m
+305 610 l
+1225 610 l
+1225 253 l
+305 253 l
+stroke
+[] 0 setdash
+305 253 m
+305 263 l
+381 253 m
+381 263 l
+458 253 m
+458 263 l
+535 253 m
+535 263 l
+611 253 m
+611 263 l
+688 253 m
+688 263 l
+765 253 m
+765 263 l
+841 253 m
+841 263 l
+918 253 m
+918 263 l
+995 253 m
+995 263 l
+1071 253 m
+1071 263 l
+1148 253 m
+1148 263 l
+1225 253 m
+1225 263 l
+305 610 m
+305 600 l
+381 610 m
+381 600 l
+458 610 m
+458 600 l
+535 610 m
+535 600 l
+611 610 m
+611 600 l
+688 610 m
+688 600 l
+765 610 m
+765 600 l
+841 610 m
+841 600 l
+918 610 m
+918 600 l
+995 610 m
+995 600 l
+1071 610 m
+1071 600 l
+1148 610 m
+1148 600 l
+1225 610 m
+1225 600 l
+stroke
+305 253 m
+305 273 l
+458 253 m
+458 273 l
+611 253 m
+611 273 l
+765 253 m
+765 273 l
+918 253 m
+918 273 l
+1071 253 m
+1071 273 l
+305 610 m
+305 590 l
+458 610 m
+458 590 l
+611 610 m
+611 590 l
+765 610 m
+765 590 l
+918 610 m
+918 590 l
+1071 610 m
+1071 590 l
+/Times-Italic findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+305 203 m
+gsave
+305 203 translate
+0 rotate
+0 -20  m
+(0) CS
+(0) show
+grestore
+newpath
+458 203 m
+gsave
+458 203 translate
+0 rotate
+0 -20  m
+(1) CS
+(1) show
+grestore
+newpath
+611 203 m
+gsave
+611 203 translate
+0 rotate
+0 -20  m
+(2) CS
+(2) show
+grestore
+newpath
+765 203 m
+gsave
+765 203 translate
+0 rotate
+0 -20  m
+(3) CS
+(3) show
+grestore
+newpath
+918 203 m
+gsave
+918 203 translate
+0 rotate
+0 -20  m
+(4) CS
+(4) show
+grestore
+newpath
+1071 203 m
+gsave
+1071 203 translate
+0 rotate
+0 -20  m
+(5) CS
+(5) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+765 103 m
+gsave
+765 103 translate
+0 rotate
+0 0  m
+(|p1-p2|/2 \(fm\)) CS
+(|p) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(1) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 18 rmoveto
+(-p) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(2) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 18 rmoveto
+(|/2 \(fm\)) show
+grestore
+newpath
+305 253 m
+315 253 l
+305 324 m
+315 324 l
+305 396 m
+315 396 l
+305 467 m
+315 467 l
+305 538 m
+315 538 l
+1225 253 m
+1215 253 l
+1225 324 m
+1215 324 l
+1225 396 m
+1215 396 l
+1225 467 m
+1215 467 l
+1225 538 m
+1215 538 l
+stroke
+305 324 m
+325 324 l
+305 396 m
+325 396 l
+305 467 m
+325 467 l
+305 538 m
+325 538 l
+1225 324 m
+1205 324 l
+1225 396 m
+1205 396 l
+1225 467 m
+1205 467 l
+1225 538 m
+1205 538 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+267 324 m
+gsave
+267 324 translate
+0 rotate
+0 -20  m
+(0.00) RJ
+(0.00) show
+grestore
+newpath
+267 396 m
+gsave
+267 396 translate
+0 rotate
+0 -20  m
+(0.05) RJ
+(0.05) show
+grestore
+newpath
+267 467 m
+gsave
+267 467 translate
+0 rotate
+0 -20  m
+(0.10) RJ
+(0.10) show
+grestore
+newpath
+267 538 m
+gsave
+267 538 translate
+0 rotate
+0 -20  m
+(0.15) RJ
+(0.15) show
+grestore
+newpath
+305 324 m
+329 324 l
+353 325 l
+377 328 l
+401 337 l
+425 353 l
+449 378 l
+473 412 l
+497 448 l
+521 480 l
+545 502 l
+569 512 l
+594 512 l
+618 503 l
+642 490 l
+666 474 l
+690 457 l
+714 440 l
+738 423 l
+762 408 l
+786 394 l
+810 381 l
+834 369 l
+858 359 l
+883 350 l
+907 342 l
+931 336 l
+955 330 l
+979 325 l
+1003 321 l
+1027 318 l
+1051 316 l
+1075 314 l
+1099 313 l
+1123 312 l
+1147 311 l
+1172 311 l
+1196 311 l
+1220 311 l
+1225 311 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+305 324 m
+329 324 l
+353 325 l
+377 328 l
+401 337 l
+425 353 l
+449 380 l
+473 416 l
+497 456 l
+521 492 l
+545 519 l
+569 534 l
+594 539 l
+618 535 l
+642 526 l
+666 513 l
+690 499 l
+714 484 l
+738 470 l
+762 456 l
+786 443 l
+810 430 l
+834 419 l
+858 408 l
+883 399 l
+907 391 l
+931 383 l
+955 376 l
+979 370 l
+1003 365 l
+1027 360 l
+1051 356 l
+1075 352 l
+1099 349 l
+1123 346 l
+1147 343 l
+1172 341 l
+1196 339 l
+1220 338 l
+1225 337 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+305 324 m
+329 324 l
+353 325 l
+377 328 l
+401 337 l
+425 353 l
+449 380 l
+473 416 l
+497 458 l
+521 497 l
+545 528 l
+569 547 l
+594 555 l
+618 555 l
+642 548 l
+666 538 l
+690 525 l
+714 511 l
+738 497 l
+762 482 l
+786 468 l
+810 454 l
+834 441 l
+858 429 l
+883 417 l
+907 407 l
+931 397 l
+955 388 l
+979 379 l
+1003 372 l
+1027 365 l
+1051 359 l
+1075 354 l
+1099 349 l
+1123 344 l
+1147 341 l
+1172 337 l
+1196 334 l
+1220 332 l
+1225 332 l
+stroke
+[] 0 setdash
+305 610 m
+305 967 l
+1225 967 l
+1225 610 l
+305 610 l
+stroke
+305 610 m
+305 620 l
+381 610 m
+381 620 l
+458 610 m
+458 620 l
+535 610 m
+535 620 l
+611 610 m
+611 620 l
+688 610 m
+688 620 l
+765 610 m
+765 620 l
+841 610 m
+841 620 l
+918 610 m
+918 620 l
+995 610 m
+995 620 l
+1071 610 m
+1071 620 l
+1148 610 m
+1148 620 l
+1225 610 m
+1225 620 l
+305 967 m
+305 957 l
+381 967 m
+381 957 l
+458 967 m
+458 957 l
+535 967 m
+535 957 l
+611 967 m
+611 957 l
+688 967 m
+688 957 l
+765 967 m
+765 957 l
+841 967 m
+841 957 l
+918 967 m
+918 957 l
+995 967 m
+995 957 l
+1071 967 m
+1071 957 l
+1148 967 m
+1148 957 l
+1225 967 m
+1225 957 l
+stroke
+305 610 m
+305 630 l
+458 610 m
+458 630 l
+611 610 m
+611 630 l
+765 610 m
+765 630 l
+918 610 m
+918 630 l
+1071 610 m
+1071 630 l
+1225 610 m
+1225 630 l
+305 967 m
+305 947 l
+458 967 m
+458 947 l
+611 967 m
+611 947 l
+765 967 m
+765 947 l
+918 967 m
+918 947 l
+1071 967 m
+1071 947 l
+1225 967 m
+1225 947 l
+stroke
+305 669 m
+315 669 l
+305 729 m
+315 729 l
+305 788 m
+315 788 l
+305 848 m
+315 848 l
+305 907 m
+315 907 l
+305 967 m
+315 967 l
+1225 669 m
+1215 669 l
+1225 729 m
+1215 729 l
+1225 788 m
+1215 788 l
+1225 848 m
+1215 848 l
+1225 907 m
+1215 907 l
+1225 967 m
+1215 967 l
+stroke
+305 669 m
+325 669 l
+305 729 m
+325 729 l
+305 788 m
+325 788 l
+305 848 m
+325 848 l
+305 907 m
+325 907 l
+1225 669 m
+1205 669 l
+1225 729 m
+1205 729 l
+1225 788 m
+1205 788 l
+1225 848 m
+1205 848 l
+1225 907 m
+1205 907 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+267 669 m
+gsave
+267 669 translate
+0 rotate
+0 -20  m
+(-0.025) RJ
+(-0.025) show
+grestore
+newpath
+267 729 m
+gsave
+267 729 translate
+0 rotate
+0 -20  m
+(-0.020) RJ
+(-0.020) show
+grestore
+newpath
+267 788 m
+gsave
+267 788 translate
+0 rotate
+0 -20  m
+(-0.015) RJ
+(-0.015) show
+grestore
+newpath
+267 848 m
+gsave
+267 848 translate
+0 rotate
+0 -20  m
+(-0.010) RJ
+(-0.010) show
+grestore
+newpath
+267 907 m
+gsave
+267 907 translate
+0 rotate
+0 -20  m
+(-0.005) RJ
+(-0.005) show
+grestore
+newpath
+305 967 m
+329 965 l
+353 958 l
+377 942 l
+401 914 l
+425 874 l
+449 826 l
+473 779 l
+497 741 l
+521 718 l
+545 712 l
+569 717 l
+594 730 l
+618 747 l
+642 765 l
+666 783 l
+690 800 l
+714 816 l
+738 831 l
+762 845 l
+786 858 l
+810 870 l
+834 881 l
+858 891 l
+883 901 l
+907 909 l
+931 917 l
+955 924 l
+979 930 l
+1003 935 l
+1027 940 l
+1051 944 l
+1075 948 l
+1099 951 l
+1123 954 l
+1147 956 l
+1172 958 l
+1196 960 l
+1220 961 l
+1225 962 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+305 967 m
+329 965 l
+353 959 l
+377 943 l
+401 916 l
+425 877 l
+449 831 l
+473 784 l
+497 747 l
+521 723 l
+545 715 l
+569 718 l
+594 729 l
+618 743 l
+642 759 l
+666 775 l
+690 791 l
+714 806 l
+738 820 l
+762 833 l
+786 846 l
+810 858 l
+834 869 l
+858 880 l
+883 889 l
+907 898 l
+931 906 l
+955 914 l
+979 921 l
+1003 927 l
+1027 932 l
+1051 937 l
+1075 941 l
+1099 945 l
+1123 948 l
+1147 951 l
+1172 953 l
+1196 955 l
+1220 957 l
+1225 957 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+305 967 m
+329 965 l
+353 959 l
+377 945 l
+401 918 l
+425 879 l
+449 829 l
+473 775 l
+497 728 l
+521 696 l
+545 683 l
+569 687 l
+594 702 l
+618 725 l
+642 750 l
+666 776 l
+690 800 l
+714 822 l
+738 842 l
+762 859 l
+786 874 l
+810 888 l
+834 899 l
+858 908 l
+883 917 l
+907 924 l
+931 930 l
+955 935 l
+979 939 l
+1003 943 l
+1027 946 l
+1051 949 l
+1075 951 l
+1099 953 l
+1123 955 l
+1147 956 l
+1172 957 l
+1196 958 l
+1220 959 l
+1225 959 l
+stroke
+[] 0 setdash
+305 967 m
+305 1323 l
+1225 1323 l
+1225 967 l
+305 967 l
+stroke
+305 967 m
+305 977 l
+381 967 m
+381 977 l
+458 967 m
+458 977 l
+535 967 m
+535 977 l
+611 967 m
+611 977 l
+688 967 m
+688 977 l
+765 967 m
+765 977 l
+841 967 m
+841 977 l
+918 967 m
+918 977 l
+995 967 m
+995 977 l
+1071 967 m
+1071 977 l
+1148 967 m
+1148 977 l
+1225 967 m
+1225 977 l
+305 1323 m
+305 1313 l
+381 1323 m
+381 1313 l
+458 1323 m
+458 1313 l
+535 1323 m
+535 1313 l
+611 1323 m
+611 1313 l
+688 1323 m
+688 1313 l
+765 1323 m
+765 1313 l
+841 1323 m
+841 1313 l
+918 1323 m
+918 1313 l
+995 1323 m
+995 1313 l
+1071 1323 m
+1071 1313 l
+1148 1323 m
+1148 1313 l
+1225 1323 m
+1225 1313 l
+stroke
+305 967 m
+305 987 l
+458 967 m
+458 987 l
+611 967 m
+611 987 l
+765 967 m
+765 987 l
+918 967 m
+918 987 l
+1071 967 m
+1071 987 l
+1225 967 m
+1225 987 l
+305 1323 m
+305 1303 l
+458 1323 m
+458 1303 l
+611 1323 m
+611 1303 l
+765 1323 m
+765 1303 l
+918 1323 m
+918 1303 l
+1071 1323 m
+1071 1303 l
+1225 1323 m
+1225 1303 l
+stroke
+305 967 m
+315 967 l
+305 1026 m
+315 1026 l
+305 1085 m
+315 1085 l
+305 1145 m
+315 1145 l
+305 1204 m
+315 1204 l
+305 1264 m
+315 1264 l
+1225 967 m
+1215 967 l
+1225 1026 m
+1215 1026 l
+1225 1085 m
+1215 1085 l
+1225 1145 m
+1215 1145 l
+1225 1204 m
+1215 1204 l
+1225 1264 m
+1215 1264 l
+stroke
+305 1026 m
+325 1026 l
+305 1085 m
+325 1085 l
+305 1145 m
+325 1145 l
+305 1204 m
+325 1204 l
+305 1264 m
+325 1264 l
+1225 1026 m
+1205 1026 l
+1225 1085 m
+1205 1085 l
+1225 1145 m
+1205 1145 l
+1225 1204 m
+1205 1204 l
+1225 1264 m
+1205 1264 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+267 1026 m
+gsave
+267 1026 translate
+0 rotate
+0 -20  m
+(-0.05) RJ
+(-0.05) show
+grestore
+newpath
+267 1085 m
+gsave
+267 1085 translate
+0 rotate
+0 -20  m
+(0.00) RJ
+(0.00) show
+grestore
+newpath
+267 1145 m
+gsave
+267 1145 translate
+0 rotate
+0 -20  m
+(0.05) RJ
+(0.05) show
+grestore
+newpath
+267 1204 m
+gsave
+267 1204 translate
+0 rotate
+0 -20  m
+(0.10) RJ
+(0.10) show
+grestore
+newpath
+267 1264 m
+gsave
+267 1264 translate
+0 rotate
+0 -20  m
+(0.15) RJ
+(0.15) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+35 1145 m
+gsave
+35 1145 translate
+90 rotate
+0 0  m
+(defect wave function) CS
+(defect wave function) show
+grestore
+newpath
+305 1085 m
+329 1090 l
+353 1099 l
+377 1114 l
+401 1135 l
+425 1160 l
+449 1185 l
+473 1205 l
+497 1215 l
+521 1211 l
+545 1195 l
+569 1173 l
+594 1149 l
+618 1126 l
+642 1105 l
+666 1088 l
+690 1075 l
+714 1065 l
+738 1057 l
+762 1052 l
+786 1049 l
+810 1047 l
+834 1047 l
+858 1047 l
+883 1048 l
+907 1050 l
+931 1052 l
+955 1054 l
+979 1056 l
+1003 1059 l
+1027 1061 l
+1051 1064 l
+1075 1066 l
+1099 1068 l
+1123 1070 l
+1147 1072 l
+1172 1074 l
+1196 1075 l
+1220 1077 l
+1225 1077 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+305 1085 m
+329 1090 l
+353 1099 l
+377 1113 l
+401 1132 l
+425 1155 l
+449 1178 l
+473 1195 l
+497 1201 l
+521 1194 l
+545 1176 l
+569 1153 l
+594 1128 l
+618 1104 l
+642 1084 l
+666 1068 l
+690 1056 l
+714 1047 l
+738 1041 l
+762 1037 l
+786 1035 l
+810 1034 l
+834 1035 l
+858 1036 l
+883 1039 l
+907 1041 l
+931 1044 l
+955 1047 l
+979 1050 l
+1003 1053 l
+1027 1056 l
+1051 1059 l
+1075 1062 l
+1099 1064 l
+1123 1067 l
+1147 1069 l
+1172 1071 l
+1196 1073 l
+1220 1074 l
+1225 1074 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+305 1085 m
+329 1090 l
+353 1098 l
+377 1111 l
+401 1130 l
+425 1151 l
+449 1171 l
+473 1184 l
+497 1185 l
+521 1172 l
+545 1147 l
+569 1117 l
+594 1086 l
+618 1058 l
+642 1035 l
+666 1017 l
+690 1003 l
+714 994 l
+738 989 l
+762 987 l
+786 987 l
+810 988 l
+834 992 l
+858 996 l
+883 1002 l
+907 1007 l
+931 1013 l
+955 1019 l
+979 1025 l
+1003 1031 l
+1027 1037 l
+1051 1042 l
+1075 1047 l
+1099 1051 l
+1123 1056 l
+1147 1060 l
+1172 1063 l
+1196 1067 l
+1220 1069 l
+1225 1070 l
+stroke
+[] 0 setdash
+305 1323 m
+305 1680 l
+1225 1680 l
+1225 1323 l
+305 1323 l
+stroke
+305 1323 m
+305 1333 l
+381 1323 m
+381 1333 l
+458 1323 m
+458 1333 l
+535 1323 m
+535 1333 l
+611 1323 m
+611 1333 l
+688 1323 m
+688 1333 l
+765 1323 m
+765 1333 l
+841 1323 m
+841 1333 l
+918 1323 m
+918 1333 l
+995 1323 m
+995 1333 l
+1071 1323 m
+1071 1333 l
+1148 1323 m
+1148 1333 l
+1225 1323 m
+1225 1333 l
+305 1680 m
+305 1670 l
+381 1680 m
+381 1670 l
+458 1680 m
+458 1670 l
+535 1680 m
+535 1670 l
+611 1680 m
+611 1670 l
+688 1680 m
+688 1670 l
+765 1680 m
+765 1670 l
+841 1680 m
+841 1670 l
+918 1680 m
+918 1670 l
+995 1680 m
+995 1670 l
+1071 1680 m
+1071 1670 l
+1148 1680 m
+1148 1670 l
+1225 1680 m
+1225 1670 l
+stroke
+305 1323 m
+305 1343 l
+458 1323 m
+458 1343 l
+611 1323 m
+611 1343 l
+765 1323 m
+765 1343 l
+918 1323 m
+918 1343 l
+1071 1323 m
+1071 1343 l
+1225 1323 m
+1225 1343 l
+305 1680 m
+305 1660 l
+458 1680 m
+458 1660 l
+611 1680 m
+611 1660 l
+765 1680 m
+765 1660 l
+918 1680 m
+918 1660 l
+1071 1680 m
+1071 1660 l
+1225 1680 m
+1225 1660 l
+stroke
+305 1323 m
+315 1323 l
+305 1413 m
+315 1413 l
+305 1502 m
+315 1502 l
+305 1591 m
+315 1591 l
+1225 1323 m
+1215 1323 l
+1225 1413 m
+1215 1413 l
+1225 1502 m
+1215 1502 l
+1225 1591 m
+1215 1591 l
+stroke
+305 1413 m
+325 1413 l
+305 1502 m
+325 1502 l
+305 1591 m
+325 1591 l
+1225 1413 m
+1205 1413 l
+1225 1502 m
+1205 1502 l
+1225 1591 m
+1205 1591 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+267 1413 m
+gsave
+267 1413 translate
+0 rotate
+0 -20  m
+(-0.05) RJ
+(-0.05) show
+grestore
+newpath
+267 1502 m
+gsave
+267 1502 translate
+0 rotate
+0 -20  m
+(0.00) RJ
+(0.00) show
+grestore
+newpath
+267 1591 m
+gsave
+267 1591 translate
+0 rotate
+0 -20  m
+(0.05) RJ
+(0.05) show
+grestore
+newpath
+305 1502 m
+329 1506 l
+353 1514 l
+377 1528 l
+401 1546 l
+425 1567 l
+449 1587 l
+473 1601 l
+497 1604 l
+521 1594 l
+545 1573 l
+569 1547 l
+594 1520 l
+618 1495 l
+642 1474 l
+666 1457 l
+690 1445 l
+714 1436 l
+738 1430 l
+762 1426 l
+786 1425 l
+810 1426 l
+834 1428 l
+858 1431 l
+883 1435 l
+907 1439 l
+931 1443 l
+955 1448 l
+979 1453 l
+1003 1457 l
+1027 1462 l
+1051 1466 l
+1075 1470 l
+1099 1473 l
+1123 1477 l
+1147 1480 l
+1172 1483 l
+1196 1486 l
+1220 1488 l
+1225 1488 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+305 1502 m
+329 1506 l
+353 1514 l
+377 1528 l
+401 1546 l
+425 1567 l
+449 1587 l
+473 1602 l
+497 1605 l
+521 1595 l
+545 1575 l
+569 1549 l
+594 1521 l
+618 1496 l
+642 1475 l
+666 1458 l
+690 1445 l
+714 1436 l
+738 1430 l
+762 1426 l
+786 1425 l
+810 1426 l
+834 1428 l
+858 1431 l
+883 1434 l
+907 1438 l
+931 1443 l
+955 1448 l
+979 1452 l
+1003 1457 l
+1027 1461 l
+1051 1466 l
+1075 1470 l
+1099 1473 l
+1123 1477 l
+1147 1480 l
+1172 1483 l
+1196 1486 l
+1220 1488 l
+1225 1488 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+305 1502 m
+329 1506 l
+353 1514 l
+377 1526 l
+401 1543 l
+425 1562 l
+449 1580 l
+473 1590 l
+497 1589 l
+521 1575 l
+545 1552 l
+569 1523 l
+594 1494 l
+618 1467 l
+642 1445 l
+666 1428 l
+690 1415 l
+714 1406 l
+738 1400 l
+762 1397 l
+786 1396 l
+810 1397 l
+834 1400 l
+858 1404 l
+883 1408 l
+907 1413 l
+931 1419 l
+955 1424 l
+979 1430 l
+1003 1436 l
+1027 1441 l
+1051 1446 l
+1075 1452 l
+1099 1456 l
+1123 1461 l
+1147 1465 l
+1172 1469 l
+1196 1473 l
+1220 1476 l
+1225 1477 l
+stroke
+[] 0 setdash
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+723 1645 m
+863 1645 l
+stroke
+898 1645 m
+gsave
+898 1645 translate
+0 rotate
+0 -20  m
+(Bonn-A) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+[4 8] 0 setdash
+7 setlinewidth
+723 1571 m
+863 1571 l
+stroke
+[] 0 setdash
+1 setlinewidth
+898 1571 m
+gsave
+898 1571 translate
+0 rotate
+0 -20  m
+(Bonn-C) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+[20 20] 0 setdash
+723 1497 m
+863 1497 l
+stroke
+[] 0 setdash
+898 1497 m
+gsave
+898 1497 translate
+0 rotate
+0 -20  m
+(Reid) show
+grestore
+newpath
+1225 253 m
+1225 610 l
+2145 610 l
+2145 253 l
+1225 253 l
+stroke
+1225 253 m
+1225 263 l
+1301 253 m
+1301 263 l
+1378 253 m
+1378 263 l
+1455 253 m
+1455 263 l
+1531 253 m
+1531 263 l
+1608 253 m
+1608 263 l
+1685 253 m
+1685 263 l
+1761 253 m
+1761 263 l
+1838 253 m
+1838 263 l
+1915 253 m
+1915 263 l
+1991 253 m
+1991 263 l
+2068 253 m
+2068 263 l
+2145 253 m
+2145 263 l
+1225 610 m
+1225 600 l
+1301 610 m
+1301 600 l
+1378 610 m
+1378 600 l
+1455 610 m
+1455 600 l
+1531 610 m
+1531 600 l
+1608 610 m
+1608 600 l
+1685 610 m
+1685 600 l
+1761 610 m
+1761 600 l
+1838 610 m
+1838 600 l
+1915 610 m
+1915 600 l
+1991 610 m
+1991 600 l
+2068 610 m
+2068 600 l
+2145 610 m
+2145 600 l
+stroke
+1225 253 m
+1225 273 l
+1378 253 m
+1378 273 l
+1531 253 m
+1531 273 l
+1685 253 m
+1685 273 l
+1838 253 m
+1838 273 l
+1991 253 m
+1991 273 l
+2145 253 m
+2145 273 l
+1225 610 m
+1225 590 l
+1378 610 m
+1378 590 l
+1531 610 m
+1531 590 l
+1685 610 m
+1685 590 l
+1838 610 m
+1838 590 l
+1991 610 m
+1991 590 l
+2145 610 m
+2145 590 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+1225 203 m
+gsave
+1225 203 translate
+0 rotate
+0 -20  m
+(0) CS
+(0) show
+grestore
+newpath
+1378 203 m
+gsave
+1378 203 translate
+0 rotate
+0 -20  m
+(1) CS
+(1) show
+grestore
+newpath
+1531 203 m
+gsave
+1531 203 translate
+0 rotate
+0 -20  m
+(2) CS
+(2) show
+grestore
+newpath
+1685 203 m
+gsave
+1685 203 translate
+0 rotate
+0 -20  m
+(3) CS
+(3) show
+grestore
+newpath
+1838 203 m
+gsave
+1838 203 translate
+0 rotate
+0 -20  m
+(4) CS
+(4) show
+grestore
+newpath
+1991 203 m
+gsave
+1991 203 translate
+0 rotate
+0 -20  m
+(5) CS
+(5) show
+grestore
+newpath
+2145 203 m
+gsave
+2145 203 translate
+0 rotate
+0 -20  m
+(6) CS
+(6) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+1685 103 m
+gsave
+1685 103 translate
+0 rotate
+0 0  m
+(|p1-p2|/2 \(fm\)) CS
+(|p) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(1) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 18 rmoveto
+(-p) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(2) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 18 rmoveto
+(|/2 \(fm\)) show
+grestore
+newpath
+1225 342 m
+1235 342 l
+1225 431 m
+1235 431 l
+1225 521 m
+1235 521 l
+1225 610 m
+1235 610 l
+2145 342 m
+2135 342 l
+2145 431 m
+2135 431 l
+2145 521 m
+2135 521 l
+2145 610 m
+2135 610 l
+stroke
+1225 342 m
+1245 342 l
+1225 431 m
+1245 431 l
+1225 521 m
+1245 521 l
+2145 342 m
+2125 342 l
+2145 431 m
+2125 431 l
+2145 521 m
+2125 521 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+2183 342 m
+gsave
+2183 342 translate
+0 rotate
+0 -20  m
+(-0.010) show
+grestore
+newpath
+2183 431 m
+gsave
+2183 431 translate
+0 rotate
+0 -20  m
+(-0.005) show
+grestore
+newpath
+2183 521 m
+gsave
+2183 521 translate
+0 rotate
+0 -20  m
+(0.000) show
+grestore
+newpath
+1225 521 m
+1249 520 l
+1273 520 l
+1297 518 l
+1321 510 l
+1345 492 l
+1369 459 l
+1393 414 l
+1417 363 l
+1441 317 l
+1465 287 l
+1489 274 l
+1514 278 l
+1538 292 l
+1562 313 l
+1586 337 l
+1610 362 l
+1634 387 l
+1658 410 l
+1682 430 l
+1706 449 l
+1730 466 l
+1754 480 l
+1778 493 l
+1803 503 l
+1827 512 l
+1851 520 l
+1875 526 l
+1899 530 l
+1923 534 l
+1947 537 l
+1971 539 l
+1995 541 l
+2019 541 l
+2043 542 l
+2067 542 l
+2092 542 l
+2116 541 l
+2140 541 l
+2145 540 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+1225 521 m
+1249 520 l
+1273 520 l
+1297 518 l
+1321 510 l
+1345 493 l
+1369 462 l
+1393 419 l
+1417 370 l
+1441 327 l
+1465 299 l
+1489 288 l
+1514 291 l
+1538 305 l
+1562 325 l
+1586 348 l
+1610 371 l
+1634 394 l
+1658 414 l
+1682 433 l
+1706 450 l
+1730 464 l
+1754 477 l
+1778 488 l
+1803 497 l
+1827 504 l
+1851 510 l
+1875 515 l
+1899 519 l
+1923 522 l
+1947 524 l
+1971 525 l
+1995 526 l
+2019 527 l
+2043 527 l
+2067 527 l
+2092 527 l
+2116 527 l
+2140 527 l
+2145 526 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+1225 521 m
+1249 520 l
+1273 520 l
+1297 518 l
+1321 511 l
+1345 494 l
+1369 464 l
+1393 421 l
+1417 372 l
+1441 328 l
+1465 296 l
+1489 281 l
+1514 279 l
+1538 288 l
+1562 302 l
+1586 320 l
+1610 338 l
+1634 357 l
+1658 374 l
+1682 390 l
+1706 405 l
+1730 418 l
+1754 430 l
+1778 441 l
+1803 451 l
+1827 459 l
+1851 467 l
+1875 474 l
+1899 480 l
+1923 485 l
+1947 490 l
+1971 494 l
+1995 497 l
+2019 500 l
+2043 503 l
+2067 506 l
+2092 508 l
+2116 509 l
+2140 511 l
+2145 511 l
+stroke
+[] 0 setdash
+1225 610 m
+1225 967 l
+2145 967 l
+2145 610 l
+1225 610 l
+stroke
+1225 610 m
+1225 620 l
+1301 610 m
+1301 620 l
+1378 610 m
+1378 620 l
+1455 610 m
+1455 620 l
+1531 610 m
+1531 620 l
+1608 610 m
+1608 620 l
+1685 610 m
+1685 620 l
+1761 610 m
+1761 620 l
+1838 610 m
+1838 620 l
+1915 610 m
+1915 620 l
+1991 610 m
+1991 620 l
+2068 610 m
+2068 620 l
+2145 610 m
+2145 620 l
+1225 967 m
+1225 957 l
+1301 967 m
+1301 957 l
+1378 967 m
+1378 957 l
+1455 967 m
+1455 957 l
+1531 967 m
+1531 957 l
+1608 967 m
+1608 957 l
+1685 967 m
+1685 957 l
+1761 967 m
+1761 957 l
+1838 967 m
+1838 957 l
+1915 967 m
+1915 957 l
+1991 967 m
+1991 957 l
+2068 967 m
+2068 957 l
+2145 967 m
+2145 957 l
+stroke
+1225 610 m
+1225 630 l
+1378 610 m
+1378 630 l
+1531 610 m
+1531 630 l
+1685 610 m
+1685 630 l
+1838 610 m
+1838 630 l
+1991 610 m
+1991 630 l
+2145 610 m
+2145 630 l
+1225 967 m
+1225 947 l
+1378 967 m
+1378 947 l
+1531 967 m
+1531 947 l
+1685 967 m
+1685 947 l
+1838 967 m
+1838 947 l
+1991 967 m
+1991 947 l
+2145 967 m
+2145 947 l
+stroke
+1225 610 m
+1235 610 l
+1225 669 m
+1235 669 l
+1225 729 m
+1235 729 l
+1225 788 m
+1235 788 l
+1225 848 m
+1235 848 l
+1225 907 m
+1235 907 l
+2145 610 m
+2135 610 l
+2145 669 m
+2135 669 l
+2145 729 m
+2135 729 l
+2145 788 m
+2135 788 l
+2145 848 m
+2135 848 l
+2145 907 m
+2135 907 l
+stroke
+1225 669 m
+1245 669 l
+1225 729 m
+1245 729 l
+1225 788 m
+1245 788 l
+1225 848 m
+1245 848 l
+1225 907 m
+1245 907 l
+2145 669 m
+2125 669 l
+2145 729 m
+2125 729 l
+2145 788 m
+2125 788 l
+2145 848 m
+2125 848 l
+2145 907 m
+2125 907 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+2183 669 m
+gsave
+2183 669 translate
+0 rotate
+0 -20  m
+(-0.005) show
+grestore
+newpath
+2183 729 m
+gsave
+2183 729 translate
+0 rotate
+0 -20  m
+(0.000) show
+grestore
+newpath
+2183 788 m
+gsave
+2183 788 translate
+0 rotate
+0 -20  m
+(0.005) show
+grestore
+newpath
+2183 848 m
+gsave
+2183 848 translate
+0 rotate
+0 -20  m
+(0.010) show
+grestore
+newpath
+2183 907 m
+gsave
+2183 907 translate
+0 rotate
+0 -20  m
+(0.015) show
+grestore
+newpath
+1225 729 m
+1249 729 l
+1273 732 l
+1297 740 l
+1321 754 l
+1345 778 l
+1369 812 l
+1393 851 l
+1417 889 l
+1441 917 l
+1465 931 l
+1489 932 l
+1514 923 l
+1538 907 l
+1562 889 l
+1586 870 l
+1610 852 l
+1634 836 l
+1658 822 l
+1682 810 l
+1706 799 l
+1730 791 l
+1754 783 l
+1778 777 l
+1803 772 l
+1827 768 l
+1851 764 l
+1875 761 l
+1899 758 l
+1923 756 l
+1947 754 l
+1971 752 l
+1995 751 l
+2019 749 l
+2043 748 l
+2067 747 l
+2092 745 l
+2116 744 l
+2140 743 l
+2145 743 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+1225 729 m
+1249 729 l
+1273 732 l
+1297 740 l
+1321 754 l
+1345 778 l
+1369 812 l
+1393 852 l
+1417 890 l
+1441 919 l
+1465 934 l
+1489 935 l
+1514 926 l
+1538 911 l
+1562 893 l
+1586 874 l
+1610 856 l
+1634 839 l
+1658 825 l
+1682 812 l
+1706 801 l
+1730 792 l
+1754 784 l
+1778 777 l
+1803 771 l
+1827 767 l
+1851 762 l
+1875 759 l
+1899 756 l
+1923 753 l
+1947 751 l
+1971 749 l
+1995 747 l
+2019 746 l
+2043 744 l
+2067 743 l
+2092 742 l
+2116 741 l
+2140 740 l
+2145 740 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+1225 729 m
+1249 729 l
+1273 732 l
+1297 739 l
+1321 753 l
+1345 777 l
+1369 809 l
+1393 848 l
+1417 885 l
+1441 912 l
+1465 926 l
+1489 925 l
+1514 914 l
+1538 896 l
+1562 875 l
+1586 853 l
+1610 832 l
+1634 813 l
+1658 795 l
+1682 780 l
+1706 766 l
+1730 755 l
+1754 745 l
+1778 737 l
+1803 731 l
+1827 725 l
+1851 721 l
+1875 718 l
+1899 715 l
+1923 713 l
+1947 712 l
+1971 711 l
+1995 710 l
+2019 710 l
+2043 710 l
+2067 710 l
+2092 711 l
+2116 711 l
+2140 712 l
+2145 712 l
+stroke
+[] 0 setdash
+1225 967 m
+1225 1323 l
+2145 1323 l
+2145 967 l
+1225 967 l
+stroke
+1225 967 m
+1225 977 l
+1301 967 m
+1301 977 l
+1378 967 m
+1378 977 l
+1455 967 m
+1455 977 l
+1531 967 m
+1531 977 l
+1608 967 m
+1608 977 l
+1685 967 m
+1685 977 l
+1761 967 m
+1761 977 l
+1838 967 m
+1838 977 l
+1915 967 m
+1915 977 l
+1991 967 m
+1991 977 l
+2068 967 m
+2068 977 l
+2145 967 m
+2145 977 l
+1225 1323 m
+1225 1313 l
+1301 1323 m
+1301 1313 l
+1378 1323 m
+1378 1313 l
+1455 1323 m
+1455 1313 l
+1531 1323 m
+1531 1313 l
+1608 1323 m
+1608 1313 l
+1685 1323 m
+1685 1313 l
+1761 1323 m
+1761 1313 l
+1838 1323 m
+1838 1313 l
+1915 1323 m
+1915 1313 l
+1991 1323 m
+1991 1313 l
+2068 1323 m
+2068 1313 l
+2145 1323 m
+2145 1313 l
+stroke
+1225 967 m
+1225 987 l
+1378 967 m
+1378 987 l
+1531 967 m
+1531 987 l
+1685 967 m
+1685 987 l
+1838 967 m
+1838 987 l
+1991 967 m
+1991 987 l
+2145 967 m
+2145 987 l
+1225 1323 m
+1225 1303 l
+1378 1323 m
+1378 1303 l
+1531 1323 m
+1531 1303 l
+1685 1323 m
+1685 1303 l
+1838 1323 m
+1838 1303 l
+1991 1323 m
+1991 1303 l
+2145 1323 m
+2145 1303 l
+stroke
+1225 1038 m
+1235 1038 l
+1225 1109 m
+1235 1109 l
+1225 1181 m
+1235 1181 l
+1225 1252 m
+1235 1252 l
+2145 1038 m
+2135 1038 l
+2145 1109 m
+2135 1109 l
+2145 1181 m
+2135 1181 l
+2145 1252 m
+2135 1252 l
+stroke
+1225 1038 m
+1245 1038 l
+1225 1109 m
+1245 1109 l
+1225 1181 m
+1245 1181 l
+1225 1252 m
+1245 1252 l
+2145 1038 m
+2125 1038 l
+2145 1109 m
+2125 1109 l
+2145 1181 m
+2125 1181 l
+2145 1252 m
+2125 1252 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+2183 1038 m
+gsave
+2183 1038 translate
+0 rotate
+0 -20  m
+(-0.02) show
+grestore
+newpath
+2183 1109 m
+gsave
+2183 1109 translate
+0 rotate
+0 -20  m
+(-0.01) show
+grestore
+newpath
+2183 1181 m
+gsave
+2183 1181 translate
+0 rotate
+0 -20  m
+(0.00) show
+grestore
+newpath
+2183 1252 m
+gsave
+2183 1252 translate
+0 rotate
+0 -20  m
+(0.01) show
+grestore
+newpath
+1225 1181 m
+1249 1182 l
+1273 1187 l
+1297 1200 l
+1321 1221 l
+1345 1247 l
+1369 1270 l
+1393 1281 l
+1417 1271 l
+1441 1242 l
+1465 1200 l
+1489 1154 l
+1514 1112 l
+1538 1079 l
+1562 1056 l
+1586 1042 l
+1610 1035 l
+1634 1034 l
+1658 1038 l
+1682 1045 l
+1706 1055 l
+1730 1065 l
+1754 1077 l
+1778 1088 l
+1803 1099 l
+1827 1110 l
+1851 1120 l
+1875 1129 l
+1899 1138 l
+1923 1145 l
+1947 1152 l
+1971 1158 l
+1995 1163 l
+2019 1167 l
+2043 1171 l
+2067 1173 l
+2092 1176 l
+2116 1178 l
+2140 1179 l
+2145 1180 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+1225 1181 m
+1249 1182 l
+1273 1187 l
+1297 1199 l
+1321 1219 l
+1345 1244 l
+1369 1265 l
+1393 1276 l
+1417 1267 l
+1441 1240 l
+1465 1200 l
+1489 1158 l
+1514 1120 l
+1538 1090 l
+1562 1069 l
+1586 1057 l
+1610 1051 l
+1634 1051 l
+1658 1055 l
+1682 1062 l
+1706 1071 l
+1730 1081 l
+1754 1091 l
+1778 1102 l
+1803 1112 l
+1827 1121 l
+1851 1130 l
+1875 1139 l
+1899 1146 l
+1923 1152 l
+1947 1158 l
+1971 1163 l
+1995 1167 l
+2019 1171 l
+2043 1174 l
+2067 1176 l
+2092 1178 l
+2116 1180 l
+2140 1181 l
+2145 1181 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+1225 1181 m
+1249 1182 l
+1273 1187 l
+1297 1198 l
+1321 1217 l
+1345 1241 l
+1369 1262 l
+1393 1272 l
+1417 1264 l
+1441 1237 l
+1465 1197 l
+1489 1153 l
+1514 1112 l
+1538 1078 l
+1562 1052 l
+1586 1034 l
+1610 1023 l
+1634 1019 l
+1658 1019 l
+1682 1022 l
+1706 1029 l
+1730 1037 l
+1754 1047 l
+1778 1057 l
+1803 1068 l
+1827 1079 l
+1851 1090 l
+1875 1101 l
+1899 1111 l
+1923 1120 l
+1947 1128 l
+1971 1136 l
+1995 1143 l
+2019 1150 l
+2043 1156 l
+2067 1161 l
+2092 1165 l
+2116 1169 l
+2140 1172 l
+2145 1173 l
+stroke
+[] 0 setdash
+1225 1323 m
+1225 1680 l
+2145 1680 l
+2145 1323 l
+1225 1323 l
+stroke
+1225 1323 m
+1225 1333 l
+1301 1323 m
+1301 1333 l
+1378 1323 m
+1378 1333 l
+1455 1323 m
+1455 1333 l
+1531 1323 m
+1531 1333 l
+1608 1323 m
+1608 1333 l
+1685 1323 m
+1685 1333 l
+1761 1323 m
+1761 1333 l
+1838 1323 m
+1838 1333 l
+1915 1323 m
+1915 1333 l
+1991 1323 m
+1991 1333 l
+2068 1323 m
+2068 1333 l
+2145 1323 m
+2145 1333 l
+1225 1680 m
+1225 1670 l
+1301 1680 m
+1301 1670 l
+1378 1680 m
+1378 1670 l
+1455 1680 m
+1455 1670 l
+1531 1680 m
+1531 1670 l
+1608 1680 m
+1608 1670 l
+1685 1680 m
+1685 1670 l
+1761 1680 m
+1761 1670 l
+1838 1680 m
+1838 1670 l
+1915 1680 m
+1915 1670 l
+1991 1680 m
+1991 1670 l
+2068 1680 m
+2068 1670 l
+2145 1680 m
+2145 1670 l
+stroke
+1225 1323 m
+1225 1343 l
+1378 1323 m
+1378 1343 l
+1531 1323 m
+1531 1343 l
+1685 1323 m
+1685 1343 l
+1838 1323 m
+1838 1343 l
+1991 1323 m
+1991 1343 l
+2145 1323 m
+2145 1343 l
+1225 1680 m
+1225 1660 l
+1378 1680 m
+1378 1660 l
+1531 1680 m
+1531 1660 l
+1685 1680 m
+1685 1660 l
+1838 1680 m
+1838 1660 l
+1991 1680 m
+1991 1660 l
+2145 1680 m
+2145 1660 l
+stroke
+1225 1323 m
+1235 1323 l
+1225 1395 m
+1235 1395 l
+1225 1466 m
+1235 1466 l
+1225 1537 m
+1235 1537 l
+1225 1609 m
+1235 1609 l
+2145 1323 m
+2135 1323 l
+2145 1395 m
+2135 1395 l
+2145 1466 m
+2135 1466 l
+2145 1537 m
+2135 1537 l
+2145 1609 m
+2135 1609 l
+stroke
+1225 1395 m
+1245 1395 l
+1225 1466 m
+1245 1466 l
+1225 1537 m
+1245 1537 l
+1225 1609 m
+1245 1609 l
+2145 1395 m
+2125 1395 l
+2145 1466 m
+2125 1466 l
+2145 1537 m
+2125 1537 l
+2145 1609 m
+2125 1609 l
+/Helvetica findfont 
+60 scalefont
+ setfont
+stroke
+2183 1395 m
+gsave
+2183 1395 translate
+0 rotate
+0 -20  m
+(-0.03) show
+grestore
+newpath
+2183 1466 m
+gsave
+2183 1466 translate
+0 rotate
+0 -20  m
+(-0.02) show
+grestore
+newpath
+2183 1537 m
+gsave
+2183 1537 translate
+0 rotate
+0 -20  m
+(-0.01) show
+grestore
+newpath
+2183 1609 m
+gsave
+2183 1609 translate
+0 rotate
+0 -20  m
+(0.00) show
+grestore
+newpath
+1225 1609 m
+1249 1608 l
+1273 1602 l
+1297 1590 l
+1321 1569 l
+1345 1540 l
+1369 1507 l
+1393 1476 l
+1417 1453 l
+1441 1440 l
+1465 1438 l
+1489 1444 l
+1514 1455 l
+1538 1468 l
+1562 1482 l
+1586 1495 l
+1610 1508 l
+1634 1520 l
+1658 1532 l
+1682 1542 l
+1706 1551 l
+1730 1559 l
+1754 1566 l
+1778 1573 l
+1803 1578 l
+1827 1583 l
+1851 1587 l
+1875 1590 l
+1899 1593 l
+1923 1595 l
+1947 1597 l
+1971 1598 l
+1995 1599 l
+2019 1599 l
+2043 1599 l
+2067 1599 l
+2092 1599 l
+2116 1599 l
+2140 1599 l
+2145 1598 l
+stroke
+7 setlinewidth
+[4 8] 0 setdash
+1225 1609 m
+1249 1608 l
+1273 1602 l
+1297 1589 l
+1321 1568 l
+1345 1538 l
+1369 1503 l
+1393 1470 l
+1417 1445 l
+1441 1431 l
+1465 1429 l
+1489 1435 l
+1514 1448 l
+1538 1464 l
+1562 1480 l
+1586 1497 l
+1610 1512 l
+1634 1527 l
+1658 1541 l
+1682 1553 l
+1706 1564 l
+1730 1574 l
+1754 1583 l
+1778 1590 l
+1803 1597 l
+1827 1602 l
+1851 1607 l
+1875 1611 l
+1899 1614 l
+1923 1617 l
+1947 1619 l
+1971 1620 l
+1995 1621 l
+2019 1622 l
+2043 1623 l
+2067 1623 l
+2092 1623 l
+2116 1623 l
+2140 1622 l
+2145 1622 l
+stroke
+[] 0 setdash
+1 setlinewidth
+[20 20] 0 setdash
+1225 1609 m
+1249 1608 l
+1273 1607 l
+1297 1602 l
+1321 1592 l
+1345 1575 l
+1369 1548 l
+1393 1510 l
+1417 1465 l
+1441 1421 l
+1465 1385 l
+1489 1364 l
+1514 1358 l
+1538 1364 l
+1562 1379 l
+1586 1400 l
+1610 1423 l
+1634 1446 l
+1658 1469 l
+1682 1490 l
+1706 1508 l
+1730 1525 l
+1754 1539 l
+1778 1551 l
+1803 1561 l
+1827 1570 l
+1851 1577 l
+1875 1583 l
+1899 1588 l
+1923 1592 l
+1947 1595 l
+1971 1598 l
+1995 1600 l
+2019 1602 l
+2043 1603 l
+2067 1604 l
+2092 1605 l
+2116 1606 l
+2140 1607 l
+2145 1607 l
+stroke
+[] 0 setdash
+/Helvetica findfont 
+60 scalefont
+ setfont
+1054 1389 m
+gsave
+1054 1389 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(1) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(S) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(0) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+1063 1224 m
+gsave
+1063 1224 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(S) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(1) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+1075 778 m
+gsave
+1075 778 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(P) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(1) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+988 510 m
+gsave
+988 510 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(S) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(1) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 18 rmoveto
+(-) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(D) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(1) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+1942 1400 m
+gsave
+1942 1400 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(1) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(P) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(1) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+1939 1072 m
+gsave
+1939 1072 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(P) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(0) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+1957 867 m
+gsave
+1957 867 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(P) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(2) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+/Helvetica findfont 
+60 scalefont
+ setfont
+1879 374 m
+gsave
+1879 374 translate
+0 rotate
+0 -20  m
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(P) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(2) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 18 rmoveto
+(-) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 36 rmoveto
+(3) show
+/Helvetica findfont 
+60 scalefont
+ setfont
+0 -36 rmoveto
+(F) show
+/Helvetica findfont 
+36 scalefont
+ setfont
+0 -18 rmoveto
+(2) show
+grestore
+newpath
+/Helvetica findfont 
+60 scalefont
+ setfont
+showpage
+%%Trailer
