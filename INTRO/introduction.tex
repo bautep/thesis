@@ -1,0 +1,176 @@
+%\section{Introduction (and Summary)}
+This thesis deals with the description of atomic nuclei as an assembly of 
+protons and neutrons, which are considered as inert objects. 
+The nuclear system is studied experimentally by stirring it with a probing 
+particle (\eg\ a proton or an electron). The aim of a theoretical description is
+to describe and understand the output measured in such an experiment. 
+Therefore a many-fermion problem has to be solved.
+This has been studied in various approximations for several decades.
+Besides the use of nuclear models%
+\cite{DeT63,EG72,dSF74,BM75,BG77,RS80}, 
+there have always been attempts to describe nuclear 
+properties as a many-body problem, starting with a realistic nucleon-nucleon 
+($NN$) interaction that reproduces the scattering phase shifts 
+\cite{KB66,KB68,BK73,MMB90,FM94}. 
+The latter type of calculations has become feasible due to the 
+rapidly increasing computer performance. One may distinguish two kinds of 
+development. 
+
+In the first approach one constructs many-body wave functions within a limited 
+(shell) model space. For this purpose it is then necessary to construct from 
+the $NN$-interaction an equivalent effective model space interaction as well 
+as effective operators for observables. In principle such a procedure may be 
+well-defined\cite{Br67a,BJB71,MPK85} 
+and some work along this line is still going on\cite{SOE94}. 
+An essential drawback of the method is that, even in a relatively
+small model space of only a few major oscillator shells for protons as well as
+neutrons, the dimensions of the matrices that one has to deal with explode 
+with the growth of 
+the size of the model space and soon become of order $10^{12}$ or higher,
+which is a reason to resort again to phenomenological models\cite{Ta92}.
+
+In the second kind of approach, one partly circumvents these huge dimensions by 
+dealing directly with matrix elements of observables, for which one studies 
+equations of motion. 
+These observables depend on the reaction studied, \eg\ one-nucleon removal is 
+described by the solution of the Dyson equation while two-nucleon removal and 
+electro-magnetic response are described by solutions of a Bethe-Salpeter 
+equation.
+In the framework of Green's functions techniques, 
+with its extensive applications in field theory and quantum statistical 
+mechanics\cite{AGD63,FW71,KE88},
+these equations of motion describe the Green's functions with summations of 
+infinite sets of Feynman diagrams.
+Approximations can be made by considering the correspondence of these diagrams
+with physical processes.
+The diagrams which are believed to be the most relevant for the 
+properties under investigation,
+are then taken into account in the summation.
+ In the early days various building blocks of 
+this theory were represented by phenomenological parameters\cite{Mi67} as 
+their calculation from the fundamental interactions was considered to be 
+hopelessly complicated. In recent years, however, due to the enormous growth of 
+computational tools, {\em ab-initio} calculations are becoming feasible. 
+
+Recently, self-consistent calculations of the nuclear spectral functions in 
+nuclear matter\cite{RPD89,VDP93} 
+and in finite nuclei\cite{MD94} have been reported 
+with a Reid soft-core or Bonn nucleon-nucleon ($NN$)
+ potential. Also a two-nucleon spectral 
+function in nuclear matter has been calculated recently\cite{GDPR95}. In 
+these nuclear matter studies the focus is on the short-range correlations, 
+induced by the rather hard core of  the $NN$-potential. 
+Because the extension of this hard core ($r_c \sim 0.4-0.5$~fm) 
+is much smaller than the average inter-particle distance of 
+$1.6$~fm,  the effect of the hard core is assumed to be taken into account when
+all the so-called `ladder' diagrams (describing multiple binary collisions) 
+are summed. However, the work of ref.~\cite{GDPR95} supersedes 
+this by treating the scattering of `dressed nucleons'.
+The nuclear system has this short-range effect in common with 
+quantum liquids, in contrast 
+to, for instance, 
+many-body systems such as electron clouds of atoms and molecules 
+and the electron 
+gas in solids. 
+
+In this thesis the effect of short-range correlations (SRC) on the
+nuclear many-body system is treated in two stages. The heavy 
+binary collisions in a nuclear environment are solved first, 
+leading to an effective interaction (called Brueckner G-matrix)
+and modified basis wave functions. Next, the nuclear 
+motion associated with the finite size of the nucleus, 
+notably shell structure and low-energy 
+excitations, are calculated with this effective interaction. 
+In the hard collisions intermediate states 
+with high (relative) momenta are essential. The space of these high-momentum 
+wave functions is largely orthogonal to the large but limited shell model 
+space within which the longer-ranged low-energy dynamics is 
+described.
+Also the finite range of the force, which makes the treatment of screening to 
+all orders unnecessary, is different from the case of the electron 
+gas\cite{KE88} as an effective interaction. 
+
+The G-matrix interaction used in 
+chapter~\ref{chap:DERPA}, had been deduced in nuclear matter calculations and 
+therefore 
+the orthogonality of the spaces dealing with the different aspects is at best 
+approximate. In the chapters~\ref{chap:SPECFAC} and \ref{chap:PPO} the 
+applied G-matrix 
+had been constructed in a space explicitly orthogonal to the shell model space.
+The nuclear properties studied in this thesis are 
+restricted to low-energy phenomena, \ie\ the structure is calculated
+within a large but limited shell model space with a G-matrix as an effective 
+interaction.
+In the chapters \ref{chap:ppknock} and \ref{chap:PPO} the 
+high-momentum part of the two-nucleon spectral functions is investigated.
+Therefore, both the low-energy structure and the short-range correlations 
+are put together. The input provided by calculations of 
+M\"uther\cite{MS93a} had been essential here.
+
+The composition of this thesis is as follows. In chapter~\ref{chap:GREEN}
+a survey is given 
+of recent applications of Green's functions methods to the description of 
+low-energy nuclear properties and of which most of the other chapters may be 
+considered as extensions in some respects. Approximations exploring the 
+physical processes that have the most significant influence on 
+the relevant propagators are discussed. In chapter~\ref{chap:DERPA}
+an attempt is made to combine 
+the merits of recent extensions \cite{BAD90,RGBA93} of the 
+Random Phase Approximation 
+(RPA) for the charge-exchange  response. The framework in which these 
+extensions are formulated is the
+ Bethe-Salpeter equation (BSE) for the polarization propagator. 
+The conclusions of ref.~\cite{RGBA93}, \viz\ that the Gamow-Teller response 
+in a ($n$,$p$) reaction on a magic nucleus with neutron excess is 
+quite well described 
+as soon as the partial filling of shells is taken into account with 
+a `Dressed RPA' procedure, is confirmed. This conclusion  holds 
+because it is found that the response strength 
+is not essentially modified when certain components induced 
+by medium polarization are included in the effective interaction.
+
+In chapter~\ref{chap:SPECFAC} attention is focussed on the fact that the 
+G-matrix  which is obtained by solving the Bethe-Goldstone equation 
+(BGE)\cite{MS93a}, is energy-dependent. Therefore, if it is applied in the 
+calculation of the mean field and of the spectral functions at low missing 
+energies, already the Hartree-Fock term in the self-energy becomes 
+energy-dependent. 
+This energy-dependence then simulates a dispersive effect, \viz\ 
+the scattering of a nucleon into orbits outside of 
+the model space due to hard collisions. This is just the type of scattering 
+dealt with in the BGE.
+By treating the energy-dependence of the G-matrix explicitly this effect 
+of short-range correlations is re-introduced into the model space calculation 
+of spectroscopic factors. As expected this yields a depletion of spectral 
+strength as compared with calculations in which the G-matrix is treated as a 
+static effective interaction and in which dispersive and correlation effects 
+arise only by diagrams of second order in the G-matrix interaction.
+The results obtained are indeed in line with direct calculations of depletion 
+of orbits by short-range correlations\cite{MPD95}. The fact that there is 
+still a considerable discrepancy between the calculated spectroscopic factors 
+and those deduced from a careful analysis of the data \cite{Leu94} calls for 
+further theoretical investigation, however.
+
+Chapters \ref{chap:ppknock} to~\ref{chap:CROSS} deal with the question whether 
+short-range correlations between two nucleons are directly visible in the 
+knock-out of two nucleons with high relative momenta. 
+For that purpose a detailed expression for the two-hole spectral function is 
+derived in chapter~\ref{chap:ppknock}. The SRC, dealt with in the BGE and 
+incorporated in the G-matrix, yield also high-momentum components in the 
+(relative two-body) wave functions. These high-momentum components are 
+described by the defect functions calculated also from a BGE. The calculated 
+spectral function is proportional to the $W^{00}$ element of the hadronic 
+tensor in plane wave approximation and therefore comparable with the 
+longitudinal structure function in the \eepp\ cross-section.
+In chapter~\ref{chap:PPO} the spectral function derived in 
+chapter~\ref{chap:ppknock} is calculated for $^{16}$O. 
+The G-matrix and the defect functions were calculated by M\"uther.
+The short-range effects for different realistic $NN$-potentials are compared
+and the spectral function calculated with the Reid soft-core potential is 
+roughly a factor two larger than when the Bonn(A) potential is used for the
+calculation of short-range effects. In chapter \ref{chap:CROSS} the 
+longitudinal part of the \eepp\ cross-section in plane wave approximation is 
+calculated for a restricted set  of kinematics. 
+
+
+Finally, conclusions are drawn in chapter~\ref{chap:OUTLOOK}.

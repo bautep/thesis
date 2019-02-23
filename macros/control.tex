@@ -1,0 +1,46 @@
+\def\qu#1{{\bf #1}}
+%\pagestyle{headings}
+%\global\def\@oddfoot{\today\hfil}
+%%
+%% references
+%%
+\def\refrncs{%
+  \bibliography{bibtex/thesis}
+  \bibliographystyle{bibtex/thesis}
+}
+%%
+%% abstract
+%%
+%textwidth is 12.5
+% with a margin of 1cm extra the abstract will be 10.5cm wide
+\newenvironment{WTabstract}%
+{\par\noindent\hspace{1cm}\begin{minipage}{10.5cm}\noindent\small\relax}%
+{\end{minipage}\par}
+%%
+%% handy cntrbox command
+%%
+%
+% box #1 by #2 (centered on the line 5pt above the current baseline)
+% containing object #3
+%
+\def\cntrbox#1#2#3{%
+\newdimen\htobj\newdimen\htbx%
+\makebox[#1]{\htbx=#2%
+\setbox1=\hbox{#3}%
+\htobj=\ht1%
+\divide\htbx\tw@%
+\divide\htobj\tw@%
+\advance\htbx 5pt%
+\advance\htobj -5pt%
+\rule[-\htbx]{0mm}{#2}%
+\lower \htobj \box1%
+}}
+%%
+%% Benno's chapnonum (adapted to personal taste)
+%%
+\def\chapnonum#1{%
+%\cleardoublepage%
+\chapter*{#1}%
+\addcontentsline{toc}{chapter}{#1}%
+\markboth{#1}{}%
+}

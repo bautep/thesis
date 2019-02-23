@@ -1,0 +1,219 @@
+\section{Connection to Green's Function}
+An important ingredient in the description of the two-nucleon knock-out 
+reaction is the two-hole spectral function that is defined as
+%
+	\begin{eqnarray}
+	\lefteqn{%
+		S^{hh}(\rvec{p}_1, \rvec{p}_2, \rvec{p}_{1'}, \rvec{p}_{2'}, 
+		\omega )
+	=} 
+	\label{eq:SpecFunc}
+	\\
+	&&
+		\sum_n
+		\ME<\Psi^A_0| \Oc{\rvec{p}_{1'}} \Oc{\rvec{p}_{2'}}|%
+		\Psi^{n,A-2} >
+		\ME<\Psi^{n,A-2}| \Oa{\rvec{p}_1} \Oa{\rvec{p}_2}|%
+		\Psi^A_0 >
+		\delta( \omega - (E^{0,A} - E^{n,A-2}) )
+	\nonumber
+	\;,
+	\end{eqnarray}
+%
+where $\Psi^A_0$ denotes the ($0^+$) ground state of the target system 
+ and $\Psi^{n,A-2}$ denotes the $n$-th excited state
+of the residual nucleus. The restriction of a $0^+$
+target system is not necessary, but is imposed here because the results will
+be simpler and we intend to apply the formalism to $^{16}$O, which has a
+ $0^+$ ground state. In (\ref{eq:SpecFunc}), 
+ $\Oc{\rvec{p}}$ ($\Oa{\rvec{p}}$) are
+the creation (annihilation) operators of a nucleon with momentum $\rvec{p}$
+(spin and isospin are implicitly assumed).
+
+Since the nuclear wave functions have well-defined angular momentum and 
+parity quantum numbers, it is useful to expand the operators also into some 
+basis with shell model quantum numbers.
+%
+	\begin{equation}
+		\Oa{\rvec{p}}
+	=
+		\sum_{\alpha}
+		\phi^{\phantom{\dagger}}_\alpha(\rvec{p})
+		\Oa{\alpha}
+	\label{eq:basisO}
+	\;,
+	\end{equation}
+%
+with $\alpha=\{n_\alpha, l_\alpha, j_\alpha, m_\alpha\}$ and
+%
+	\begin{equation}
+		\phi^{\phantom{\dagger}}_\alpha(\rvec{p})
+	=
+		\inp< \rvec{p} m_s
+		|n_\alpha, l_\alpha, j_\alpha, m_\alpha>
+	\;.
+	\end{equation}
+%
+ For
+the description of bound systems one can use single-particle wave functions 
+of, for instance, 
+Saxon-Woods or harmonic oscillator form.
+With a sufficiently good energy resolution the cross-sections for individual
+low-lying 
+states, with well defined angular momenta,  may be identified. Therefore, it is 
+natural to introduce a pair wave function
+in angular momentum coupled form\cite{Ed57,BG77,FW71}
+%
+	\begin{equation}
+		\Phi^{JM}_{cd}( \rvec{p}_{1'}, \rvec{p}_{2'} )
+	=
+		\sum_{m_\gamma m_\delta}
+		\CG( j_\gamma, m_\gamma, j_\delta, m_\delta, J, 
+		\; M )
+		\phi_\gamma( \rvec{p}_{1'})
+		\phi_\delta( \rvec{p}_{2'})
+	\label{eq:PhiCoup}
+	\;,
+	\end{equation}
+%
+where a Clebsch-Gordan coefficient is employed, and the indices $c$ and $d$ 
+denote basis states without the projection quantum number $m$:
+$a=\{n_a, l_a, j_a\}$. The spectral function (\ref{eq:SpecFunc}) for final 
+states with angular momentum $J$ can now 
+be written as
+%
+	\begin{eqnarray}
+	\lefteqn{
+		S^{hh}_J( \rvec{p}_1, \rvec{p}_2, \rvec{p}_{1'}, \rvec{p}_{2'}, 
+		\omega )
+	=}
+	&&
+	\label{eq:SpecFunc1} \\
+	&&
+		\sum_{abcd,M}
+		\Phi^{\ast JM}_{cd}( \rvec{p}_{1'}, \rvec{p}_{2'} )
+		S^-_{cdab;JM}(\omega)
+		\Phi^{JM}_{ab}( \rvec{p}_1, \rvec{p}_2 )
+	\nonumber
+	\;.
+	\end{eqnarray}
+%
+The two-nucleon removal spectral function $S^-_{abcd;JM}$ may be calculated by 
+constructing shell model wave functions for the initial and final nucleus and 
+next calculating the matrix element of the angular momentum coupled 
+two-nucleon removal operator $(\Oa{\rvec{p}_1} \Oa{\rvec{p}_2})_{JM}$.
+A more direct method, which we prefer, is to use the relation between
+the spectral function and the (imaginary part of the) two-particle Green's 
+function
+%
+	\begin{equation}
+		S^-_{abcd;JM}(\omega)
+	=
+		\frac{-1}{\pi} {\rm Im} \; G^{II}_{abcd;JM}(\omega)
+	\;,
+	\end{equation}
+%
+as discussed in section~\ref{sect:ppRPA}.
+It describes the propagation of a pair of nucleons through the nuclear medium 
+and is given in Lehmann representation and using the angular momentum coupled 
+form 
+%
+	\begin{eqnarray}
+	\lefteqn{%
+		G^{II}_{abcd;J}(\omega)
+	=} 
+	\label{eq:g2} 
+	\\
+	&&
+		\sum_{n}
+		\frac{
+		\RME<\Psi^A_0| (\Oa{\tilde{\beta}} \Oa{\tilde{\alpha}})_J|%
+		\Psi^{n,A+2}_J >
+		\RME<\Psi^{n,A+2}_{J}| (\Oc{\gamma} \Oc{\delta})_J|%
+		\Psi^A_0 >
+		}{ \omega - (E^{n,A+2}_{J} - \EnulA) + i \eta }
+	\nonumber \\
+	&&
+	-
+		\sum_{m}
+		\frac{
+		\RME<\Psi^A_0| (\Oc{\gamma} \Oc{\delta})_J|%
+		\Psi^{m,A-2}_J >
+		\RME<\Psi^{m,A-2}_{J}| 
+			(\Oa{\tilde{\beta}} \Oa{\tilde{\alpha}})_J|%
+		\Psi^A_0 >
+		}{ \omega - (\EnulA - E^{m,A-2}_{J}) - i \eta }
+	\nonumber \\
+	&&
+	=
+		\sum_{n}
+		\frac{
+		Y^{n\ast}_{ab J} Y^{n}_{cd J}
+		}{ \omega - (E^{n,A+2}_{J} - \EnulA) + i \eta }
+	-
+		\sum_{m}
+		\frac{
+		X^{m\ast}_{cd J} X^{m}_{ab J}
+		}{ \omega - (\EnulA - E^{m,A-2}_{J} ) - i \eta }
+	\nonumber
+	\;.
+	\end{eqnarray}
+%
+The symbols $\RME<\ldots|\ldots|\ldots>$ represent the reduced matrix elements%
+\cite{Ed57,BG77,FW71}
+of the two-nucleon removal and addition tensor operators that
+are constructed by the angular momentum coupling of two one-nucleon addition
+and removal tensors ($\Oc{\alpha}$ and $\Oa{\tilde{\alpha}}$, where
+$\Oa{\tilde{\alpha}}=(-)^{j_\alpha-m_\alpha}\Oa{-\alpha}$ and
+ $-\alpha$ denotes $\{n_\alpha, l_\alpha, j_\alpha, -m_\alpha\}$, the 
+time reverse of $\alpha$).
+The working expression of the spectral function (\ref{eq:SpecFunc}) 
+then becomes 
+%
+	\begin{eqnarray}
+	\lefteqn{%
+		S^{hh}_J( \rvec{p}_1, \rvec{p}_2, 
+		          \rvec{p}_{1'}, \rvec{p}_{2'}, \omega )
+	=
+		%\sum_{M}
+	} && 
+	\label{eq:SpecFuncW}
+	\\
+	&&
+	\hspace{-0.5cm}
+		\sum_{n}
+		\sum_{abcd,M}
+		\Phi^{\ast JM}_{cd}( \rvec{p}_{1'}, \rvec{p}_{2'} )
+		X^{n\ast}_{cd J} X^{n}_{ab J} 
+		\Phi^{JM}_{ab}( \rvec{p}_1, \rvec{p}_2 )
+		\;
+		\delta(\omega - (\EnulA -E^{n,A-2}_{J}) )
+	\nonumber
+	\;.
+	\end{eqnarray}
+%
+The reason for preferring this method is that the Green's function 
+(\ref{eq:g2}) can be calculated by means of a Feynman-Dyson expansion, 
+derived from the Gell-Mann and Low theorem\cite{FW71,AGD63}. 
+Summation of infinite subclasses 
+of diagrams makes
+it possible to derive approximate equations for the two-particle
+removal amplitudes $X$. 
+These procedures have been given in section~\ref{sec:lrcBSE}.
+%
+A direct calculation of the amplitudes $X$, \ie\ performing a shell model 
+calculation that takes into account both the coherence effects due to 
+long-range correlation and high-momentum mixing effects of the short-range
+correlations, will require an excessive model space. By the Green's function 
+method one is able to handle larger model spaces than in shell model
+calculations. 
+%
+
+The summation in (\ref{eq:SpecFuncW}) runs over an infinite set of 
+single-particle basis states $abcd$, in principle. 
+In order to avoid that the calculation of the amplitudes $X$ becomes impossible,
+a truncation of the model space is 
+necessary, but the presence of short-range correlation requires a large 
+space to describe high-momentum components in the wave functions. 
+For this reason a distinction is made between treatment of short- and 
+long-range correlations. This approach is presented in the next section.

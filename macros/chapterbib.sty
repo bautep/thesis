@@ -1,0 +1,224 @@
+%==========================================================================
+% chapterbib.sty        Version 1.0 (23-NOV-1988) Niel Kempson
+% ~~~~~~~~~~~~~~                1.1 (24-MAR-1993) Donald Arseneau
+%                               1.2 (21-MAY-1993) Donald Arseneau (bug fix)
+% Allow multiple bibliographies in a LaTeX document, including items
+% \cite'd in more than one bibliography.  Despite the name "chapterbib",
+% the bibliographies are for each included file, not necessarily for each
+% chapter.  Each included file should have its own {thebibliography}
+% environment.  To use bibTeX, run bibtex on each included file separately
+% rather than on the root file.
+%
+% Restrictions
+% ~~~~~~~~~~~~
+%   1.  The \bibliography and \bibliographystyle commands may not be used
+%       in the root file, only in files that have been \include'd. If you
+%       try to use them, a LaTeX warning is issued and the offending
+%       command(s) ignored. This restriction occurs because the root .aux
+%       file includes the subsidiary .aux files and when BibTeX processes
+%       the root .aux file, it complains about multiple \bibdata commands.
+%
+%   2.  If you want to \cite in the root file, you must provide your own
+%       bibliography within the root file using the thebibliography
+%       environment. I don't suppose that this will appeal to BibTeX users!
+%
+%   3.  The subsidiary files must be \include'd (not \input'ed) by the root
+%       file, with only one bibliography per \include'd file.
+%
+%   4.  The style file works by redefining the \bibcite, so if you've got
+%       any other style files that alter \bibcite, watch out!  The only style
+%       files (that I've seen) with \bibcite in them are deproc.sty,
+%       ctswan.sty & ipr.sty.  If you remove chapterbib from the list of
+%       document style options, delete all the .aux files before re-running
+%       LaTeX or bibTeX.
+%
+%   5.  Your preferred citation style (xxx.sty) may not work with chapterbib
+%       at first, but it is easy to make it compatible.  In `xxx.sty' change
+%       all occurrences of "b@\@citeb" to "b@\@citeb\@extra@b@citeb", and
+%       insert the line:
+%       \@ifundefined{@extra@b@citeb}{\def\@extra@b@citeb{}}{}
+%       (but not as a comment or as part of another definition!)
+%       And/or you can ask the author of the citation style file to make
+%       the change.
+%
+% Original Author
+% ~~~~~~~~~~~~~~~
+% Niel Kempson                       | Telephone:      Swindon (0793) 785687
+% School of Elec Eng & Science,      |  International: +44-793-785687
+% Royal Military College of Science, |
+% Shrivenham, SWINDON,               | E-mail:
+% SN6 8LA,                           |  JANET: rmcs-tex@uk.ac.cranfield.cdvc
+% United Kingdom                     |
+%
+% Modified by
+% ~~~~~~~~~~~
+% Donald Arseneau  <asnd@reg.triumf.ca>   March 1993
+% - to coexist with cite.sty and overcite.sty
+% - to be based on recent LaTeX
+% - to expand some of LaTeX definitions rather than replacing them
+% - to be simpler in some places
+% - But Still Work Just The Same!
+%
+% Fix stupid mistake (May 1993) DA
+%=========================================================================
+% Begin macros...
+%-------------------------------------------------------------------------
+% Keep track of files currently opened.
+% 1. The counter @ipfilectr keeps track of the currently open I/P file,
+%    and @includefilectr keeps track of the \include files.
+% 2. @ipfilectr is set to @includefilectr, except when processing the root
+%    file. An arbitrary large (number greater than the maximum number of
+%    include files) is used to denote the root file.
+%-------------------------------------------------------------------------
+\newcounter{@ipfilectr}                 % current I/P file,
+\def\the@ipfilectr{\roman{@ipfilectr}}  % displayed as roman numerals
+\newcounter{@includefilectr}            % current \include file
+\def\@rootfilevalue{1988}               % arbitrary value for root file
+\def\savedjobname{\jobname}             % save root file name as a macro
+%
+%-----------------------------------------------------------------------
+% The name of the current I/P file is stored in macro \@currentipfile
+% and the global macro ipfile@the@ipfilectr is set to this name whenever
+% \@currentipfile changes.
+%-----------------------------------------------------------------------
+\def\@currentipfile{\jobname}    % initialize to root file
+\setcounter{@ipfilectr}{\@rootfilevalue}% ditto
+\global\@namedef{ipfile@\the@ipfilectr}{\@currentipfile}
+%
+%-----------------------------------------------------------------------
+% Redefine the \include macro so that when a file is \include'd...
+% 1. \@currentipfile is updated and \includefilectr incremented
+% 2. ipfilectr set to includefilectr
+% 3. global macro ipfile@\the@ipfilectr set to \@currentfile
+% 4. \include the file according to the normal definition
+%
+% When the \include'd file is finished...
+% 1. reset \@currentipfile to the root file name (\jobname)
+% 2. reset ipfilectr to \@rootfilevalue
+% 3. global macro ipfile@\the@ipfilectr set to \@currentfile
+% DA: add functions to current definition of \include rather than re-defining
+%     it blindly. (Mar, 1993)
+%-----------------------------------------------------------------------
+\begingroup
+\toks0={\def\@currentipfile{#1}%
+ \stepcounter{@includefilectr}%
+ \setcounter{@ipfilectr}{\value{@includefilectr}}%
+ \global\@namedef{ipfile@\the@ipfilectr}{\@currentipfile}%
+}
+\toks1=\expandafter{\include{#1}}
+\toks2={\def\@currentipfile{\jobname}%
+ \setcounter{@ipfilectr}{\@rootfilevalue}%
+ \global\@namedef{ipfile@\the@ipfilectr}{\@currentipfile}%
+}
+\xdef\@gtempa{\def\noexpand\include##1{\the\toks0 \the\toks1 \the\toks2 }}
+\endgroup
+\@gtempa
+
+%-------------------------------------------------------------------------
+%      ****************************************
+%      *            BIBLIOGRAPHY              *
+%      ****************************************
+%
+%  A bibliography is created by the bibliography environment, which
+%  generates a title such as ``References'', and a list of entries.  The
+%  BIBTeX program will create a file containing such an environment, which
+%  will be read in by the \bibliography command.  With BIBTeX, the
+%  following commands will be used.
+%
+%  CONVENTION
+%
+%  \b@FOO@iv   : The name or number of the reference created by
+%                \cite{FOO} in the fourth (iv) \include file.
+%        e.g.    if in the 4th \include file, \cite{FOO} -> [17],
+%                then \b@FOO@iv -> 17.
+%-------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------
+% \bibcite is now defined as: \bibcite{LABEL}{VALUE}{IPFILECTR}, so make
+% the \@bibitem & \@lbibitem commands output the extra parameter.
+% DA: updated to newer LaTeX standard.  I am not sure what to do if
+% a citation style also redefines \@bibitem and \@lbibitem.  Citation
+% files should be content with changing \@biblabel, but that wasn't
+% enough in older LaTeX versions.  Such styles will need to be reconciled
+% on an individual basis.
+%-------------------------------------------------------------------------
+%% RmS 92/02/26: Added \hfill to restore left-alignment of
+%%               bibliography labels in alpha style
+\def\@lbibitem[#1]#2{\item[\@biblabel{#1}\hfill]\if@filesw
+    {\def\protect##1{\string ##1\space}\immediate
+     \write\@auxout{\string\bibcite{#2}{#1}{\the@ipfilectr}}}\fi
+   \ignorespaces}
+
+%% RmS 91/11/13: Changed counter enumi to enumiv,
+%%               as it says in the comment above
+%% RmS 92/01/10: Changed \c@enumiv to \value{\@listctr}.
+\def\@bibitem#1{\item\if@filesw \immediate\write\@auxout
+    {\string\bibcite{#1}{\the\value{\@listctr}}{\the@ipfilectr}}\fi
+    \ignorespaces}
+
+\def\bibcite#1#2#3{{\global\@namedef{b@#1@#3}{#2}}}
+
+%-----------------------------------------------------------------------
+% only replace \@citex if no citation style that supports chapterbib has been
+% loaded:
+
+\@ifundefined{@extra@b@citeb}{%
+%
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \let\@citea\@empty
+  \@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{,\penalty\@m\ }%
+     \def\@tempa##1##2\@nil{\edef\@citeb{\if##1\space##2\else##1##2\fi}}%
+     \expandafter\@tempa\@citeb\@nil
+     \@ifundefined{b@\@citeb \@extra@b@citeb}{{\reset@font\bf ?}\@warning
+        {Citation `\@citeb' in file `\@nameuse{ipfile@\the@ipfilectr}'
+            on page \thepage \space undefined}}%
+     {\hbox{\csname b@\@citeb \@extra@b@citeb\endcsname}}}}{#1}}
+}{}
+
+\def\@extra@b@citeb{@\the@ipfilectr}
+
+\@ifundefined{reset@font}{\let\reset@font\relax}{}
+%   ... Yes, I know the \let is superfluous.  \relax allows \@ifundefined
+% to be used again later.
+%
+%-------------------------------------------------------------------------
+% We don't allow \bibliography and \bibliographystyle commands in the root
+% file, so warn and ignore if appropriate.
+% DA: add to current definition of \bibliographystyle, but redefine
+%     \bibliography from scratch.
+%-------------------------------------------------------------------------
+\begingroup
+\toks0={%
+  \ifx\@currentipfile\savedjobname
+    \@warning{\string\bibliographystyle \space commands in the root file
+    are ignored ^^Jby the `chapterbib' style option.}%
+  \else}
+\toks1=\expandafter{\bibliographystyle{#1}}
+\toks2={\fi}
+\xdef\@gtempa{\def\noexpand
+  \bibliographystyle##1{\the\toks0 \the\toks1 \the\toks2 }}
+\endgroup
+\@gtempa
+
+\def\bibliography#1{%
+  \ifx\@currentipfile\savedjobname
+    \@warning{\string\bibliography \space commands in the root file %
+            are ignored ^^Jby the `chapterbib' style option.}%
+  \else
+    \if@filesw\immediate\write\@auxout{\string\bibdata{#1}}\fi
+    \@input{\@currentipfile.bbl}%
+  \fi}
+
+%-------------------------------------------------------------------------
+% DA: All we need to do now is to redefine \@testdef so that it properly
+% checks whether the \cite labels have changed.  (It used to redefine
+% \enddocument.)
+%-------------------------------------------------------------------------
+
+\let\@test@defiii\@testdef
+
+\def\@testdef#1{\if#1b\relax\@test@defiv \fi \@test@defiii #1}
+
+%  #1 = \fi !
+\def\@test@defiv#1\@test@defiii#2#3#4#5{#1\@test@defiii{#2}{#3@#5}{#4}}

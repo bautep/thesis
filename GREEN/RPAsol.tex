@@ -1,0 +1,187 @@
+\section{Solutions to RPA Equations\label{sec:RPAsol}}
+The various types of RPA equations, that were introduced in the previous
+sections, can be solved with
+the same two methods, which work for particle-hole
+as well as particle-particle (pp) or hole-hole (hh) RPA. 
+The pp and hhRPA are described 
+in section~\ref{sect:ppRPA}. Below the two methods, known as
+discrete and continuous RPA, are sketched. Due to the similarity of 
+the phRPA equation with the ppRPA equation, 
+the following equations hold also for 
+the two-particle propagator $G^{II}$ instead of 
+the polarization propagator $L$.
+
+The RPA equation (\ref{eq:RPA}) can be written in the following notation
+%
+	\begin{equation}
+		L_{ij}(\omega)
+	=
+		L^0_{ij}(\omega)
+	+	
+		L^0_{ik}(\omega)
+		V_{kl}
+		L_{lj}(\omega)
+	\label{eq:phRPA}
+	\;.
+	\end{equation}
+%
+The indices $i$ and $j$ are introduced to stress the fact that the RPA 
+equation is {\em de facto} a matrix equation. 
+These indices  represent the configurations of the form $\{\alpha\beta\}$.
+This mapping is very effective because of angular momentum coupling, \cf\
+appendix~\ref{app:detail}.
+The Lehmann representation for $L$ (\ref{eq:DefLLeh}) is written in this 
+notation
+%
+	\begin{equation}
+		L_{ij}(\omega)
+	=
+		\sum_{n \neq 0}
+		\frac{ X^n_i X^n_j }
+		{ \omega - E^n - i \eta }
+	-
+		\sum_{m \neq 0}
+		\frac{ Y^m_i Y^m_j }
+		{ \omega - E^m + i \eta }
+	\label{eq:solL}
+	\end{equation}
+%
+
+\subsubsection{Discrete RPA\label{sec:RPAdisc}}
+The RPA equation (\ref{eq:phRPA}) can be solved if it is transformed into an
+eigenvalue equation. 
+This transformation can be performed,
+using the general expression for the polarization propagator
+(\ref{eq:solL}) and the explicit form of the mean field polarization propagator
+%
+	\begin{equation}
+		L^0_{ij}(\omega)
+	=
+		{\sc diag} 
+		\left\{
+		\frac{ \delta(i,\{hp\})}
+		{ \omega - \varepsilon_i + i \eta}
+	-
+		\frac{\delta(i,\{ph\})}
+		{ \omega - \varepsilon_i - i \eta}
+		\right\}
+	\label{eq:solL0}
+	\;.
+	\end{equation}
+%
+Here the notations $\delta(i,\{hp\})=\theta(F-\alpha)\theta(\beta-F)$ and
+$\varepsilon_i=\varepsilon^{HF}_\alpha-\varepsilon^{HF}_\beta$ are introduced. 
+The
+symbol ${\sc diag}$ denotes that $L^0$ is a diagonal matrix in the indices 
+$i$ and $j$.
+The eigenvalue equation is now obtained by extracting the residues of
+the poles of the exact propagator (\ref{eq:solL}). After substitution of
+(\ref{eq:solL}) and (\ref{eq:solL0}) into (\ref{eq:phRPA}), multiplication by 
+ $(\omega - E^n)$ and having taken the limit 
+ $\omega \rightarrow E^n$, the eigenvalue equation to be
+solved is
+%
+	\begin{equation}
+		\left(
+			\varepsilon 
+		+
+			V(E^n)
+		\right)X^n
+	=
+		E^n X^n
+	\label{eq:RPAeig}
+	\;,
+	\end{equation}
+%
+where the mean field energies only appear on the diagonal of the matrix, and
+the amplitudes $X$ are taken to be real. In the case of ERPA, where
+the (effective) interaction is energy-dependent, (\ref{eq:RPAeig})  is a 
+generalized eigenvalue equation, \cf\ (\ref{eq:DysDis}) and should be
+solved consistently with respect to $E^n$ (the matrix $\varepsilon +V$ is 
+dependent on the eigenvalues $E^n$).
+The normalization condition for that case of an RPA equation with 
+energy-dependent potential is derived in ref.\cite{HDA86,AEG93}.
+
+\subsubsection{Continuous RPA}
+The discrete RPA method has been derived with a single-pole form of $L^0$ 
+(\ref{eq:solL0}).
+It has to be used, for the matrices involved ($L$ and $L^0$)
+ are singular because
+of their pole structure. If $L^0$ is not of single-pole form (like in 
+Dressed RPA), the dimension of the RPA matrix of (\ref{eq:RPAeig}) will 
+grow proportional to the number of fragments in $L^0$.
+When  the poles in $L^0$ and $L$ are shifted
+away from the real axis by replacing the positive infinitesimal $\eta$ in 
+(\ref{eq:solL}) and (\ref{eq:solL0}) by a finite number, the singularity is 
+removed.
+This will have the effect that 
+in the final result (\cf\ eq.~(\ref{eq:SopO})) the delta functions 
+will have a finite width, which is justified by the fact, 
+that in measurements the energy resolution is always finite, and hence delta
+functions will not be observed. 
+
+Having moved the poles away from the real axis, a closed expression for 
+ $L$ can be written down. Multiplying (\ref{eq:phRPA}) on the left with
+ ${L^0}^{-1}$  and on the right with $L^{-1}$, respectively the 
+inverses of $L^0$  and 
+ $L$, the RPA equation reads
+%
+	\begin{equation}
+		{L_{ij}(\omega)}^{-1}
+	=
+			{L^0_{ij}(\omega)}^{-1}
+			-
+			V_{ij}
+	\label{eq:RPAcont}
+	\;.
+	\end{equation}
+%
+Because of the finite $\eta$ the matrix to be inverted will be regular but
+complex  for real $\omega$'s.
+One remark should be made here. A matrix inversion is quite expensive (in the 
+sense of algorithmic complexity) and in 
+general not all  the matrix elements of $L$ are required. 
+In appendix~\ref{app:detail} a method is given to calculate the response
+function (\ref{eq:defS}) is given that does not require the calculation of 
+the inverse of $(L^0)^{-1} - V$ as an intermediate step.
+
+\subsubsection{Discrete DRPA}
+In chapter~\ref{chap:PPO} we will need the transition amplitudes to 
+a certain final state of the residual nucleus explicitly, and now we 
+face the problem that 
+DRPA can not easily be handled with the discrete method described above
+because the RPA matrix in (\ref{eq:RPAeig}) will grow proportionally with the
+number of poles in the free propagator $L^f$. 
+In general $L^f$ will have many poles, \cf~(\ref{eq:drpa:Lf}), 
+for the single-particle spectral function is highly fragmented.
+The continuous method can be applied (to the two-particle Green's function)
+but this method does not yield the 
+vectors $X^n_{ij}$ that will be needed to calculate the spectral function
+in chapter~\ref{chap:PPO}.
+
+The way around this problem has
+already been suggested in ref.\cite{AEG93} in the form of a contour
+integration. Inspired by the form of the Lehmann representation of
+the propagator (\ref{eq:solL}) the amplitudes $X$ and $Y$
+can be determined if the corresponding energies are well separated. In the case
+one is interested in amplitudes to the ground state and first few excited states
+of $^{14}$C, this separation is 
+present. To extract amplitudes that belong to a set of closely lying states
+is not possible due to numerical difficulties.
+Using (\ref{eq:RPAcont})
+as a description of a complex function $L_{ij}(z)$ ($z$ is $\omega$ but 
+allowing complex values), the Cauchy 
+integral formula can be applied to obtain the amplitudes $X$
+%
+	\begin{equation}
+		X^n_{i} X^{n}_{j}
+	=
+		\frac{1}{2 \pi i}
+		\oint_{C_n} {\rm d} z\;
+		L_{ij}(z)
+	\;,
+	\label{eq:contour}
+	\end{equation}
+%
+where $z$ is a complex variable and $C_n$ is a contour around $E^n$
+excluding all other poles of $L$, such that $L(z)$ is regular for $z\in C_n$.

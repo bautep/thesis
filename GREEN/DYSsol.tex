@@ -1,0 +1,119 @@
+\subsection{Solutions to the Dyson Equation\label{sec:DYSsol}}
+
+The Dyson equation (\ref{eq:Dyson}) is usually solved in an energy 
+formulation
+%
+	\begin{equation}
+		g_{\alpha\beta}(\omega)
+	=
+		g^0_{\alpha\beta}(\omega)
+	+
+		\sum_{\gamma\delta}
+		g^0_{\alpha\gamma}(\omega)
+		\Sigma^\ast_{\gamma\delta}(\omega)
+		g^{\phantom{0}}_{\delta\beta}(\omega)
+	\;.
+	\label{eq:DysonE}
+	\end{equation}
+%
+The specific form of the bare propagator $g^0(\omega)$ can be derived from
+the Lehmann representation (\ref{eq:g1}), when we consider a system without
+residual interaction. In this case we have only the diagonal (one-body) part 
+of the
+Hamiltonian (\ref{eq:Hamiltonian}) and the ground state of the $A$-body
+system as well as the ground and excited states of the ($A-1$)-body system 
+will be 
+Slater determinants. Hence the bare propagator has the form
+%
+	\begin{equation}
+		g^0_{\alpha\beta}(\omega)
+	=
+		\delta_{\alpha\beta}
+		\left[
+		\frac{
+		\theta( \alpha - F )
+		}{ \omega - \varepsilon_\alpha + i \eta }
+	+
+		\frac{
+		\theta( F - \alpha )
+		}{ \omega - \varepsilon_\alpha - i \eta }
+		\right]
+	\label{eq:g10} 
+	\;,
+	\end{equation}
+%
+where the notion of Fermi level is introduced and the step function
+$\theta(\alpha-F)$ has the value one (zero) if the index $\alpha$ 
+denotes a state above (below) the Fermi level. 
+
+One may now formally obtain the ($A+1$)-part of the propagator from the Dyson 
+equation (\ref{eq:DysonE}) by
+inserting the form for the bare propagator $g^0$ (\ref{eq:g10}) together with
+the full
+propagator (\ref{eq:g1}) into the Dyson equation, multiplying it by
+$(\omega - (E^{n,A+1}- \EnulA))$ and taking the limit 
+$\omega \rightarrow (E^{n,A+1}- \EnulA)$ to extract the residue of the $n$-th
+pole for each possible $n$.
+The ($A-1$)-part of the propagator can be calculated with a similar procedure
+from the equation
+%
+	\begin{equation}
+		\tilde{E}^m  
+		X_\alpha^m
+	=
+		\sum_\beta
+		\left(
+			\varepsilon_\alpha +
+			\Sigma^\ast_{\alpha\beta}(\tilde{E}^m)
+		\right)
+		X_\beta^m
+	\label{eq:DysDis}
+	\;,
+	\end{equation}
+%
+where $\tilde{E}^m = (\EnulA - E^{m,A-1})$ and 
+$X_\alpha^m=\ME<\Psi^{m,A-1}| \Oa{\alpha} | \Psi^A_0 >$.
+
+The solution of eq.~(\ref{eq:DysDis}) in the approximation that $\Sigma^\ast$
+does not depend on the full propagator, can be found by solving this generalized
+eigenvalue equation iteratively, combining eigenvalue finding algorithms 
+with zero finding procedures.
+In the case the self-energy does depend on the full propagator, 
+this scheme can be more elaborate.
+The solution in both cases will consists of a set eigenvalues and 
+eigenvectors. 
+The normalization of the eigenvectors can also be obtained from the Dyson
+equation (\ref{eq:Dyson}) \cite{Heng} by expanding
+the Dyson equation  around $\tilde{E}^m$ to first
+order in $(\omega-\tilde{E}^m)$ and using the pole structure of the full 
+propagator and  inserting equation (\ref{eq:DysDis}) the normalization of
+the eigenvector can be obtained from
+%
+	\begin{equation}
+		\sum_\alpha
+		|X_\alpha^m| ^2
+	=
+		1 
+	+
+		\sum_{\alpha\beta}
+		X_\alpha^m
+		X_\beta^m
+		\left.
+			\frac{ {\rm d} \Sigma^\ast_{\alpha\beta}(\omega)}
+			     { {\rm d} \omega}
+		\right|_{\omega = \tilde{E}^m}
+	\label{eq:DysNorm}
+	\;.
+	\end{equation}
+%
+This procedure is similar to the procedure to derive the normalization of the
+RPA vectors\cite{AEG93}.
+
+In fig.~\ref{fig:BHF} the lines in the ladder sum correspond to states outside
+the model space that will be chosen to do shell model structure calculations
+in. This means that in Brueckner-Hartree-Fock, these (high momentum/energy)
+states will contribute. It will be shown in chapter~\ref{chap:SPECFAC} that the
+effect of these states can be taken into account in a structure calculation 
+by considering an 
+explicit energy-dependent G-matrix (\ref{eq:BGEG}) instead of a static 
+approximation.

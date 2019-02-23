@@ -1,0 +1,250 @@
+\section{Theory\label{sec:CROSStheory}}
+The theoretical framework of the triple-coincidence cross-sections
+for the \eepp\ reaction is given in ref.~\cite{GP91}. All the conventions
+used in this chapter are the same as in that work. In summary one has to
+calculate the nine-fold differential cross-section depending on the measured
+four-momenta $\rvec{p}'_0$, $\rvec{p}'_1$ and $\rvec{p}'_2$ of respectively the
+scattered electron and the two out-coming protons. Initial momenta will be 
+denoted without a prime. In the one-photon exchange approximation the 
+nine-fold differential cross-section is given by
+%
+	\begin{equation}
+		\frac{
+			{\rm d}^9 \sigma
+		}{
+			{\rm d}\rvec{p}'_0
+			{\rm d}\rvec{p}'_1
+			{\rm d}\rvec{p}'_2
+		}
+	=
+		\alpha^2
+		\frac{1}{
+			q_\kappa^2 p\phpr_0 p'_0 (\varepsilon - 1)
+		}
+		L_{\mu\nu} W^{\mu\nu}
+	\label{eq:crosss}
+	\end{equation}
+%
+where $\alpha=\frac{1}{137}$ is the fine structure constant, $q_\mu$ is the 
+four-momentum transfer $q_\mu=( \omega, \rvec{q} )$ with 
+$\omega=p\phpr_0-p'_0$ as the
+transferred energy ($p\phpr_0$ and $p'_0$ are the electron energies of 
+respectively
+the beam and scattered electron) and $\rvec{q}=\rvec{p}\phpr_0-\rvec{p}'_0$ the 
+transferred three-momentum. The quantity
+%
+	\begin{equation}
+		\varepsilon
+	=
+		\left(
+		 1 - \frac{2\rvec{q}^2}{q_\nu^2} \tan^2(\half\theta)
+		\right)^{-1}
+	\end{equation}
+%
+is the transverse polarization of the virtual photon that is  transferred by 
+the electron.
+The angle $\theta$ is the angle between $\rvec{p}\phpr_0$ and $\rvec{p}'_0$ 
+(in the
+laboratory system).
+
+The only unknown quantity in the expression for the cross-section is the 
+hadronic
+tensor $W^{\mu\nu}$, since the leptonic tensor $L_{\mu\nu}$ is known.
+The hadronic tensor is defined as
+%
+	\begin{equation}
+		W^{\mu\nu}
+	=
+		\ME< \Psi_f | \hat{J}^\mu | \Psi_i >
+		\ME< \Psi_f | \hat{J}^\nu | \Psi_i >^\ast
+		\delta( E_i - E_f )
+	\label{eq:hadron}
+	\;,
+	\end{equation}
+%
+where $\hat{J}^\mu$ is the current operator that appears in the interaction 
+Hamiltonian term $A_\mu\hat{J}^\mu$, where $A_\mu$ is the photon field. In the 
+case that only one-proton is knocked out it is likely that only one-body 
+currents will contribute. Calculations of the Ghent group\cite{Ry94}, 
+however, also find
+a reasonable contribution of two-body current contributions in the \eep\ 
+cross-section.In the case of \eepp\ two-body currents (\eg\ meson exchange 
+currents (MEC)) may contribute as well.
+
+Usually the cross-section is written in terms of  structure functions as
+an eight-fold differential cross-section (one energy variable is eliminated 
+by energy conservation). 
+The longitudinal part is then
+%
+	\begin{equation}
+		\frac{ {\rm d}^8 \sigma }
+		{
+			{\rm d} p'_0
+			{\rm d} \Omega'_0
+			{\rm d} E'_1
+			{\rm d} \Omega'_1
+			{\rm d} \Omega'_2
+		}
+	=
+		2K\varepsilon_L W^{00}
+	\end{equation}
+%
+with
+%
+	\begin{equation}
+		K
+	=
+		\alpha^2
+		\frac{ \Omega_f }
+		{ q_\mu^2 p\phpr_0 p'_0 (\varepsilon -1) }
+		\frac{1}{f_R}
+	\end{equation}
+%
+a kinematical factor 
+in which $\Omega_f={p'_0}^2 p'_1 E'_1 p'_2 E'_2$ is a phase space factor,
+$\alpha$ is the fine structure constant  and
+${f_R}^{-1}$ is a recoil factor.
+The factor $\varepsilon_L$ is defined as
+%
+	\begin{equation}
+		\varepsilon_L
+	=
+		-\frac{ q_\mu^2 }
+		{ \rvec{q}^2 }
+		\varepsilon
+	\end{equation}
+%
+and is called the longitudinal polarization.
+
+\subsection{The Spectator Model}
+The matrix elements in the expression for the hadronic tensor (\ref{eq:hadron})
+involve many-body  wave functions including the outgoing particles. Because the
+focus is on the situation where one has two 
+outgoing particles, one could project the final state on the 
+two-particle emission channel.
+The approximation that will be made here is that the current operator will only
+act on the nucleons that leave the nucleus, the residual nucleus acts as
+a spectator.
+If the residual nucleus
+is left in the excited state $\ket{\Psi^{A-2}_n}$, projection on the 
+two-particle emission channel gives in the spectator approximation:
+%
+	\begin{eqnarray}
+	\lefteqn{
+		J_n^\mu(\rvec{q})
+	=} &&
+	\\
+	&&
+		\int
+		{\rm d} \rvec{r}
+		{\rm d} \rvec{r}_1
+		{\rm d} \rvec{r}_2
+		\inp< \Psi_f | \Psi^{A-2}_n \rvec{r}_1 \rvec{r}_2 >
+		\ME< \Psi^{A-2}_n \rvec{r}_1 \rvec{r}_2 | 
+                   \hat{J}^\mu( \rvec{r}, \rvec{r}_1,\rvec{r}_2)
+		| \Psi_i >
+		e^{i \rvec{q}\cdot\rvec{r}}
+	\;.
+	\nonumber
+	\end{eqnarray}
+%
+Assuming that the protons leave the nucleus in opposite direction one may
+argue that their mutual interaction in the final state is unimportant 
+and describe the out-coming protons by the 
+eigenfunctions $\zeta$ of an optical potential.
+The overlap with the final state can then be rewritten as
+%
+	\begin{equation}
+		\inp< \Psi_f | \Psi^{A-2}_n \rvec{r}_1 \rvec{r}_2 >
+	=	
+		\zeta_{\rvec{p}'_1}^\ast (\rvec{r}_1) 
+		\zeta_{\rvec{p}'_2}^\ast (\rvec{r}_2) 
+	\label{eq:finalst}
+	\;.
+	\end{equation}
+%
+The overlap matrix elements of the initial states can be written in
+second quantized form (assuming that the initial nucleus is in the ground
+state) as
+%
+	\begin{equation}
+		\ME< \Psi^{A-2}_n \rvec{r}_1 \rvec{r}_2 | 
+                   \hat{J}^\mu( \rvec{r}, \rvec{r}_1,\rvec{r}_2)
+		| \Psi_i >
+	=
+               	J^\mu( \rvec{r}, \rvec{r}_1,\rvec{r}_2)
+		\ME< \Psi^{A-2}_n | 
+			\Oa{\rvec{r}_1}\Oa{\rvec{r}_2} 
+		| \Psi^A_0 >
+	\end{equation}
+%
+where $J^\mu( \rvec{r}, \rvec{r}_1,\rvec{r}_2)$ is in principle the sum over 
+one- and two-body contributions.
+\subsection{Longitudinal Part in Plane Wave Approximation}
+The longitudinal part of the cross-section solely depends on the entry $W^{00}$ 
+of the hadronic tensor. In the approximation that the protons are only knocked
+out by a one-body current, one has only to take into account the zero-th
+element of the current operator
+%
+	\begin{equation}
+		J^0(\rvec{r}, \rvec{r}_1,\rvec{r}_2)
+	=
+		G^p_E( q_\mu^2 ) ( \delta( \rvec{r}-\rvec{r}_1)
+		                  +\delta( \rvec{r}-\rvec{r}_2))
+	\end{equation}
+%
+where $G^p_E( q_\mu^2 )$ is the Sachs proton charge form factor. 
+The numerical form used here is the 
+parameterization given in ref.~\cite{SSBW80}.
+In plane wave approximation the outgoing particles are supposed to be in plane
+wave states (instead of states distorted by \eg\ an optical potential), so
+the final state overlap function (\ref{eq:finalst}) becomes
+%
+	\begin{equation}
+		\inp< \Psi_f | \Psi^{A-2}_n \rvec{r}_1 \rvec{r}_2 >
+	=	
+		e^{i\rvec{p}'_1\cdot\rvec{r}\phpr_1} 
+		e^{i\rvec{p}'_2\cdot\rvec{r}\phpr_2} 
+	\label{eq:finalstpw}
+	\end{equation}
+%
+and the total hadronic tensor for a transition to the $n$-th excited state of
+the residual system becomes
+%
+	\begin{eqnarray}
+		W^{00}(\rvec{q})
+	&=&
+		\left(G^p_E(q_\mu^2) \right)^2
+		\left|
+		\ME< \Psi^{A-2}_n | 
+			\Oa{\rvec{p}'_1-\rvec{q}}\Oa{\rvec{p'}_2} 
+		| \Psi^A_0 >
+		+
+		\ME< \Psi^{A-2}_n | 
+			\Oa{\rvec{p}'_1}\Oa{\rvec{p'}_2-\rvec{q}} 
+		| \Psi^A_0 >
+		\right|^2
+	\nonumber \\
+	&=&
+		\left( G^p_E(q_\mu^2) \right)^2
+	\nonumber \\
+	&\times&
+	\big[
+		S( \rvec{p}'_1-\rvec{q}, \rvec{p}'_2, 
+		   \rvec{p}'_1-\rvec{q}, \rvec{p}'_2 )
+		+
+		S( \rvec{p}'_1-\rvec{q}, \rvec{p}'_2, 
+                   \rvec{p}'_1, \rvec{p}'_2-\rvec{q} )
+	\nonumber \\
+	&+&
+		S( \rvec{p}'_1, \rvec{p}'_2-\rvec{q}, 
+                   \rvec{p}'_1-\rvec{q}, \rvec{p}'_2 )
+		+
+		S( \rvec{p}'_1, \rvec{p}'_2-\rvec{q}, 
+                   \rvec{p}'_1, \rvec{p}'_2-\rvec{q} )
+	\big]
+	\label{eq:spect}
+	\end{eqnarray}
+%
+where $S$ is the spectral function (\ref{eq:CRSF}) 
+of chapter \ref{chap:ppknock}.

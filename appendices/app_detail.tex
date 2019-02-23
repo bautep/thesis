@@ -1,0 +1,227 @@
+\chapter{Details of the Calculation of Gamow-Teller Response\label{app:detail}}
+\markboth{Details of the Calculation of \ldots}{}
+%%%
+\section{Angular Momentum Coupling}
+If the one-body operator in (\ref{eq:defS}) 
+is a spherical tensor operator\cite{Ed57}
+of rank $\lambda$, it can be written as
+%
+	\begin{equation}
+		\opO^\lambda_\mu 
+	=
+		\frac{1}{\sqrt{2\lambda+1}}
+		\RME< a|\opOhatless^\lambda|b>
+		(\Oc{a} \Oa{\tilde{b}})_{\lambda\mu}
+	\label{eq:app1}
+	\;,
+	\end{equation}
+%
+where $\RME< a |\opOhatless^\lambda|b >$ is the reduced matrix element,
+ and
+%
+	\begin{equation}
+		(\Oc{a} \Oa{\tilde{b}})_{\lambda\mu}
+	=
+		\sum_{m_a m_b}
+		\CG( j_a, m_a, j_b, m_b, \lambda, \mu )
+		(-1)^{j_b - m_b}
+		\Oc{a} \Oa{-b}
+	\label{eq:app2}
+	\end{equation}
+%
+in which the notation $a=\{n_a,l_a,j_a,m_a\}$ and $-b=\{n_b,l_b,j_b,-m_b\}$ are 
+used. The symbols $\CG( j_a, m_a, j_b, m_b, \lambda, \mu )$ are the 
+Clebsch-Gordan coefficients.
+By introduction angular momentum coupling, (\ref{eq:defS}) becomes
+%
+	\begin{equation}
+		S_{\opO^\lambda}(\omega)
+	=
+		-\frac{1}{\pi} {\rm Im} 
+	\; 
+		\sum_{\alpha\beta\gamma\delta}
+		\RME<\alpha |\opOhatless^\lambda |\beta >^*
+	\;
+		\Pi_{\alpha\beta;\gamma\delta;\lambda}(\omega)
+	\;
+		\RME<\gamma |\opOhatless^\lambda |\delta >
+	\;,
+	\label{eq:app3}
+	\end{equation}
+%
+where $\Pi$ is the coupled form of the polarization propagator $L$ 
+(\ref{eq:DefLLeh}):
+%
+	\begin{eqnarray}
+		\Pi_{\alpha\beta;\gamma\delta;\lambda}(\omega)
+	&=&
+		\sum_{n\not=0}
+		\sum_{\mu=-\lambda}^{\lambda}
+		\frac{1}{2\lambda+1}
+		\left[
+			\frac{
+			\ME<\Psi_0|
+				(\Oc{\beta} \Oa{\tilde{\alpha}})_{\lambda\mu}
+			|\Psi_n >
+			\ME<\Psi_n|
+				(\Oc{\gamma} \Oa{\tilde{\delta}})_{\lambda\mu}
+			|\Psi_0 >
+    			}{
+			\omega-E^n+i\eta
+    			}
+		\right] 
+	\nonumber \\
+	&&
+	\hspace{-2cm}
+	-
+		\sum_{m\not=0}
+		\sum_{\mu=-\lambda}^{\lambda}
+		\frac{1}{2\lambda+1}
+		\left[
+			\frac{
+			\ME<\Psi_0|
+				(\Oc{\gamma} \Oa{\tilde{\delta}})_{\lambda\mu}
+			|\Psi_m>
+			\ME<\Psi_m|
+				(\Oc{\beta} \Oa{\tilde{\alpha}})_{\lambda\mu}
+			|\Psi_0>
+			}{
+			\omega+E^m-i\eta
+			}
+		\right]
+	\;.
+	\label{eq:app4}
+	\end{eqnarray}
+%
+Using the fact that the summations are not dependent on $\mu$  
+((\ref{eq:app2}) also defines a tensor operator), one can remove 
+$\mu$ together with the factor $1/(2\lambda+1)$.
+
+Angular momentum coupling implies that the following objects are used in 
+formulas (instead of the uncoupled $V_{\alpha\beta\gamma\delta}$)\cite{ABBS88}
+%
+	\begin{eqnarray}
+		\ME< a b;J | V | c d; J >
+	&=& 
+		G(abcdJ)
+	\hspace{-3cm}
+	\\
+	&&
+	\hspace{-3cm}
+	= 
+		\sum_{m_a m_b m_c m_d}
+		\CG( j_a, m_a, j_b, m_b, J, m_a+m_b)
+		\CG( j_c, m_c, j_d, m_d, J, m_c+m_d )
+		V_{\alpha\beta\gamma\delta}
+	\nonumber
+	\end{eqnarray}
+%
+and
+%
+	\begin{eqnarray}
+		\ME< a b^{-1};J | V | c d^{-1};J >
+	&=&
+		F(abcdJ)
+	\\
+	&&
+	\hspace{-4cm}
+	=
+		-\sum_{J'} (2 J'+1)
+		(-)^{j_a+j_b+j_c+j_d}
+		\zesJ( j_a, j_b, J, j_d, j_c, J' )
+		\ME< d a; J' | V | b c; J' >
+	\nonumber
+	\end{eqnarray}
+%
+%%%%%%%
+% equation to be solved:
+\section{Solution to the Coupled Equation}
+Solving the equation (\ref{eq:DRPA}), one has to have in mind that
+the real object of our interest is the response function, given
+by (\ref{eq:defS}).
+% objects:
+The appearance of 
+$\ME<\alpha|\opOhatless|\beta>$ in this formula simplifies the calculation.
+In the case of Gamow-Teller response the operator 
+$\opO=\mbox{\boldmath{$\sigma$}}\tau_\pm$ 
+is a spherical tensor 
+with multipolarity $\lambda = 1$, and angular momentum coupling results in
+the fact that reduced matrix elements should be used:
+$\RME<\alpha |\opOhatless |\beta>$. The only combinations of $\alpha$ and
+$\beta$ are the ones that can be coupled to $\lambda$ 
+($|j_\alpha - j_\beta| \le \lambda \le j_\alpha + j_\beta$). 
+% index pairing
+Now it is natural 
+to define a coding $i=\{\alpha, \beta\}$ for all the combinations that can be
+coupled to $\lambda$, so the object
+$\langle\alpha\|\opOhatless\|\beta\rangle$ can be seen as a vector 
+$\rvec{v} = \wveci{v}_i$.
+
+% matrix equation
+With this coding, (\ref{eq:DRPA}) is rewritten in the matrix form (\cf\ 
+(\ref{eq:RPAinv})
+ using $L_{\alpha \beta\gamma\delta}=\rvec{L}=\wveci{L}_{ij}$ 
+\etc)
+%
+	\begin{equation}
+		\left(\rvec{L}^{\phantom{f}}(\omega)\right)^{-1}
+	= 
+		\left(\rvec{L}^f(\omega)\right)^{-1}
+	- 
+		\rvec{V}(\omega)
+	\label{eq:DRPAinv}
+	\;.
+	\end{equation}
+%
+The interaction is taken energy-dependent to be able to apply the method to be
+described to
+the DERPA equation (\ref{eq:DERPA}).
+To know the value of the response function at some energy $\omega$ one 
+has to solve (\ref{eq:DRPAinv}) together with
+%
+	\begin{equation}
+		S_\opO(\omega) 
+	= 
+		\rvec{v}^T
+		\rvec{L}(\omega) 
+		\rvec{v}
+	\;,
+	\end{equation}
+%
+where $\rvec{v}^T$ is the transpose of $\rvec{v}$ and $\rvec{v}$ is a vector 
+consisting of the matrix elements of $\opO$.
+The two methods to solve the RPA equation, 
+described in section~\ref{sec:RPAsol}, cannot both be applied.
+Only the continuous method will be feasible for D(E)RPA.
+
+%
+% continuous method
+%
+By solving with the continuous method is meant that in (\ref{eq:RPA}) the 
+infinitesimal quantity $\eta$ is taken to be finite (\eg\ $0.25$~MeV 
+while the range 
+of $\omega$ is $0-30$~MeV). This finite `width' $\eta$ is physically observable
+when a collection of states is positioned close to each other and therefore 
+mix strongly. Isolated states do not appear as $\delta$-peaks (\cf\ 
+(\ref{eq:defS})) in experiments, 
+but are smeared out also due to finite energy resolution. With a
+finite $\eta$ $L$ and $L^{(0)}$ are not singular anymore. 
+The wanted $S_\opO$ is found by
+solving the following set:
+%
+	\begin{equation}
+		\left\{
+		\begin{array}{ccc}
+		\rvec{L}^{-1}\rvec{b} & = & \rvec{v}     \\
+		\rvec{L}^{-1}         & = & {\rvec{L}^f}^{-1}-\rvec{V}     \\
+		S_{GT}                & = & \rvec{v}^T \rvec{b}
+		\end{array}
+	\right.
+	\label{eq:Appset}
+	\end{equation}
+%
+Because the construction of $\rvec{L}^{-1}$ is cheap, due to the diagonal form 
+of $\rvec{L}^f$. Solving (\ref{eq:Appset}) is a process of order $n^2$ 
+and is hence cheaper than the matrix inversion which is of order $n^3$.
+
+\refrncs

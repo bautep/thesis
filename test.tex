@@ -1,0 +1,25 @@
+\documentclass{mijnboek}
+\usepackage{epsfig}
+\makeatletter
+\def\cntrbox#1#2#3{%
+\newdimen\htobj\newdimen\htbx%
+\fbox{\makebox[#1]{\htbx=#2%
+\setbox1=\hbox{#3}%
+\htobj=\ht1%
+\divide\htbx\tw@%
+\divide\htobj\tw@%
+\rule[-\htbx]{0mm}{#2}%
+\lower \htobj \box1%
+}}}
+\begin{document}
+\begin{figure}
+\[
++
+\cntrbox{5cm}{5cm}{\epsfig{figure=figures/selfenergy/sig_UHF3.ps, width=2cm}}
++
+\cntrbox{5cm}{5cm}{\epsfig{figure=figures/selfenergy/sig_UHF2.ps, width=2cm}}
++
+\]
+\caption[]{test}
+\end{figure}
+\end{document}

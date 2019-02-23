@@ -1,0 +1,132 @@
+\section{Computational Procedure\label{sec:SPcompset}}
+\subsection{Model Space and Interaction}
+The shell model space in which the effective Hamiltonian 
+(\ref{eq:Hamiltonian}) acts is chosen to consist of the first four harmonic 
+oscillator shells. These orbits
+are excluded by the Pauli operator in the Bethe-Goldstone equation 
+(\ref{eq:BGEG}),
+which was used to construct the G-matrix interaction employing the Bonn-C 
+potential\cite{Ma89}. 
+The corresponding HF single-particle energies 
+$\varepsilon_\alpha(\omega)$ are shown in fig.~\ref{fig:Ehf}. 
+For the 
+orbits around the Fermi level ($p$-shell and $sd$-shell) they are slightly 
+(with $1-2$~MeV)
+adjusted, such that the total calculation (HF $+$ 2p1hTDA) reproduces the 
+experimental energies of the quasiparticle states, \ie\ the states with the 
+large spectroscopic factors.
+This adjustment has  been done by shifting the 
+$\varepsilon_\alpha(\omega)$ curves of fig.~\ref{fig:Ehf}
+in vertical direction. Thereby the normalization effect (\ref{eq:sfNorm}) of
+the derivative was left unchanged. The single-particle states and the obtained
+quasiparticle energies are listed in table~\ref{tab:sps}. 
+%%%%%%%%%%%%%
+\begin{table}
+\centerline{
+\begin{tabular}{|cr@{.}lr@{.}l|cr@{.}lr@{.}l|}
+ \hline
+ \multicolumn{1}{|c}{ }     & \multicolumn{4}{c}{Energy} &
+ \multicolumn{1}{|c}{ }     & \multicolumn{4}{c|}{Energy} \\
+ \multicolumn{1}{|c}{Shell} & \multicolumn{2}{c}{proton} 
+                            & \multicolumn{2}{c}{neutron} &
+ \multicolumn{1}{|c}{Shell} & \multicolumn{2}{c}{proton} 
+                            & \multicolumn{2}{c|}{neutron} \\
+ \hline
+ $1s\frac{1}{2}$ & $-35$&$0$&$-40$&$0$ & $2s\frac{1}{2}$ & $-0$&$1$&$-3$&$3$\\
+ $1p\frac{3}{2}$ & $-18$&$5$&$-21$&$8$ & $1f\frac{7}{2}$ & $17$&$4$&$14$&$0$\\
+ $1p\frac{1}{2}$ & $-12$&$1$&$-15$&$7$ & $1f\frac{5}{2}$ & $23$&$5$&$20$&$2$\\
+ $1d\frac{5}{2}$ & $ -0$&$6$&$ -4$&$1$ & $2p\frac{3}{2}$ & $16$&$0$&$12$&$4$\\
+ $1d\frac{3}{2}$ & $  4$&$4$&$  0$&$9$ & $2p\frac{1}{2}$ & $17$&$7$&$14$&$3$\\
+ \hline
+\end{tabular}
+}
+\caption[]{The single-particle states that belong to the model space $\calM$,
+which was used in calculations on $^{16}$O.
+\label{tab:sps}}
+\end{table}
+%%%%%%%%%%%%%
+
+\subsection{Calculation of the 2p1hTDA Self-Energy}
+In principle the calculation of the eigenvalues and eigenvectors of the 
+Hamiltonian 
+within the 2p1h and 2h1p spaces, leading to $\bar{R}$ (\ref{eq:Risbb}) 
+in TDA, should be done with the energy-dependent G-matrix elements and 
+single-particle energies. This is a cumbersome procedure and in fact 
+unnecessary for practical purposes. A simpler procedure is justified by the 
+following two observations.  First, the $\omega$-dependence of the G-matrix 
+and the HF-energies is weak and smooth as compared to the pole structure of 
+$\bar{R}$ (\ref{eq:Risbb}). So a large amount of computational effort may be 
+saved by calculating the poles and eigenvectors in (\ref{eq:Risbb}) with a 
+fixed `starting energy' for the G-matrix, for which a value of 
+$-40$~MeV was taken
+as a suitable average for a 2h1p state. For the 2p1h
+states one would prefer  a larger starting energy. These states are less 
+important for the 
+description of the experimentally measured hole spectral function.
+The second observation is that
+the calculation of the self-energy and the procedure of solving the Dyson 
+equation become effectively decoupled 
+when the condition is imposed that the outcome of the quasi-particle energies 
+for the shells around the Fermi level must correspond to the experimental ones,
+So the method adopted here is to
+calculate the eigenvalues $\omega^\nu$ and eigenvectors $b^\nu_{lmn}$ with the 
+quasi-particle energies of table~\ref{tab:sps} and G($\omega=-40$~MeV).
+Next, the Dyson equation (\ref{eqbis:DysonE}) is solved with the self-energies 
+(\ref{eq:SigHFe}) and (\ref{eq:SigTDA}). 
+If the energies of the main quasi-particle peaks around the Fermi level differ 
+appreciably from the experimental values, the corresponding single-particle 
+energy curve $\varepsilon^{HF}_\alpha(\omega)$ 
+is shifted and the whole procedure is 
+repeated. As a result the quasi-particle values of table~\ref{tab:sps} were 
+obtained. Only a few iterations are needed because the adjustments are small.  
+Moreover, high precision at this point is not meaningful in view of the 
+various approximations and slight inconsistencies that are still inherent in 
+the method and which are shortly addressed in the next section.
+
+\subsection{Lack of Self-Consistency}
+Besides the use of a fixed $\omega$-value for the G-matrix interaction in the 
+calculation of the 2p1h and 2h1p amplitudes, there is a more important problem 
+if one wishes to solve the Dyson equation with a self-consistent self-energy. 
+This arises as soon as the 2p1h-propagator in (\ref{eq:SigTDA}) is no longer 
+restricted to its Faddeev (TDA) form, but consists of diagrams that involve
+`dressed' nucleons, \ie\ nucleons fully interacting with all other nucleons.
+These dressed nucleons are then described with a fragmented one-body propagator
+and no longer with the single-pole propagator of (\ref{eqbis:gHF}).
+Now the self-energy (\ref{eq:SigTDA}) depends on the solution of the 
+Dyson equation in which it appears. The use of an iterative scheme, where the
+propagator of the $(n-1)$-th step is used as input for the calculation of the
+self-energy in the $n$-th step is not possible, because  in each step, 
+the number of poles increases and thereby the complexity of 
+the expressions for the self-energy.
+The self-consistency can only be studied for very simple approximations of the self-energy, \eg\ independent propagation of the particles and holes in 
+(\ref{eq:gR}), or with a simple form for the interaction.
+This has been performed by 
+Van Neck\cite{NWR91}, 
+who represented the propagators in a limited set of energy bins.
+A different approach to reach a certain self-consistency is the 
+BAsis GEnerated by the Lanczos (BAGEL)\cite{MS93} method.
+In this method the Dyson equation, with a self-energy (\ref{eq:SigTDA}) but 
+with 
+independent propagation of the particles and  holes, is written as a matrix 
+within the space composed of
+the one-hole state and the  2h1p states. The most important 
+eigenvectors are then 
+filtered out by the Lanczos method.
+A self-consistent calculation of the one-body propagator 
+for the Tin isotopes using a pairing force 
+and with a 2p1hTDA 
+self-energy 
+is given in ref.~\cite{Yu94}.
+
+
+As a consequence of the lack of self-consistency elementary sum rules may be 
+violated. For a given orbit the sum of all removal and addition spectroscopic 
+factors, \ie\ of all residues of the corresponding Green's functions, must be 
+unity. In the present case, however, this sum is already smaller in HF 
+approximation. As a consequence of 
+the energy-dependence of the G-matrix the strength at 
+very high energies due to short-range correlations is hidden. So to assess the 
+violation of the sum rule due to the lack of self-consistency the result of 
+the 
+calculation without any energy-dependence in the HF-part should be considered.
+In this case the violation appeared to be only of the order of $10^{-8}$.

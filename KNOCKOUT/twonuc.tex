@@ -1,0 +1,303 @@
+\section{Two-Nucleon Spectral Function; Computational Scheme}
+In this section explicit formulas are derived for the spectral function
+(\ref{eq:SpecFuncW}).
+As mentioned in section~\ref{sec:Mos} the Moshinsky brackets that will 
+be used are between $(\lambda S)_J$ two-body coupled wave functions, while
+the wave functions used in (\ref{eq:PhiCoup}) have been coupled in the 
+ $(j_aj_b)_J$ scheme
+%
+	\begin{equation} 
+		\rvec{l}_a + \rvec{s}_a = \rvec{j}_a ;\;\; 
+		\rvec{l}_b + \rvec{s}_b = \rvec{j}_b ;\;\; 
+		\rvec{j}_a + \rvec{j}_b = \rvec{J}. 
+	\end{equation} 
+%
+During the route to derive the explicit formula for the spectral function, one
+has to perform a recoupling at one point. This recoupling is given by
+%
+	\begin{eqnarray} 
+	\lefteqn{%
+		\Phi^{JM}_{ab}(\rvec{p}_1,\rvec{p}_2) 
+	= 
+		\inp<\rvec{p}_1 \rvec{p}_2| (l_a s_a) j_a (l_b s_b) j_b \; J M>
+	} \nonumber \\
+	&=&
+		\sum_{\lambda S}
+		\inp<(l_a l_b) \lambda (s_a s_b)S \; J M |%
+		               (l_a s_a) j_a (l_b s_b) j_b \; J M >
+	\nonumber \\
+	&\times&
+		\inp< \rvec{p}_1 \rvec{p}_2 | 
+                      n_a n_b (l_a l_b) \lambda (s_a s_b) S \; J M >
+	\label{eq:phiab}
+	\;.
+	\end{eqnarray} 
+%
+The last line of (\ref{eq:phiab}) can be written explicitly in case
+the one-body wave functions are known as:
+%
+	\begin{eqnarray} 
+	\lefteqn{
+		\inp< \rvec{p}_1 \rvec{p}_2 | 
+                      n_a n_b (l_a l_b) \lambda (s_a s_b) S J M >
+	=} 
+	\label{eq:coup1}
+	\\
+	&&
+		\sum_{ m_a, m_b, \mu, s^z_a, s^z_b, S_z }
+		\CG( l_a, m_a, l_b, m_b, \lambda, \mu )
+		\CG( s^{\phantom{z}}_a, s^z_a, s^{\phantom{z}}_b, 
+		     s^z_b, S, S_z)
+		\CG( \lambda, \mu, S, S_z, J, M )
+	\nonumber \\
+	&\times&
+		R_{n_a l_a}(|\rvec{p}_1|)
+		Y_{l_a m_a}(\hat{\rvec{p}}_1)
+		\xi_{s s^z_a}
+		\;
+		R_{n_b l_b}(|\rvec{p}_2|)
+		Y_{l_b m_b}(\hat{\rvec{p}}_2) 
+		\xi_{s s^z_b}
+	\nonumber
+	\;,
+	\end{eqnarray} 
+%
+where $R_{nl}$ are the radial wave functions and $Y_{lm}$ are the 
+spherical harmonics. The symbols $\xi$ denote the spin wave functions.
+In the present application wave functions are always 
+calculated in complex conjugated pairs, \cf\ (\ref{eq:SpecFuncW}). 
+This means that in the spectral 
+function the spin part can be dealt with explicitly, using that 
+ $\xi^\ast_{ss^{\phantom{\prime}}_z}\xi^{\phantom{\ast}}_{ss'_z} 
+ = \delta_{s^{\phantom{\prime}}_z s'_z}$. 
+So the factor 
+ $\CG( s^{\phantom{z}}_a, s^z_a, s^{\phantom{z}}_b, s^z_b, S, S_z)$ 
+will drop out together with the 
+summation over $s^z_a$ and $s^z_b$, due to the condition that the total spin
+ $S$ is the same in both two-body wave functions in each term of the spectral 
+function (\ref{eq:SpecFuncW}).
+
+\subsection{Coupled Correlated Two-Body Wave Functions}
+In order to incorporate short-range correlations
+the transformation to relative and \CM\
+momenta is applied. Therefore the Moshinsky transformation
+(\ref{eq:MTapply}) is combined with (\ref{eq:phiab}), in which the
+transformation brackets are given by\cite{Ed57}
+%
+	\begin{eqnarray} 
+		\inp<(l_a l_b) \lambda (s_a s_b)SJM |%
+		     (l_a s_a) j_a (l_b s_b)j_b JM > 
+	=
+	&&
+	\label{eq:jjlamS}
+	\\
+	&&
+	\hspace{-1.5cm}
+		\hat{\lambda} \hat{S} \hat{j}_a \hat{j}_b
+		\negenJ(l_a, l_b, \lambda, s_a, s_b, S, j_a, j_b, J)
+	\;,
+	\nonumber
+	\end{eqnarray} 
+%
+where $\hat{j}=\sqrt{2j+1}$. 
+Combining (\ref{eq:jjlamS}) with the Moshinsky transformation 
+(\ref{eq:MTapply}), the wave function becomes
+%
+	\begin{eqnarray}
+		\Phi^{J_fM_f}_{ab} ( \rvec{p}_1,\rvec{p}_2 )
+	&=&
+		\inp< \rvec{p}_1 \rvec{p}_2| (a b) J_f M_f>
+	\label{eq:ACtrafo1}
+	\\
+	&=&
+		\sum_{Si}
+		C^{ ab J_f}_{Si}
+		\inp< \rvec{p}_{rel} \rvec{p}_{\CM} | i S  J_f M_f >
+	\nonumber
+	\;,
+	\end{eqnarray}
+%
+where definitions for the used symbols are
+%
+	\begin{subeqnarray}
+		ab
+	&=&
+		\{ n_a, l_a, j_a, n_b, l_b, j_b \}
+	\;,
+	\\
+		i
+	&=&
+		\{n_i,l_i,N_i,L_i,\lambda_i\}
+	\mbox{ and}
+	\\
+		C^{ ab J_f}_{Si}
+	&=&
+		\hat{\lambda_i} \hat{S} \hat{j}_a \hat{j}_b
+		\negenJ(l_a, l_b, \lambda_i, s_a, s_b, S, j_a, j_b, J_f)
+		\inp< n_i l_i N_i L_i \lambda_i| n_a l_a n_b l_b \lambda_i>
+	\;.
+	\slabel{eq:Cab}
+	\end{subeqnarray}
+%
+The index $i$ has a finite range due to the energy conservation
+condition of the Moshinsky brackets (\ref{eq:MTEC}).
+
+At this stage SRC can be taken into account.
+In the expression for the $(jj)$ coupled
+wave function
+%
+	\begin{eqnarray}
+		\inp< \rvec{p}_{rel} \rvec{p}_{\CM} | i S >
+	&=&
+		\sum_{ m, M, \mu, S_z }
+		\CG( l_i, m, L_i, M, \lambda_i, \mu )
+		\CG( \lambda_i, \mu, S, S_z, J_f, M_f )
+	\nonumber \\
+	&\times&
+	\!\!
+		R_{n_il_i}(|\rvec{p}_{rel}|)Y_{l_im}(\hat{\rvec{p}}_{rel})
+		R_{N_iL_i}(|\rvec{p}_{\CM}|)Y_{L_iM}(\hat{\rvec{p}}_{\CM})
+	\nonumber\\
+	&=&
+		\Phi_{iS}( \rvec{p}_{rel}, \rvec{p}_{\CM} )
+	\nonumber 
+	\end{eqnarray}
+%
+the relative radial wave function 
+ $R_{n_il_i}(|\rvec{p}_{rel}|)$
+can be replaced by the correlated relative wave
+function, which is the Fourier-Bessel transform of $f(r)R_{nl}(r)$, with
+ $f(r)$ one of the correlation functions of section~\ref{sec:cf}.
+%
+If, instead, one incorporates SRC by means of defect functions,
+an extra angular momentum 
+coupling should be applied as follows.
+
+%\subsubsection{partial waves}
+The defect functions calculated in ref.~\cite{MS93} are calculated
+using partial wave angular momentum coupling.
+Partial waves (notation $^{2S+1}l_{J'}$, \eg\ $^1S_0$) are coupled 
+with the scheme:
+%
+	\begin{equation} 
+  		\rvec{l} +  \rvec{S} = \rvec{J'} ;\;\; 
+  		\rvec{J'} + \rvec{L} = \rvec{J}
+	\end{equation} 
+%
+The required transformation bracket is\cite{Ed57} %(\cf\ FW-B.26):
+%
+	\begin{eqnarray} 
+		\inp< (lL)\lambda S J| (lS)J' L J> 
+	&=&
+		(-)^{L+l-\lambda+L+J'-J}
+		\inp< (Ll)\lambda S J| L (lS)J' J>  
+	\nonumber \\
+	&=&
+		(-)^{L-\lambda+J'+S} \hat{\lambda} \hat{J'}
+		\zesJ( L, l, \lambda, S, J, J')
+		%      1  2  J'       3  4  J
+	\label{eq:SixJ}
+	\;,
+	\end{eqnarray} 
+%
+hence the partial waves are written in terms of the known functions as
+%
+	\begin{eqnarray} 
+	\lefteqn{
+		\inp< \rvec{p}_{rel} \rvec{p}_{\CM}| n N (lS) J' L J_f M_f >
+	=} \nonumber \\
+	&&
+		\sum_{ \lambda }
+		(-)^{L-\lambda+J'+S} \hat{\lambda} \hat{J'}
+		\zesJ( L, l, \lambda, S, J_f, J')
+	\nonumber \\
+	&\times&
+		\sum_{ m, M_L, \mu, s^z_a, s^z_b, S_z }
+		\CG( l, m, L, M_L, \lambda, \mu )
+		\CG( s^{\phantom{z}}_a, s^z_a, s^{\phantom{z}}_b, 
+		     s^z_b, S, S_z)
+		\CG( \lambda, \mu, S, S_z, J_f, M_f )
+	\nonumber \\
+	&\times&
+		R_{nl}(|\rvec{p}_{rel}|)Y_{lm}(\hat{\rvec{p}}_{rel})
+		R_{NL}(|\rvec{p}_{\CM}|)Y_{LM_L}(\hat{\rvec{p}}_{\CM})
+	\label{eq:PW}
+	\;.
+	\end{eqnarray} 
+%
+Using the inverse of the transformation (\ref{eq:SixJ}), and again noting
+that the summation over $s^z_a$ and  $s^z_b$ can be discarded together
+with the Clebsch-Gordan symbol since the total spin $S$ is the same
+in the pair of conjugated two-body wave functions in the spectral function
+(\ref{eq:SpecFuncW}), one may link the partial wave coupling to the earlier 
+derived expression (\ref{eq:ACtrafo1}) 
+%
+	\begin{eqnarray}
+	\lefteqn{%
+		\inp< \rvec{p}_{rel} \rvec{p}_{\CM} | i S >
+	=} &&
+	\label{eq:PW2} \\
+	&&
+		\sum_{ J' }
+		(-)^{L_i-\lambda_i+J'+S} \hat{\lambda_i} \hat{J'}
+		\zesJ( L_i, l_i, \lambda_i, S, J, J')
+		\inp< \rvec{p}_{rel} \rvec{p}_{\CM}| 
+		      n_i N_i (l_iS) J' L_i J_f M_f >
+	\nonumber
+	\end{eqnarray}
+%
+The correlated wave function is constructed by adding the appropriate defect 
+function to the partial waves in (\ref{eq:PW2}). 
+
+\subsection{Total Spectral Function}
+At this stage 
+the total spectral function can be written out explicitly. Substitution
+of the above mentioned angular momentum coupling, one obtains for the
+strength of $S^-_J$ at energy $E^{n,A-2}_{J_f}$ 
+%
+	\begin{eqnarray}
+	\lefteqn{
+		S^-( \rvec{p}_1, \rvec{p}_2, \rvec{p}_{1'}, \rvec{p}_{2'}, n )
+	=}
+	\label{eq:CRSF} \\
+	&&
+		\sum_{abcd,M_f}
+		\Psi^{\ast J_f M_f}_{cd}( \rvec{p}_{1'}, \rvec{p}_{2'} )
+		X^{n\ast}_{cd J_f}
+		X^{n}_{ab J_f}
+		\Psi^{ J_f M_f}_{ab}( \rvec{p}_1, \rvec{p}_2 )
+	\nonumber \\
+	&&
+	\!\!\!\!
+	\!\!\!\!
+	\!\!\!\!
+	=
+		\sum_{abcd}
+		\sum_{SM_f}
+		\sum_{ij}
+		\inp< \rvec{p}_{rel'} \rvec{p}_{\CM'} | j S >
+		C^{ cd J_f M_f }_{Sj}
+		X^{n\ast}_{cd J_f}
+		X^{n}_{ab J_f}
+		C^{ ab J_f M_f }_{Si}
+		\inp< i S | \rvec{p}_{rel} \rvec{p}_{\CM} >
+	\nonumber \\
+	&&
+	\!\!\!\!
+	\!\!\!\!
+	\!\!\!\!
+	=
+		\sum_{abcd}
+		\sum_{SM_f}
+		\sum_{ij}
+		\Psi^\ast_{jS}( \rvec{p}_{rel'},\rvec{p}_{\CM'})
+		C^{ cd J_f M_f }_{Sj}
+		X^{n\ast}_{cd J_f}
+		X^{n}_{ab J_f}
+		C^{ ab J_f M_f }_{Si}
+		\Psi_{i S}( \rvec{p}_{rel}, \rvec{p}_{\CM} )
+	\nonumber
+	\end{eqnarray}
+%
+where the functions $\Psi$ are the correlated wave functions constructed
+as described above.

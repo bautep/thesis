@@ -1,0 +1,179 @@
+\chapter{Closed Form of the Moshinsky Brackets\label{app:MTCF}}
+The brackets that are used in the Moshinsky transformation 
+(\ref{eq:MTapply}) can be written in closed form, as was proven 
+for the more general case of two particles with different masses\cite{SG72}.
+If the  masses are the same, the expression becomes:
+%\footnote%
+%
+	\begin{eqnarray}
+	\label{eq:MTCF}
+		\inp< n l N L; \lambda | n_1 l_1 n_2 l_2; \lambda > 
+	=
+	\end{eqnarray}
+%
+{ 
+\renewcommand{\arraystretch}{1.5}
+\tiny
+%
+	\begin{eqnarray}
+	%\label{eq:MTCF}
+	%\\
+	%\displaystyle
+	%	\inp< n l N L; \lambda | n_1 l_1 n_2 l_2; \lambda > 
+	%\\
+	\begin{array}{c}
+	{
+	\displaystyle
+		2^{-\frac{1}{2} l}
+		\left[
+		\frac{ (2l_1+1)(2l_2+1)(2L+1)} {(2l+1)}	
+		\frac{ (l_1+l_2-\lambda)!}{(l_1+l_2+\lambda+1)!} 
+		\frac{ (l+L+\lambda+1)!
+		       (l+L-\lambda)!
+		       (l-L+\lambda)!
+		       (L+\lambda-l)!
+                     }{(l_1+\lambda-l_2)! 
+                       (l_2+\lambda-l_1)!} 
+		\right]^\frac{1}{2}
+	}
+	\\
+	{
+	\displaystyle
+		\hspace{-7pt}
+		(-)^{\lambda+n+n_1+n_2}
+		(2l+1)
+		\left[
+		\frac{ n_1! n_2! n!} {N!}	
+		\frac{ 
+			\Gamma( n_1+l_1 + \frac{3}{2} )
+			\Gamma( n_2+l_2 + \frac{3}{2} )
+		     } 
+		     {
+			\Gamma( n+l + \frac{3}{2} )
+			\Gamma( N+L + \frac{3}{2} )
+		     }	
+		\right]^\frac{1}{2}
+		\delta ( 2n+l+2N+L, 2n_1+l_1+2n_2+l_2 )
+	}
+	\\
+	{
+	\displaystyle
+		\sum_{ \lambda_1 \lambda_2 p_1 p_2 }
+		\delta( \lambda_1+\lambda_2, l)
+		(-)^{\lambda_2 + 
+		     \frac{1}{2}( p_1+p_2+l_1+l_2+\lambda_1+\lambda_2} )
+		\;
+		2^{-\frac{1}{2}(p_1+p_2)}
+	}
+	\\
+	{
+		\frac{
+			(l_1+p_1-\lambda_1)!
+			(p_1+p_2-L)!
+			(l_2+p_2-\lambda_2)!
+			(\frac{1}{2}(l_1+p_1+\lambda_1))!
+			(\frac{1}{2}(p_1+p_2+L))!
+			(\frac{1}{2}(l_2+p_2+\lambda_2))!
+		     }
+		     {
+			(l_1+p_1+\lambda_1+1)!
+			(p_1+p_2+L+1)!
+			(l_2+p_2+\lambda_2+1)!
+			(\frac{1}{2}(l_1+p_1-\lambda_1))!
+			(\frac{1}{2}(p_1+p_2-L))!
+			(\frac{1}{2}(l_2+p_2-\lambda_2))!
+		     }
+	}
+	\\[5pt]
+	{
+	\displaystyle
+	\hspace{-7pt}
+		\frac{
+			(2p_1+1)(2p_2+1)
+		     }
+		     {
+			(\frac{1}{2}(l_1+\lambda_1-p_1))!
+			(\frac{1}{2}(p_1+\lambda_1-l_1))!
+			(\frac{1}{2}(p_1+L-p_2))!
+			(\frac{1}{2}(p_2+L-p_1))!
+			(\frac{1}{2}(l_2+\lambda_2-p_2))!
+			(\frac{1}{2}(p_2+\lambda_2-l_2))!
+		     }
+	}
+	\\[5pt]
+	{
+	\displaystyle
+		\sum_{ x y }
+		\frac{
+			(-)^{x+y}
+			(2p_1-x)!
+			(2l_2-y)!
+			(p_2+L-p_1+x)!
+			(l_1+\lambda-l_2+y)!
+		     }
+		     {
+			x! y!
+			(p_1+p_2-L-x)!
+			(l_1+l_2-\lambda-y)!
+			(p_1-l_2+\lambda-\lambda_1+y-x)!
+			(l_2-p_1+L-\lambda_2+x-y)!
+		     }
+	}
+	\\
+	{
+	\displaystyle
+		\sum_{ m_1 m_2 }
+		(-2)^{-(m_1+m_2)}
+		\frac{ 
+			\Gamma( \frac{3}{2} )
+			\Gamma( \frac{1}{2}(p_1+p_2+L)+m_1+m_2+\frac{3}{2} )
+		     } 
+		     {
+			\Gamma( p_1+m_1 + \frac{3}{2} )
+			\Gamma( p_2+m_2 + \frac{3}{2} )
+		     }	
+	}
+	\\
+	{
+	\displaystyle
+		\frac{ 
+			(\frac{1}{2}(p_1+p_2-L)+m_1+m_2)!
+		     } 
+		     {
+			m_1! m_2!
+			(n_1-m_1-\frac{1}{2}(\lambda_1+p_1-l_1))!
+			(n_2-m_2-\frac{1}{2}(\lambda_2+p_2-l_2))!
+			(\frac{1}{2}(p_1+p_2-L)+m_1+m_2-N)!
+		     }	
+	} 
+	\end{array}
+	\nonumber
+	\end{eqnarray}
+
+%
+}
+\noindent Summations are restricted by
+the triangular conditions imposed by the nine-j symbol
+%
+\renewcommand{\arraystretch}{1.0}
+	\begin{equation}
+	\negenJ( p_1, p_2, L, \lambda_1, \lambda_2, l, l_1, l_2, \lambda )
+	\mbox{\hspace{10pt}and by\hspace{10pt}}
+		\left.
+			\begin{array}{rcl}
+				p_1+\lambda_1+l_1 
+			&=& 
+				\mbox{even} 
+			\\
+				p_2+\lambda_2+l_2 
+			&=& 
+				\mbox{even} 
+			\\
+				p_1+p_2+L
+			&=& 
+				\mbox{even} 
+			\end{array}
+		\right\}
+	\end{equation}
+%
+\refrncs

@@ -1,0 +1,93 @@
+\documentclass[11pt,oldtoc,openany]{proefschrift}
+
+%\includeonly{EXTRA/frontmatter}
+%\includeonly{contents}
+%\includeonly{INTRO/wortel}
+%\includeonly{GREEN/wortel}
+%\includeonly{DERPA/wortel}
+%\includeonly{SPECFAC/wortel}
+%\includeonly{KNOCKOUT/wortel}
+%\includeonly{PPkoO16/wortel}
+%\includeonly{CROSS/wortel}
+%\includeonly{OUTLOOK/wortel}
+%\includeonly{appendices/moshinsky}
+%\includeonly{appendices/app_detail}
+%\includeonly{EXTRA/samenvatting}
+%\includeonly{EXTRA/acknowledgement}
+%\includeonly{EXTRA/frontmatter,contents,INTRO/wortel}
+
+\usepackage{macrodefs}
+\usepackage{epsfig}
+\usepackage{cite}
+\usepackage[dutch,english]{babel}
+%\usepackage{standard}
+%\usepackage{myfhead}
+%\usepackage{amsbsy}
+\usepackage{chapterbib}
+%\usepackage{dcolumn}
+\usepackage[small,bf]{caption}
+\usepackage{subeqnarray}
+%\usepackage{elements}
+%\usepackage{vargreek}
+%\usepackage{prabib}
+%\input{rotate}
+%\psnocompress
+
+
+%\renewcommand{\figurename}{\small\em Figure}
+%\renewcommand{\tablename}{\small\em Table}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.2}
+\def\mycaption#1{\caption{\em #1}}
+\pretolerance=300
+%
+% hyphenation
+%
+\input{local_hyph.tex}
+
+%\newcolumntype{d}[1]{D{.}{.}{#1}}
+%\newcolumntype{.}{D{.}{.}{-1}}
+%\newcolumntype{x}{D{x}{\,\pm\,}{-1}}
+
+
+\def\bibname{References}
+
+\def\ij{i\kern-.02em j}
+
+%definities voor paginagrootte van een proefschrift.
+% GESTOLEN van Ferry 
+%\evensidemargin 1.5cm
+%\oddsidemargin 2.5cm
+%\topmargin 2cm
+%\textwidth 12.50cm
+%\textheight 18.6cm
+
+%\renewcommand{\baselinestretch}{2}
+
+%\lhead [\fancyplain{}{\sl\leftmark}]{\fancyplain{}{}}
+%\rhead [\fancyplain{}{}]{\fancyplain{}{\sl\leftmark}}
+
+\begin{document}
+\setcounter{page}{1}
+\pagenumbering{roman}
+\include{EXTRA/frontmatter}
+\pagestyle{headings}
+\include{contents}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\include{INTRO/wortel}
+\include{GREEN/wortel}
+\include{DERPA/wortel}
+\include{SPECFAC/wortel}
+\include{KNOCKOUT/wortel}
+\include{PPkoO16/wortel}
+\include{CROSS/wortel}
+\include{OUTLOOK/wortel}
+\appendix
+\include{appendices/app_detail}
+\include{appendices/moshinsky}
+\include{EXTRA/samenvatting}
+\include{EXTRA/acknowledgement}
+\end{document}

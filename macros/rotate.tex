@@ -1,0 +1,51 @@
+%
+%   These macros allow you to rotate or flip a \TeX\ box.  Very useful for
+%   sideways tables or upsidedown answers.
+%
+%   To use, create a box containing the information you want to rotate.
+%   (An hbox or vbox will do.)  Now call \rotr\boxnum to rotate the
+%   material and create a new box with the appropriate (flipped) dimensions.
+%   \rotr rotates right, \rotl rotates left, \rotu turns upside down, and
+%   \rotf flips.  These boxes may contain other rotated boxes.
+%
+\newbox\rotbox\newdimen\rotdimen
+\def\escspec#1{\special{"@endspecial #1 @beginspecial @setspecial}}%
+\def\rotfinish{\escspec{currentpoint grestore moveto}}%
+%
+%   First, the rotation right.
+%
+\def\rotr#1{\rotdimen=\ht#1\advance\rotdimen by\dp#1%
+   \hbox to\rotdimen{\hskip\ht#1\vbox to\wd#1{\escspec{gsave
+   currentpoint currentpoint translate 90 rotate neg exch neg exch
+   translate}\box#1\vss}\hss}\rotfinish}
+%
+%   Next, the rotation left.
+%
+\def\rotl#1{\rotdimen=\ht#1\advance\rotdimen by\dp#1%
+   \hbox to\rotdimen{\vbox to\wd#1{\vskip\wd#1\escspec{gsave
+   currentpoint currentpoint translate 270 rotate neg exch neg exch
+   translate}\box#1\vss}\hss}\rotfinish}%
+%
+%   Upside down is simple.
+%
+\def\rotu#1{\rotdimen=\ht#1\advance\rotdimen by\dp#1%
+   \hbox to\wd#1{\hskip\wd#1\vbox to\rotdimen{\vskip\rotdimen
+   \escspec{gsave currentpoint currentpoint translate 180 rotate neg exch
+   neg exch translate}\box#1\vss}\hss}\rotfinish}%
+%
+%   And flipped end for end is pretty easy too.
+%
+\def\rotf#1{\hbox to\wd#1{\hskip\wd#1\vbox{\escspec{gsave currentpoint
+   currentpoint translate -1 1 scale neg exch neg exch translate}\box#1}%
+   \hss}\rotfinish}%
+%
+%
+%
+\def\rotleft#1{\setbox\rotbox=\hbox{#1}\rotl\rotbox}%
+%
+\def\rotright#1{\setbox\rotbox=\hbox{#1}\rotr\rotbox}%
+%
+\def\rotupside#1{\setbox\rotbox=\hbox{#1}\rotu\rotbox}%
+%
+\def\rotflip#1{\setbox\rotbox=\hbox{#1}\rotf\rotbox}%
+

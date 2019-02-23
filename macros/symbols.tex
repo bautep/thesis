@@ -1,0 +1,117 @@
+%
+% some of these are stolen of Joost Zalmstra
+%
+\macrodef{\def\bra #1{\langle #1 |}}
+	{$\bra{\psi}$}{bra-vector}
+\macrodef{\def\ket #1{\;| #1 \rangle}}
+	{$\ket{\psi}$}{ket-vector}
+\macrodef{\def\inp<#1|#2>{\langle #1 |\; #2 \rangle}}
+	{$\inp<\psi|\phi>$}{innerproduct}
+\macrodef{\def\drieJ(#1,#2,#3,#4,#5,#6){%
+	\left(\matrix{#1&#2&#3\cr
+		      #4&#5&#6\cr}\right)}}
+	{$\drieJ(j_1,j_2,j_3,m_1,m_2,m_3)$}
+	{three-j symbol}
+\macrodef{\def\zesJ(#1,#2,#3,#4,#5,#6){%
+	\left\{\matrix{#1&#2&#3\cr
+		      #4&#5&#6\cr}\right\}}}
+	{$\zesJ(j_1,j_2,j_{12},j_3,j,j_{23})$}
+	{six-j symbol}
+\macrodef{\def\negenJ(#1,#2,#3,#4,#5,#6,#7,#8,#9){%
+	\left\{\matrix{#1&#2&#3\cr
+		       #4&#5&#6\cr
+		       #7&#8&#9\cr}\right\}}}
+	{$\negenJ(j_1,j_2,j_{12},j_3,j_4,j_{34},j_{13},j_{24},j)$}
+	{nine-j symbol}
+%\macrodef{\def\ME<#1|#2|#3>{\langle #1 |\; #2 \;| #3 \rangle}}
+\macrodef{\def\ME<#1|#2|#3>{\mathopen{\langle #1 |} #2 \mathclose{|#3 \rangle}}}
+         {$\ME<a|b|c>$}{matrix-element}
+\macrodef{\def\RME<#1|#2|#3>{\langle #1 \|\; #2 \;\| #3 \rangle}}
+         {$\RME<a|b|c>$}{matrix-element}
+\macrodef{\def\CG(#1,#2,#3,#4,#5,#6){(#1 #2 \> #3 #4 | #5 #6)}}
+         {$\CG(j_a, m_a, j_b, m_b, J, M)$}{Clebsch-Gordan symbol}
+\macrodef{\def\Oa#1{a^{\phantom{\dagger}}_{\vphantom{\beta}#1}}}
+	{$\Oa{\alpha}$}{ annihilation operator of state $\alpha$}
+\macrodef{\def\Oc#1{a^\dagger_{\vphantom{\beta}#1}}}
+	{$\Oc{\alpha}$}{ creation operator of state $\alpha$}
+
+\macrodef{\def\rvec#1{{\bf #1}}}
+	{$\rvec{p}$}{ roman character vector}
+\macrodef{\def\gvec#1{\mbox{\boldmath{$#1$}}}}
+	{$\gvec{\alpha}$}{ greek character vector}
+\macrodef{\def\calM{{\cal M}}}
+	{$\calM$}{ truncated modelspace}
+\macrodef{\def\calbarM{\bar{\cal M}}}
+	{$\calbarM$}{ complement of  the truncated modelspace}
+\macrodef{\def\bra #1{\langle #1 |}}
+	{$\bra{\psi}$}{bra-vector}
+\macrodef{\def\sfrac#1#2{{\mbox{$\frac{{#1}}{{#2}}$}}}}
+	{$\sfrac{a}{b}$}{little frac}
+\macrodef{\def\half{{\mbox{$\frac{1}{2}$}}}}
+	{$\half$}{half}
+\macrodef{\def\threehalf{{\mbox{$\frac{3}{2}$}}}}
+	{$\threehalf$}{threehalf}
+\macrodef{\def\CM{CM}}
+	{$\CM$}{centre-of-mass}
+\macrodef{\def\EnulA{E^{0,A}_{\phantom{J}}}}
+	{$\EnulA$}{ground state energy of A-particle system}
+%
+% latin
+%
+\macrodef{\def\cf{{\em cf.}}}
+	{\cf}{confer: compare with}
+\macrodef{\def\eg{{\em e.g.}}}
+	{\eg\ }{for example}
+\macrodef{\def\ie{{\em i.e.}}}
+	{\ie\ }{id est: that is}
+\macrodef{\def\viz{{\em viz.}}}
+	{\viz\ }{namely}
+\macrodef{\def\etal{{\em et al.}}}
+	{\etal\ }{et alii: and others}
+\macrodef{\def\etc{{\em etc.}}}
+	{\etc\ }{et cetera}
+\macrodef{\def\vs{{\em vs.}}}
+	{\vs\ }{versus}
+%
+% invented by Benno
+%
+\macrodef{\def\onggt{%
+   \setbox1=\hbox{$\sim$} \dimen1=\wd1         % get size of ~
+        \rlap{\hbox to \dimen1{\hfil\raise.08em\hbox{$>$}\hfil}}   % center >
+      \lower.48em\hbox{$\sim$}                                   % and print ~
+        \raise.36em\hbox{}
+}}
+	{$\onggt$ }{greater than or of the order of}
+\macrodef{\def\onglt{%
+   \setbox1=\hbox{$\sim$} \dimen1=\wd1         % get size of ~
+        \rlap{\hbox to \dimen1{\hfil\raise.08em\hbox{$<$}\hfil}}   % center >
+      \lower.48em\hbox{$\sim$}                                   % and print ~
+        \raise.36em\hbox{}
+}}
+	{$\onglt$ }{less than or of the order of}
+
+%
+\macrodef{\def\eep{$(e,e'p)$}}
+	{\eep\ }{well-known reaction}
+\macrodef{\def\eepp{$(e,e'pp)$}}
+	{\eepp\ }{another well-known reaction}
+%
+\macrodef{\def\opO{{\hat{\cal O}}}}
+	{$\opO$}{Operator involved in response}
+\macrodef{\def\opOhatless{{{\cal O}}}}
+	{$\opOhatless$}{Operator involved in response without hat}
+\macrodef{\def\Sp#1{S^{#1,{\rm p}}_{i_{#1}}}}
+	{$\Sp{\alpha}$}{Particle strength} 
+\macrodef{\def\Ep#1{E^{#1,{\rm p}}_{i_{#1}}}}
+	{$\Ep{\alpha}$}{Particle energy} 
+\macrodef{\def\Sh#1{S^{#1,{\rm h}}_{j_{#1}}}}
+	{$\Sh{\alpha}$}{Hole strength} 
+\macrodef{\def\Eh#1{E^{#1,{\rm h}}_{j_{#1}}}}
+	{$\Eh{\alpha}$}{Hole energy} 
+%%%
+%%% for appendix
+\macrodef{\def\wveci#1{{\rm #1}}}
+	{$\wveci{v}_i$}{$i$-th component of vector $rvec{v}$} 
+%%% 
+% to lower the subscript in p_0 p'_0 etc.
+\def\phpr{^{\phantom{\prime}}}

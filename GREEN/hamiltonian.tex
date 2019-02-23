@@ -1,0 +1,249 @@
+\section{Definition of the Nuclear Many-Body Problem}
+%\subsection{Hamiltonian}
+
+With the assumption that the nucleus may be considered as an assembly of inert 
+nucleons, that interact by two-body interactions only, the nuclear Hamiltonian 
+is written in second quantized form as
+%
+	\begin{equation}
+		\hat{H}
+	=
+		\sum_{\alpha\beta}
+		T_{\alpha\beta}
+		\Oc{\alpha} \Oa{\beta}
+	+
+		\sfrac{1}{4}
+		\sum_{\alpha\beta\gamma\delta}
+		V_{\alpha\beta\gamma\delta}
+		\Oc{\alpha}\Oc{\beta}\Oa{\delta}\Oa{\gamma}
+	\label{eq:H1}
+	\;,
+	\end{equation}
+%
+where the Greek indices indicate a set of quantum numbers that label a certain 
+basis set of single-particle states.
+Here $T_{\alpha\beta}$ are the matrix elements of the kinetic energy operator 
+and $V_{\alpha\beta\gamma\delta}$ those of the interaction in antisymmetrized 
+form.
+The operators $\Oc{\alpha}$ 
+($\Oa{\alpha}$) are the usual creation (annihilation) operators for one 
+particle in state $\alpha$.
+
+Empirically it is known that the nucleus is a bound system with features of 
+shell structure. Therefore, a logical first step would be to construct a 
+single-particle basis with the well-known Hartree-Fock (HF) procedure, which 
+is also applied in atomic physics\cite{Ha23,Fo30}. However,  the strong 
+short-range repulsion prohibits its straightforward application, because it 
+would make the HF mean-field potential repulsive rather than an attractive 
+potential well with bound states. In order to obtain a better result one must 
+treat the short-range repulsion in a two-body scattering equation to all 
+orders, thereby constructing effective interaction matrix elements in analogy 
+with the T-matrix for the scattering of free particles.
+The procedure to implement this feature into the HF procedure is known as 
+Brueckner-Hartree-Fock (BHF)\cite{TFM74} and is diagrammatically represented in 
+fig.~\ref{fig:BHF}.
+%%%%%%%%%%%%%%%%%
+\begin{figure}
+\[
+\cntrbox{2.2cm}{2cm}{
+\epsfig{figure=figures/selfenergy/sig_UHF.ps, width=1.7cm}
+}
+=
+\cntrbox{2.2cm}{2cm}{
+\epsfig{figure=figures/selfenergy/sig_UHF1.ps, width=1.7cm}
+}
++
+\cntrbox{2.2cm}{2cm}{
+\epsfig{figure=figures/selfenergy/sig_UHF2.ps, width=1.7cm}
+}
++
+\cntrbox{2.2cm}{2cm}{
+\epsfig{figure=figures/selfenergy/sig_UHF3.ps, width=1.7cm}
+}
++
+\cdots
+\]
+\caption[]{ The Hartree-Fock potential must be constructed with a G-matrix 
+interaction that solves the two-body scattering in the nuclear medium to all 
+orders 
+(Brueckner-Hartree-Fock(BHF))\cite{MS93a}.
+The wiggly line represents the G-matrix, which is calculated as a scattering
+matrix within the medium of the $NN$-interaction (dashed line).
+\label{fig:BHF}}
+\end{figure}
+%%%%%%%%%%%%%%%%%
+
+In the present thesis we do not perform BHF calculations to obtain a 
+single-particle basis. Instead, we shall work in a harmonic oscillator basis. 
+Besides reasons of convenience, \eg\ the separation of relative and 
+center-of-mass motion performed in chapter~\ref{chap:ppknock}, their use may be 
+motivated by the fact that for light nuclei like $^{16}$O and $^{48}$Ca 
+these wave functions are good approximations of the well-bound, occupied 
+states that one obtains in BHF calculations. Then, as a restriction of the 
+problem, we shall deal with a space built with only a limited number of 
+oscillator shells. The aim is to choose this (shell) model space so large
+that is can accommodate the most important long-range correlations, \eg\ those 
+that give rise to collective motion (low-energy `phonons', 
+Giant Resonances) as well as the coupling of the motion of the individual 
+nucleons to these collective phenomena.
+The model space will be too small, however, to accommodate short-range 
+correlations which are caused by the repulsive core of the $NN$-interaction. 
+The latter involves components with large (relative) momenta, which require 
+harmonic oscillator states with large quantum numbers, \eg\ up to 
+$200 \hbar\omega$ for a Reid soft-core potential\cite{MS93a}.
+
+The practical point of view adopted here, which is also adopted in some 
+detail in chapter~\ref{chap:ppknock}, is that the occupied oscillator states 
+are a good representation of the BHF states, so that the BHF ladder diagrams 
+are already included in the single-particle energies. The latter are then 
+calculated by diagonalizing the sum of the kinetic energies and the 
+Hartree-Fock 
+terms computed with the G-matrix from the Bethe-Goldstone equation
+%
+	\begin{equation}
+		\varepsilon_{\alpha}
+	=
+		T_{\alpha\alpha}
+	+
+		\sum_{\gamma<F}
+		\left(
+			{\rm G}_{\alpha\gamma\alpha\gamma}
+		-
+			{\rm G}_{\alpha\gamma\gamma\alpha}
+		\right)
+	\label{eq:SPE}
+	\;.
+	\end{equation}
+%
+Because the matrix $\{T+G\}_{\alpha\beta}$
+is found to be almost diagonal for the occupied states, the diagonal form
+(\ref{eq:SPE}) is adopted in practice. A further rather important assumption is 
+that a suitable effective interaction with the model space is already 
+obtained by summation of the particle-particle ladders with intermediate 
+scattering states outside the model space. The summation of this ladder 
+series by means of solving the Bethe-Goldstone equation\cite{MS93a} 
+(\cf\ fig.~\ref{fig:BGEG})
+%%%%%%%%%%%%%%%%%
+\begin{figure}
+\[
+\underbrace{
+\cntrbox{1.5cm}{2cm}{
+\epsfig{figure=figures/BGEG/BGEGl.ps, width=1.0cm}
+}
+=
+\cntrbox{1.5cm}{2cm}{
+\epsfig{figure=figures/BGEG/BGEGr1.ps, width=1.0cm}
+}
++
+\cntrbox{1.5cm}{2cm}{
+\epsfig{figure=figures/BGEG/BGEGr2.ps, width=1.0cm}
+}
++
+\cntrbox{1.5cm}{2cm}{
+\epsfig{figure=figures/BGEG/BGEGr3.ps, width=1.0cm}
+}
++
+\cdots
+}_{a}
+\hspace{0.8cm}
+\underbrace{
+\left(
+\cntrbox{1.8cm}{2cm}{
+\epsfig{figure=figures/BGEG/BGEGb.ps, width=1.5cm}
+}
+\right)
+}_{b}
+\]
+\caption[]{ 
+On the left ($a$) the Bethe-Goldstone equation (BGE)(\ref{eq:BGEG}) is depicted.
+The wiggly line is the G-matrix which has contributions to all orders in the
+$NN$-interaction (dashed line). Only ladder diagrams  with intermediate 
+states outside the model space (denoted by double lines) are summed. 
+On the right ($b$) a typical diagram not included in the BGE is shown.
+\label{fig:BGEG}}
+\end{figure}
+%%%%%%%%%%%%%%%%%
+%
+	\begin{equation}
+		G(\omega)
+	=
+		V
+	+
+		V
+		\frac{ \hat{Q} }
+		{\omega - \hat{H}_0 + i\eta }
+		G(\omega)
+	\label{eq:BGEG}
+	\end{equation}
+%
+leads to the Brueckner G-matrix.
+In eq.~(\ref{eq:BGEG}) $\hat{Q}$ denotes the Pauli 
+operator that prevents scattering into states
+of the model space under consideration. The symbol $\hat{H}_0$ is the 
+Hamiltonian without the two-body interaction term. 
+The positive infinitesimal $\eta$ is
+explicitly written down in (\ref{eq:BGEG}) to stress the similarity with
+the Lippmann-Schwinger equation that gives the T-matrix of two particles in
+vacuum.
+The energy-dependence is weak for low-energy spectroscopy and therefore usually
+neglected (an average `starting energy' $W$ is adopted). 
+
+The G-matrix is only an approximation of the effective interaction that may be 
+formally derived by applying many-body perturbation 
+theory\cite{Br67a,JB71,Kuo74,EO77}. 
+For instance, the contribution of fig.~\ref{fig:BGEG}b is not included. The 
+inclusion of at least the ladder series, given in fig.~\ref{fig:BGEG}a, 
+is the 
+minimum requirement to obtain well-behaving effective interaction matrix 
+elements in the model space.
+%
+The importance of diagrams like the one shown in fig.~\ref{fig:BGEG}b for 
+low-energy spectroscopy may perhaps be reduced by adopting as large a model 
+space as feasible.
+
+Summarizing, the many-body problem that we are dealing with is that of the 
+Hamiltonian 
+%
+	\begin{eqnarray}
+		\hat{H}
+	&=&
+		\sum_{\alpha}
+		\varepsilon^{\phantom{\dagger}}_{\alpha}
+		\Oc{\alpha} \Oa{\alpha}
+	+
+		\sfrac{1}{4}
+		{\sum_{\alpha\beta\gamma\delta}}^\prime
+		V^{\phantom{\dagger}}_{\alpha\beta\gamma\delta}
+		\Oc{\alpha}\Oc{\beta}\Oa{\delta}\Oa{\gamma}
+	\nonumber \\
+	&=&
+		\hat{H}_0
+	+
+		\hat{H}_1
+	\label{eq:Hamiltonian}
+	\;,
+	\end{eqnarray}
+%
+in a large but finite harmonic oscillator 
+shell model space and with a given G-matrix interaction. The single-particle 
+energies, partly computed with (\ref{eq:SPE}) and partly re-adjusted so as
+to reproduce the energies of the quasi-particle peaks for states near the 
+Fermi level, are 
+supposed to incorporate the (Brueckner-)Hartree-Fock self-energies. Since this 
+Hamiltonian is an effective one, it must be kept in mind how it was obtained. 
+For instance, when studying short-range correlations in 
+chapters~\ref{chap:ppknock} and~\ref{chap:PPO},
+one must go one step back to the underlying G-matrix calculation.
+Another manifestation of the short-range correlations when using a finite 
+shell model space is studied in chapter~\ref{chap:SPECFAC}.
+The fact that the G-matrix is energy-dependent through the energy 
+denominator in the Bethe-Goldstone equation (BGE)
+is crucial here. 
+
+Because of the large size of the model space, which extends over several major 
+shells, a straightforward application of the standard shell model 
+techniques\cite{DeT63,BG77}, \ie\ construction of a full set of states allowed
+by coupling of angular momenta and parity, is out of the question. This is the 
+reason why Green's function techniques are adopted. Moreover, one may hope to 
+obtain guidance from the transparency of the diagrammatic representation in 
+identifying the most relevant parts of nuclear dynamics.

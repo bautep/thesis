@@ -1,0 +1,456 @@
+\section{Inclusion of both Short- and Long-Range Correlations}
+\subsection{Necessity to Split up the Calculation in Short- and Long-Range 
+Aspects\label{sec:splitting}}
+
+The strong repulsive
+core of the nucleon-nucleon interaction is responsible for high-momentum 
+components in the nuclear wave function. To describe a system with SRC 
+adequately, a very large basis is required for the wave functions, otherwise
+high momenta cannot be described.
+Such a large basis cannot be handled computationally, so a different approach
+should be taken. 
+
+This new approach is an extension of the methods previously 
+used\cite{Br90,Rij93}, \viz\ now short-range correlation(SRC) effects are 
+included
+in a calculation in which the long-range correlations are treated with a 
+G-matrix as effective interaction.
+An advantage of splitting the correlations into long-range and 
+short-range is that one may compare 
+different models for short-range correlations.
+
+The expansion of the two-nucleon removal amplitude in an angular-momentum 
+coupled shell model basis 
+%
+	\begin{eqnarray}
+	\lefteqn{%
+		\ME< \Psi^{A-2}_{J M}| \Oa{\rvec{p}_1} \Oa{\rvec{p}_2} %
+		| \Psi^A_0 >
+	\rightarrow} \nonumber \\
+	&&
+		\frac{(-)^{J-M}}
+		     {\sqrt{2J+1}}
+		\sum_{ab}
+		\RME< \Psi^{A-2}_{J}| 
+		(\Oa{\tilde{\alpha}} \Oa{\tilde{\beta}})_J %
+		| \Psi^A_0 >
+		\Phi_{ab}^{J, -M}(\rvec{p}_1, \rvec{p}_2)
+	\label{eq:MEaa}
+	\end{eqnarray}
+%
+that was used to derive (\ref{eq:SpecFuncW})
+is still exact, but the summation is in principle infinite. 
+In the 
+approximation of a mean field ground state, however, the summation is finite
+because
+the basis states are either completely filled or completely empty, so
+all the amplitudes concerning empty orbits will vanish. 
+In order to
+get a good description of the high-momentum components in the wave function,
+one has to take into account states until at least $100\hbar\omega$ for
+$^{16}$O\cite{MS93}.
+
+Due to correlations
+the shells that were filled in mean field will be partially depleted, while
+empty shells will get some occupation. This phenomenon has been observed
+experimentally very clearly, \eg\ in one-proton knock-out \eep\
+experiments\cite{HBJ88,Ste91,Qu88a,Kr90}. In previous
+calculations\cite{BRM91,RAD92} it was shown
+that the long-range correlations (represented by the coupling of the particle
+to particle-hole phonons or giant resonances) 
+cause fragmentation of single-particle strength
+and hence depletion of `filled' orbits. In these calculations it appeared to 
+be necessary to incorporate also 
+SRC in the form of an extra (overall) depletion of about 10\%.
+In that case the major effect of SRC seemed to be the uniform depletion of 
+the shells under study, shifting the one-particle strength to very
+high energies corresponding to orbits far above the Fermi level. In turn
+these orbits
+contain the necessary high-momentum 
+components in the total wave function as the effect of SRC.
+ It is
+therefore meaningful to
+formally split the model space into a part $\calM$ (\eg\ four
+or five oscillator shells in $^{16}$O) that will be used to 
+calculate the structure due to long-range correlations and the complementary
+space $\calbarM$ of which the orbits contribute to the spectral function
+as a consequence of the SRC.
+
+As a next step an effective interaction is determined for the calculation
+of the amplitudes within the model space $\calM$. This interaction will of 
+course depend on
+the choice of $\calM$. In principle such an interaction is well-defined%
+\cite{Br67a,JB71,Kuo74,EO77} but very complicated, 
+\eg\ containing 
+three- and more-body parts. One may argue that
+SRC cause the major difference between the effective and original 
+$NN$-interaction, and SRC are supposed to have the property that they can
+be well-described at the two-body level. Namely, SRC are effects
+caused by close encounters of two nucleons, and considering the range
+of $0.5$~fm of the short-range forces as a typical measure for the size of
+the nucleons, the density of nucleons is low. 
+This is the basis for the
+individual pair approach of Brueckner \etal\cite{BGW58,BLR61}.
+
+\subsection{Brueckner G-matrix Approach}
+In order to be able to incorporate all relevant diagrams the diagrams are
+summed in two stages. The diagrams that involve short-range effects are summed 
+in the Bethe-Goldstone equation (BGE) (\ref{eq:BGEG}) for the G-matrix. Another
+part of the 
+series for the two-particle Green's function  is then summed in the 
+Bethe-Salpeter equation (BSE) (\ref{eq:BSEpp}) using the G-matrix as an 
+effective 
+interaction within a limited model space. The BGE is a two-body scattering 
+equation for an individual pair while the presence of the other particles is 
+only accounted for by the average binding energy of the pair in the mean field
+potential and by the Pauli principle, which forbids as intermediate states in 
+the scattering process the 
+states of the chosen model space.
+The G-matrix is the analogue of the T-matrix in the  Lippmann-Schwinger
+equation. The procedure to calculate the G-matrix is sketched below.
+
+The starting point is to truncate the basis for the single-particle states,
+thus obtaining a smaller
+set ($\calM$) of basis states that are taken into account in $\calM$. 
+Once a truncated set is defined,
+the model
+space for states coupled to total angular momentum $J$ and projection $M$ is
+described by a set $\ket{\Phi^{JM}_{ab}}$ with 
+ $(ab) \in \calM$ (meaning ($a\in\calM$ $\wedge$ $b\in\calM$)). 
+In the BGE 
+a projection operator $P$ is introduced that projects a state on the chosen
+truncated model space. Its complementary projection $\hat{Q}$ is called
+the Pauli operator, because its function in the BGE is to prevent scattering
+to occupied states. The projection operators can be written as
+%
+	\begin{eqnarray}
+		\hat{P}
+	&=&
+		\sum_{ab \in \calM}
+		\ket{ \Phi_{ab} }
+		\bra{ \Phi_{ab} }
+	\;,
+	\nonumber \\
+		\hat{Q}
+	&=&
+		\hat{1}-\hat{P}
+	\;.
+	\end{eqnarray}
+%
+The BGE for the correlated pair wave function $\ket{\Psi^{JM}_{ab}}$ is 
+now written as
+%
+	\begin{equation}
+		\ket{\Psi_{ab}}
+	=
+		\ket{\Phi_{ab}}
+	+
+		\frac{\hat{Q}}
+		{W - \hat{H}_0 + i\eta}
+		\hat{V}
+		\ket{\Psi_{ab}}
+	\label{eq:BGEP}
+	\;,
+	\end{equation}
+%
+where $W$ is the starting energy of the propagating pair, which is negative for
+a bound system. In (\ref{eq:BGEP}) the symbol $\hat{H}_0$ is the Hamiltonian 
+without the residual interaction and $\eta$
+is a positive 
+infinitesimal. The symbol $\eta$ which is present in (\ref{eq:BGEP}) because
+of correspondence with the Lippmann-Schwinger equation where it is relevant,
+can be set to zero in this case because the denominator will always be 
+negative.
+{}From (\ref{eq:BGEP}) it is clear that the wave functions are modified
+due to the scattering that involves higher orbits (not belonging to $\calM$).
+This is precisely the mechanism with which the short-range correlation will 
+be taken into account. Defining the `defect function' $\chi$  as the 
+difference between the correlated and uncorrelated wave function, so
+%
+	\begin{equation}
+		\ket{\chi}
+	=
+		\frac{\hat{Q}}{W - \hat{H}_0 +i\eta}\hat{V} \ket{\Psi}
+	\label{eq:def}
+	\;,
+	\end{equation}
+%
+the effect of SRC can be included by the replacement of the uncorrelated
+basis functions by correlated ones
+%
+	\begin{equation}
+		\ket{\Phi}
+	\rightarrow
+		\ket{\Psi}
+	= 
+		\ket{\Phi} + \ket{\chi}
+	\label{eq:def2}
+	\;.
+	\end{equation}
+%
+
+The BGE for the G-matrix can be obtained from the definition of the G-matrix
+which is written, analogous to the definition of the T-matrix, as
+%
+	\begin{equation}
+		\ME<\Phi^{JM}_{cd}| G |\Phi^{JM}_{ab}>
+	=
+		\ME<\Phi^{JM}_{cd}| V |\Psi^{JM}_{ab}>
+	\;.
+	\end{equation}
+%
+In the form of an operator equation the BGE then reads
+%
+	\begin{equation}
+		G
+	=
+		V + V \frac{Q}{W - H_0 +i\eta}G
+	\label{eq:BGG}
+	\;.
+	\end{equation}
+%
+At this point the modification of eq.~(\ref{eq:SpecFuncW}) by the G-matrix 
+approach, \ie\ the truncation of the model space and the introduction of
+correlated wave functions can be expressed as
+%
+	\begin{eqnarray}
+	\lefteqn{%
+		S^{hh}_J( \rvec{p}_1, \rvec{p}_2, 
+		          \rvec{p}_{1'}, \rvec{p}_{2'}, \omega )
+	=
+		%\sum_{M}
+	} && 
+	\label{eq:SpecFuncC}\\
+	&&
+		\sum_{n,M}
+		\sum_{\begin{array}{c}
+			ab \in \calM;\\[-8pt]
+			cd \in \calM
+		      \end{array}}
+		\Psi^{\ast JM}_{cd}( \rvec{p}_{1'}, \rvec{p}_{2'} )
+		X^{n\ast}_{cd J} X^{n}_{ab J} 
+		\Psi^{JM}_{ab}( \rvec{p}_1, \rvec{p}_2 )
+		\;
+		\delta(\omega - E^{n,A-2}_{J} )
+	\nonumber
+	\;,
+	\end{eqnarray}
+%
+where $\Psi$ is the correlated two-body wave function, \cf~(\ref{eq:BGEP}).
+
+In general SRC will have effect only on the relative motion of two colliding
+nucleons. 
+The next step in the calculation of the spectral function therefore is to 
+perform the 
+transformation to relative and center-of-mass (\CM) coordinates. 
+
+\subsection{Transformation to Relative and Center-of-Mass 
+Coordinates\label{sec:Mos}}
+In the case one is working with a harmonic oscillator basis the 
+transformation to relative and center-of-mass coordinates can be done 
+elegantly, as was shown by Talmi\cite{Ta52} and Moshinsky\cite{MB60}.
+Although the transformation can always be performed, in the case of a
+harmonic oscillator basis for the absolute motion, the relative and \CM\ 
+motion can also be described with harmonic oscillators. Furthermore the 
+transformation brackets can be written down in closed form.
+
+If a product of two harmonic oscillator wave functions with arguments
+$\rvec{r}_1$ and $\rvec{r}_2$ and harmonic oscillator constant
+%
+	\begin{equation}
+		b
+	=
+		\sqrt{\frac{\hbar}
+		           {m\Omega}
+		}
+	\label{eq:bho}
+	\end{equation}
+%
+is expressed in
+relative ($\rvec{r}_{rel}=\rvec{r}_1-\rvec{r}_2$) and \CM\ 
+($\rvec{R}_{\CM}=\half(\rvec{r}_1+\rvec{r}_2)$) coordinates the corresponding 
+constants are
+ $b_{rel}=\sqrt{2}b$ (because the relevant mass in (\ref{eq:bho}) is 
+the reduced mass of the system $\mu=\half m$) 
+and $b_{\CM}=\half\sqrt{2}b$ (here the relevant mass is
+the total mass of the system $M=2m$).
+A Fourier transformation of this wave function yields harmonic oscillator
+functions with arguments
+$\rvec{k}_{rel}=\half(\rvec{k}_1-\rvec{k}_2)$ and 
+$\rvec{K}_{\CM}=\rvec{k}_1+\rvec{k}_2$.
+The factors $\sqrt{2}$ can be put in more symmetric form if one defines the
+relative and \CM\ coordinates and momenta as:
+%
+	\begin{eqnarray} 
+		\rvec{R}_{\CM}  = \frac{\rvec{r}_1+\rvec{r}_2}{\sqrt{2}} \;,& &
+		\rvec{r}_{rel} = \frac{\rvec{r}_1-\rvec{r}_2}{\sqrt{2}} \;,\\
+		\rvec{P}_{\CM}  = \frac{\rvec{p}_1+\rvec{p}_2}{\sqrt{2}} \;,& &
+		\rvec{p}_{rel} = \frac{\rvec{p}_1-\rvec{p}_2}{\sqrt{2}} \;.
+	\label{eq:momrelcm}
+	\end{eqnarray} 
+%
+With these definitions all harmonic oscillator functions have the same 
+harmonic oscillator constant $b$.
+
+Having defined the relative and \CM\ momenta with (\ref{eq:momrelcm}),
+the Talmi-Moshinsky transformation is defined in the following way:
+%
+	\begin{eqnarray}
+	\lefteqn{
+		\inp< \rvec{p}_1 \rvec{p}_2 | n_1 l_1 n_2 l_2; \lambda>
+	=}
+	&&
+	\label{eq:MTapply} \\
+	&&
+		\sum_{nlNL}
+		\inp< n l N L; \lambda| n_1 l_1 n_2 l_2; \lambda>
+		\inp< \rvec{P}_{\CM} \rvec{p}_{rel}| n l N L; \lambda >
+	\nonumber
+	\;,
+	\end{eqnarray}
+%
+where the wave functions are coupled in the $(\lambda S)_J$ coupled scheme
+%
+	\begin{equation} 
+		\rvec{l}_1 + \rvec{l}_2 = \gvec{\lambda} ;\;\; 
+		\rvec{s}_1 + \rvec{s}_2 = \rvec{S} ;\;\; 
+		\gvec{\lambda} + \rvec{S} = \rvec{J} 
+	\label{eq:lambdaSJ}
+	\;.
+	\end{equation} 
+%
+The transformation brackets have been tabulated by Brody and 
+Moshinsky\cite{MB60}. 
+In (\ref{eq:MTapply}) the summation is finite due to the energy 
+conservation condition of the harmonic oscillators involved
+%
+	\begin{equation}
+		2(n_1+n_2) + l_1+l_2
+	=
+		2(n+N)+l+L
+	\label{eq:MTEC}
+	\;.
+	\end{equation}
+%
+A closed form of the brackets in (\ref{eq:MTapply}) is given
+in appendix~\ref{app:MTCF}, this is the form that can easily by used in the 
+calculations.
+	
+%\subsubsection{tensor correlations}
+%The Moshinsky transformation is valid for uncorrelated wave
+%functions. The correlated wave functions do not form a complete basis anymore,
+%\eg\ they may all be zero at short relative distances.
+%Furthermore, due to tensor interaction, different $l$ values can mix
+%and the correlated wave function do not have a definite 
+%$l$-value, yielding a problem when one wants to apply eq.~(\ref{eq:MTapply}).
+%The problem of the incomplete basis is a formal problem. Basis states with
+%suppression of short distances will be able to describe the total correlated
+%wave function, which itself will have suppression at short distances. Because
+%of the problem of ill-defined $l$ values, a choice has to be made. A possible
+%choice is for instance, that in the Moshinsky transformation, 
+%the $l$ of the correlated function is taken 
+%to be the $l$ of the uncorrelated function, ignoring the mixing effect of the
+%tensor correlations in this transformation.
+
+\subsection{Correlation Functions\label{sec:cf}}
+Although the addition of defect functions is a straightforward method to 
+introduce
+the effect of SRC we will take the opportunity to look into another method
+in  which correlation functions are used
+to describe SRC and which is inspired by the Correlated Basis 
+Function (CBF) method.
+ In that method the correlated wave
+function is related to the uncorrelated ($A$-body) wave function in the 
+following way%
+\cite{GP94,Ja55,FP88,BFF94}
+%
+	\begin{equation}
+		\Psi^A(\rvec{r}_1,\ldots,\rvec{r}_A)
+	=
+		\sum_k
+		\prod_{i<j}
+		f_k(|\rvec{r}_i-\rvec{r}_j|)
+		O_k
+		\Phi^A(\rvec{r}_1,\ldots,\rvec{r}_A) 
+	\label{eq:corrfunctotal}
+	\;,
+	\end{equation}
+%
+where $f_k$ are the correlation functions and $O_k$ represent relevant 
+operators.
+At the level of two-body wave functions one has
+%
+	\begin{equation}
+		\Psi(\rvec{r}_1,\rvec{r}_2)
+	=
+		\sum_k
+		f_k(|\rvec{r}_1-\rvec{r}_2|)
+		O_k\Phi(\rvec{r}_1,\rvec{r}_2) 
+	\label{eq:corrfunc}
+	\;.
+	\end{equation}
+%
+The correlation functions and operators can be determined in a variational
+calculation. This has already been done some time
+ago for the simplest case\cite{Cl81}
+ with only the unity operator. 
+The correlated function then is of Jastrow type\cite{Ja55}. 
+In general all the 
+different operators
+that are present in the nuclear interaction should be included in 
+(\ref{eq:corrfunc})\cite{FP88}. 
+These operators are listed in table~\ref{tab:operators}.
+The Pavia group\cite{GP94} has used
+correlation functions of Jastrow type
+calculated by Clark\cite{Cl81} with a 
+variational calculation for two different interactions.
+
+In recent years methods to handle correlated basis functions (CBF) have been 
+developed further\cite{FP88}, and applied to ground state properties 
+such as momentum distributions\cite{BFF94} and spectral functions%
+\cite{BFF89,BFF92} in nuclear matter. Variational calculations of 
+similar nature were also carried out with Fermi hypernetted chain theory 
+(FHNC), which 
+yielded equivalent results for $^{16}$O\cite{CFF94}. 
+%For the calculation of 
+%the two nucleon spectral function as a function of excitation energy, these 
+%variational methods seem not very practical. 
+The CBF theory with state-dependent interactions is hard to apply in finite 
+systems for the calculation of one- or two-body spectral functions.
+A recent calculation of the 
+spectrum of $^{16}$O with the CBF method yielded rather poor
+results\cite{Bos94}.
+%%%%%%%%
+\begin{table}
+\centerline{
+\begin{tabular}{|c|c|}
+	\hline
+		1 
+	&   
+		$\gvec{\tau}_1\cdot\gvec{\tau}_2$  
+	\\ \hline
+		$\gvec{\sigma}_1\cdot\gvec{\sigma}_2$ 
+	&
+		$\gvec{\sigma}_1\cdot\gvec{\sigma}_2
+		(\gvec{\tau}_1\cdot\gvec{\tau}_2)$
+	\\ \hline
+		$S_{12}$ 
+	& 
+		$S_{12}(\gvec{\tau}_1\cdot\gvec{\tau}_2)$ 
+	\\ \hline
+		$\rvec{l}\cdot\rvec{S}$ 
+	& 
+		$\rvec{l}\cdot\rvec{S}(\gvec{\tau}_1\cdot\gvec{\tau}_2)$ 
+	\\ \hline
+\end{tabular}
+}
+\caption{
+The operators that are present in the nuclear interaction.
+The tensor operator $S_{12}$ is  defined as
+$3(\gvec{\sigma}_1\cdot\hat{\rvec{r}}_{12})
+  (\gvec{\sigma}_2\cdot\hat{\rvec{r}}_{12})-
+  \gvec{\sigma}_1\cdot\gvec{\sigma}_2$.
+\label{tab:operators}
+}
+\end{table}
+%%%%%%%%%

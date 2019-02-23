@@ -1,0 +1,48 @@
+\documentclass[11pt,oldtoc]{mijnboek}
+
+\usepackage{macrodefs}
+
+%\renewcommand{\figurename}{\small\em Figure}
+%\renewcommand{\tablename}{\small\em Table}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.2}
+\def\mycaption#1{\caption{\em #1}}
+
+% GESTOLEN van Ferry 
+\evensidemargin 1.5cm
+\oddsidemargin 2.5cm
+\topmargin 2cm
+\textwidth 12.50cm
+\textheight 18.6cm
+\begin{document}
+%%%%%%%%%%%%%%
+\begin{table}
+\centerline{
+\begin{tabular}{|c|lll|lll|}
+\hline
+\multicolumn{1}{|c|}{}         & \multicolumn{3}{c|}{Energy dependent} 
+         & \multicolumn{3}{c|}{Energy independent} \\
+\cline{2-4} \cline{5-7}
+ \multicolumn{1}{|c|}{Shell} 
+         & \multicolumn{1}{c}{hole} 
+         & \multicolumn{1}{c}{particle} 
+         & \multicolumn{1}{c|}{main peak} 
+         & \multicolumn{1}{c}{hole} 
+         & \multicolumn{1}{c}{particle} 
+         & \multicolumn{1}{c|}{main peak} \\
+\hline
+ $1d\frac{3}{2}$ & 0.035  &0.914  &0.82  &0.037 &0.963   &0.87   \\
+ $1d\frac{5}{2}$ & 0.034  &0.913  &0.86  &0.037 &0.963   &0.91   \\
+ $1p\frac{1}{2}$ & 0.837  &0.094  &0.77  &0.903 &0.097   &0.83   \\
+ $1p\frac{3}{2}$ & 0.879  &0.052  &0.76  &0.945 &0.055   &0.82   \\
+ $1s\frac{1}{2}$ & 0.880  &0.043  &---   &0.954 &0.046   &---    \\
+\hline
+\end{tabular}}
+\caption[]{Comparison of the solution of the Dyson equation with and without
+influence of the energy dependence of the G-matrix.
+\label{tab:sfO}}
+\end{table}
+%%%%%%%%%%%%%%
+\end{document}
